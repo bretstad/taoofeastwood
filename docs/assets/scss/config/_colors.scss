@@ -1,0 +1,130 @@
+// Color Configuration
+// ===================
+
+/// # Color Configuration
+/// @group color
+/// @link http://oddbird.net/accoutrement-color/docs/
+///   Accoutrement Colors
+
+@include register-function('lighten');
+@include register-function('saturate');
+@include register-function('desaturate');
+
+// Brand Colors
+// ------------
+/// The brand is defined by our primary brand blue,
+/// along with secondary pink and orange base colors.
+/// @group color
+/// @colors
+/// @type Map
+$brand-colors: (
+  '_brand-blue': hsl(195, 52%, 31%),
+  '_brand-orange': hsl(24, 100%, 62%),
+  '_brand-pink': hsl(330, 100%, 45%),
+);
+
+@include add-colors($brand-colors);
+
+
+// Contrast Colors
+// ---------------
+/// The light and dark contrast colors act as
+/// the high and low range of our palette.
+/// @group color
+/// @colors
+/// @type Map
+$contrast-colors: (
+  'blue-light': '#_brand-blue' ('lighten': 22%),
+  'blue-dark': '#_brand-blue' ('shade': 25%),
+  'pink-light': '#_brand-pink' ('lighten': 22%),
+  'pink-dark': '#_brand-pink' ('shade': 25%),
+  'gray-dark': '#_contrast-dark' ('tint': 25%),
+  'gray': '#_contrast-dark' ('tint': 30%),
+  'gray-light': '#gray' ('tint': 50%),
+  'contrast-light': hsl(220, 100%, 99%),
+  'contrast-dark': '#_brand-blue' ('shade': 50% '_contrast-dark'),
+);
+
+@include add-colors($contrast-colors);
+
+
+// Diff Colors
+// -----------
+/// Colors for making changes in documents
+/// @group color
+/// @colors
+/// @type Map
+$diff-colors: (
+  'added-dark': hsl(130, 25%, 32%),
+  'added-light':  '#added-dark' ('saturate': 15%, 'lighten': 57%),
+
+  'changed-dark': '#_brand-blue' ('desaturate': 20%, 'lighten': 5%),
+  'changed-light': '#_brand-blue' ('saturate': 48%, 'lighten': 63%),
+
+  'removed-dark': hsl(281, 25%, 54%),
+  'removed-light': '#removed-dark' ('saturate': 6%, 'lighten': 25%),
+);
+
+@include add-colors($diff-colors);
+
+
+// Light Colors
+// ------------
+/// Main theme colors will be set as relative CSS variables –
+/// applying the above colors to more specific use-cases.
+/// **This map should not include any color-adjustments.**
+/// @group color
+/// @colors
+/// @type Map
+$light-theme: (
+  'background': '#contrast-light',
+  'text': '#contrast-dark',
+  'text-light': '#gray-dark',
+  'border': '#gray',
+  'border-light': '#gray-light',
+  'action': '#_brand-blue',
+  'action-hover': '#pink-dark',
+  'action-bright': '#_brand-pink',
+  'graphic-glow': '#blue-light',
+  'graphic-base': '#blue-dark',
+
+  'added-fg': '#added-dark',
+  'added-bg': '#added-light',
+  'changed-fg': '#changed-dark',
+  'changed-bg': '#changed-light',
+  'removed-fg': '#removed-dark',
+  'removed-bg': '#removed-light',
+);
+
+@include add-colors($light-theme);
+
+
+// Dark Theme
+// ----------
+/// Inverted theme colors will be set as relative CSS variables –
+/// applying the above colors to more specific use-cases.
+/// **This map will not be available in the global `$colors` map.**
+/// @group color
+/// @colors
+/// @type Map
+$dark-theme: (
+  'background': '#contrast-dark',
+  'text': '#contrast-light',
+  'text-light': '#gray-light',
+  'border': '#gray-light',
+  'border-light': '#gray',
+  'action': '#blue-light',
+  'action-hover': '#pink-light',
+  'action-bright': '#_brand-pink',
+  'graphic-glow': '#removed-dark',
+  'graphic-base': '#removed-light',
+
+  'added-fg': '#added-light',
+  'added-bg': '#added-dark',
+  'changed-fg': '#changed-light',
+  'changed-bg': '#changed-dark',
+  'removed-fg': '#removed-light',
+  'removed-bg': '#removed-dark',
+);
+
+$dark-colors: map-merge($colors, $dark-theme);

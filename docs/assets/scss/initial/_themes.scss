@@ -1,0 +1,36 @@
+// Themes
+// ======
+
+$themes: (
+  'light': $colors,
+  'dark': $dark-colors,
+);
+
+$invert: (
+  'light': (
+    'keys': map-keys($dark-theme),
+    'colors': $dark-colors,
+  ),
+  'dark': (
+    'keys': map-keys($light-theme),
+    'colors': $colors,
+  ),
+);
+
+@each $name, $theme in $themes {
+  [data-theme='#{$name}'] {
+    @include colors--($theme);
+
+    [data-theme='invert'] {
+      $use: map-get($invert, $name);
+      @each $key in map-get($use, 'keys') {
+        @include color--($key, $source: map-get($use, 'colors'));
+      }
+    }
+  }
+}
+
+[data-theme] {
+  background-color: var-color('background');
+  color: var-color('text');
+}

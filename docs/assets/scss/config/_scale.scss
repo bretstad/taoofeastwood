@@ -1,0 +1,82 @@
+// Scale Settings
+// ==============
+
+
+/// # Scale Configuration
+/// @group scale
+/// @link http://oddbird.net/accoutrement-scale/docs/
+///   Accoutrement Scale
+
+
+// Ratios
+// ------
+/// @group scale
+/// @ratios
+$modular-scale: (
+  'text-ratio': 1.6,
+);
+
+@include add-ratios($modular-scale);
+
+
+// Text Sizes
+// ----------
+/// @group scale
+$text-sizes: (
+  'root': 16px,
+  'responsive': calc(%s + %s) ('%s': '#root' 0.25vw),
+
+  'large': 1rem ('text-ratio': 0.5),
+  'xlarge': calc(%s + %s) ('%s': '#large' 0.75vw),
+
+  'small': 1rem ('text-ratio': -0.5),
+  'xsmall': 1rem ('text-ratio': -1),
+);
+
+@include add-sizes($text-sizes);
+
+
+// Spacing Sizes
+// -------------
+/// @group scale
+$spacing-sizes: (
+  'rhythm': '#root' ('text-ratio': 1, 'convert-units': 'rem'),
+  'gutter': '#rhythm',
+  'double-gutter': '#gutter' ('times': 2),
+  'spacer': calc(%s + %s) ('%s': '#double-gutter' 4vmin),
+  'shim': '#gutter' ('times': 0.5),
+  'half-shim': '#shim' ('times': 0.5),
+  'quarter-shim': '#shim' ('times': 0.25),
+);
+
+@include add-sizes($spacing-sizes);
+
+
+// Component Sizes
+// ---------------
+/// @group scale
+$component-sizes: (
+  'icon': 1em,
+);
+
+@include add-sizes($component-sizes);
+
+
+// Page Sizes
+// ----------
+/// @group scale
+$page-sizes: (
+  'page': 30rem,
+);
+
+@include add-sizes($page-sizes);
+
+
+// Breakpoints
+// -----------
+/// @group scale
+$break-sizes: (
+  'page-break': '#page' ('times': 2, 'convert-units': 'browser-ems'),
+);
+
+@include add-sizes($break-sizes);

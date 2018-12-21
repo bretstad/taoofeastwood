@@ -1,0 +1,35 @@
+{
+  "name": "tao-of-eastwood",
+  "title": "Tao of Eastwood",
+  "version": "1.0.0",
+  "description": "The principles of the Way, through the characters of one actor and filmmaker.",
+  "author": {
+    "name": "Bret Morstad",
+    "email": "bretstad@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "docs/index.html",
+  "repository": "git@github.com:oddbird/taoofeastwood.git",
+  "scripts": {
+    "serve": "yarn eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.6.0",
+    "accoutrement": "^2.1.0",
+    "beeper": "^1.1.1",
+    "chalk": "^2.4.1",
+    "fancy-log": "^1.3.3",
+    "fibers": "^3.1.1",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^8.0.0",
+    "markdown-it": "^8.4.2",
+    "sass": "^1.15.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.4.0"
+  }
+}
