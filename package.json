@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.6.0",
-    "accoutrement": "^2.1.0",
+    "accoutrement": "^2.1.1",
     "beeper": "^1.1.1",
     "chalk": "^2.4.1",
     "fancy-log": "^1.3.3",
@@ -28,6 +28,8 @@
     "gulp-stylelint": "^8.0.0",
     "markdown-it": "^8.4.2",
     "sass": "^1.15.1",
+    "sassdoc": "^2.5.1",
+    "sassdoc-theme-herman": "^3.0.1",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.4.0"

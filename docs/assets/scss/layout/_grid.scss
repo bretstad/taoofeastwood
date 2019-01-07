@@ -1,17 +1,12 @@
 // Grid Layout
 // ===========
 
-:root {
-  @include colors--();
-  @include var-contrasted('background');
-}
-
 [data-layout="grid"] {
   box-shadow: 0 0 size('shim') var-color('border');
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0 auto;
-  max-width: 40em;
+  max-width: size('page');
   min-height: 100vh;
-  padding: 1em;
+  padding: size('gutter');
 }

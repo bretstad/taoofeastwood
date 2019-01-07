@@ -1,2 +1,39 @@
-<h1>taoofeastwood</h1>
-<p>Tao of Eastwood</p>
+<h1>Tao of Eastwood</h1>
+<p>by <a href="http://www.bretstad.com">Bret Morstad</a></p>
+<h2>Develop:</h2>
+<p>Install dependencies:</p>
+<pre><code>yarn
+</code></pre>
+<p>Compile and run <a href="http://www.11ty.io">Eleventy</a> server,
+with a watcher for Sass files:</p>
+<pre><code>gulp
+</code></pre>
+<p>The site will be compiled into <code>docs/</code>
+for simple gh-pages deployment,
+and the served site will be available at
+<code>localhost:8080</code> or e.g. <code>tao.hexxie.com:8080</code>.</p>
+<p>You can also run individual commands:</p>
+<pre><code># build the static site
+yarn eleventy
+
+# run the server
+yarn serve
+
+# compile sass
+gulp sass
+
+# lint sass
+gulp sasslint
+
+# compile sass docs
+gulp sassdoc
+
+# watch sass files (lint &amp; docs &amp; compile)
+gulp watch
+</code></pre>
+<p>Sass Docs are compiled into the <code>docs/design/</code> folder,
+which is then available at the URL: <code>/design/</code>.</p>
+<h2>Deploy:</h2>
+<p>The live site is deployed via Github Pages
+directly from the master-branch <code>docs/</code> folder.</p>
+<p>Compile changes, commit the results, and push to master.</p>

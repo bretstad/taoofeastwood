@@ -201,117 +201,93 @@ sub {
   bottom: -0.25em;
 }
 
-[data-theme=light] {
-  --color-blue-light: #49a6c5;
-  --color-blue-dark: #215869;
-  --color-pink-light: #ff57ab;
-  --color-pink-dark: #b10d65;
-  --color-gray-dark: #3f3f40;
-  --color-gray: #4b4c4d;
-  --color-gray-light: #a3a4a6;
-  --color-contrast-light: #fafcff;
-  --color-contrast-dark: #13323c;
-  --color-added-dark: #3d6644;
-  --color-added-light: #d8eedb;
-  --color-changed-dark: #3e6a79;
-  --color-changed-light: #e0f7ff;
-  --color-removed-dark: #946ca7;
-  --color-removed-light: #d0b9da;
-  --color-background:var(--color-contrast-light, #fafcff);
-  --color-text:var(--color-contrast-dark, #13323c);
-  --color-text-light:var(--color-gray-dark, #3f3f40);
-  --color-border:var(--color-gray, #4b4c4d);
-  --color-border-light:var(--color-gray-light, #a3a4a6);
-  --color-action: #266478;
-  --color-action-hover:var(--color-pink-dark, #b10d65);
-  --color-action-bright: #e60073;
-  --color-graphic-glow:var(--color-blue-light, #49a6c5);
-  --color-graphic-base:var(--color-blue-dark, #215869);
-  --color-added-fg:var(--color-added-dark, #3d6644);
-  --color-added-bg:var(--color-added-light, #d8eedb);
-  --color-changed-fg:var(--color-changed-dark, #3e6a79);
-  --color-changed-bg:var(--color-changed-light, #e0f7ff);
-  --color-removed-fg:var(--color-removed-dark, #946ca7);
-  --color-removed-bg:var(--color-removed-light, #d0b9da);
+@font-face {
+  font-family: "system";
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
-[data-theme=light] [data-theme=invert] {
-  --color-background:var(--color-contrast-dark, #13323c);
-  --color-text:var(--color-contrast-light, #fafcff);
-  --color-text-light:var(--color-gray-light, #a3a4a6);
-  --color-border:var(--color-gray-light, #a3a4a6);
-  --color-border-light:var(--color-gray, #4b4c4d);
-  --color-action:var(--color-blue-light, #49a6c5);
-  --color-action-hover:var(--color-pink-light, #ff57ab);
-  --color-action-bright: #e60073;
-  --color-graphic-glow:var(--color-removed-dark, #946ca7);
-  --color-graphic-base:var(--color-removed-light, #d0b9da);
-  --color-added-fg:var(--color-added-light, #d8eedb);
-  --color-added-bg:var(--color-added-dark, #3d6644);
-  --color-changed-fg:var(--color-changed-light, #e0f7ff);
-  --color-changed-bg:var(--color-changed-dark, #3e6a79);
-  --color-removed-fg:var(--color-removed-light, #d0b9da);
-  --color-removed-bg:var(--color-removed-dark, #946ca7);
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff");
 }
-
-[data-theme=dark] {
-  --color-blue-light: #49a6c5;
-  --color-blue-dark: #215869;
-  --color-pink-light: #ff57ab;
-  --color-pink-dark: #b10d65;
-  --color-gray-dark: #3f3f40;
-  --color-gray: #4b4c4d;
-  --color-gray-light: #a3a4a6;
-  --color-contrast-light: #fafcff;
-  --color-contrast-dark: #13323c;
-  --color-added-dark: #3d6644;
-  --color-added-light: #d8eedb;
-  --color-changed-dark: #3e6a79;
-  --color-changed-light: #e0f7ff;
-  --color-removed-dark: #946ca7;
-  --color-removed-light: #d0b9da;
-  --color-background:var(--color-contrast-dark, #13323c);
-  --color-text:var(--color-contrast-light, #fafcff);
-  --color-text-light:var(--color-gray-light, #a3a4a6);
-  --color-border:var(--color-gray-light, #a3a4a6);
-  --color-border-light:var(--color-gray, #4b4c4d);
-  --color-action:var(--color-blue-light, #49a6c5);
-  --color-action-hover:var(--color-pink-light, #ff57ab);
-  --color-action-bright: #e60073;
-  --color-graphic-glow:var(--color-removed-dark, #946ca7);
-  --color-graphic-base:var(--color-removed-light, #d0b9da);
-  --color-added-fg:var(--color-added-light, #d8eedb);
-  --color-added-bg:var(--color-added-dark, #3d6644);
-  --color-changed-fg:var(--color-changed-light, #e0f7ff);
-  --color-changed-bg:var(--color-changed-dark, #3e6a79);
-  --color-removed-fg:var(--color-removed-light, #d0b9da);
-  --color-removed-bg:var(--color-removed-dark, #946ca7);
+@font-face {
+  font-family: "lato";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/lato-italic-webfont.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff");
 }
-[data-theme=dark] [data-theme=invert] {
-  --color-background:var(--color-contrast-light, #fafcff);
-  --color-text:var(--color-contrast-dark, #13323c);
-  --color-text-light:var(--color-gray-dark, #3f3f40);
-  --color-border:var(--color-gray, #4b4c4d);
-  --color-border-light:var(--color-gray-light, #a3a4a6);
-  --color-action: #266478;
-  --color-action-hover:var(--color-pink-dark, #b10d65);
-  --color-action-bright: #e60073;
-  --color-graphic-glow:var(--color-blue-light, #49a6c5);
-  --color-graphic-base:var(--color-blue-dark, #215869);
-  --color-added-fg:var(--color-added-dark, #3d6644);
-  --color-added-bg:var(--color-added-light, #d8eedb);
-  --color-changed-fg:var(--color-changed-dark, #3e6a79);
-  --color-changed-bg:var(--color-changed-light, #e0f7ff);
-  --color-removed-fg:var(--color-removed-dark, #946ca7);
-  --color-removed-bg:var(--color-removed-light, #d0b9da);
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff");
 }
-
-[data-theme] {
-  background-color: var(--color-background, #fafcff);
-  color: var(--color-text, #13323c);
+@font-face {
+  font-family: "lato";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lato-bolditalic-webfont.woff") format("woff");
 }
-
+@font-face {
+  font-family: "open";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "open";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/opensans-italic-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "open";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "open";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/opensans-bolditalic-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "slab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/enriqueta-regular-webfont.woff2") format("woff2"), url("../fonts/enriqueta-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "slab";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/enriqueta-bold-webfont.woff2") format("woff2"), url("../fonts/enriqueta-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "script";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/kaushanscript-regular-webfont.woff2") format("woff2"), url("../fonts/kaushanscript-regular-webfont.woff") format("woff");
+}
 :root {
-  font-family: freight-text-pro, Baskerville, Palatino, Cambria, Georgia, serif;
+  --color-contrast-light: #fff;
+  --color-contrast-dark: #261f1f;
+  --color-background:var(--color-contrast-light, #fff);
+  --color-text:var(--color-contrast-dark, #261f1f);
+  --color-text-light: #735e5e;
+  --color-border: #958585;
+  --color-border-light: #ab9e9e;
+  --color-action: #d10300;
+  --color-action-hover: #5f1615;
+  --color-accent: #d6b362;
+  --color-accent-light: #f8f2e3;
+  font-family: system, system-ui, sans-serif;
+  background-color: var(--color-background, #fff);
+  color: var(--color-contrast-dark, #261f1f);
   font-size: calc(16px + 0.25vw);
   line-height: 1.6;
 }
@@ -319,7 +295,7 @@ sub {
 h1,
 h2,
 h3 {
-  font-family: freight-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: slab, serif;
 }
 
 h2 {
@@ -336,15 +312,10 @@ p {
 }
 
 a:link, a:visited {
-  color: var(--color-action, #266478);
+  color: var(--color-action, #d10300);
 }
 a:hover, a:focus, a:active {
-  color: var(--color-action-hover, #b10d65);
-}
-
-.amp {
-  font-family: BaskervilleAmp, Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif;
-  font-style: italic;
+  color: var(--color-action-hover, #5f1615);
 }
 
 .is-hidden {
@@ -358,50 +329,14 @@ a:hover, a:focus, a:active {
   width: 1px;
 }
 
-:root {
-  --color-blue-light: #49a6c5;
-  --color-blue-dark: #215869;
-  --color-pink-light: #ff57ab;
-  --color-pink-dark: #b10d65;
-  --color-gray-dark: #3f3f40;
-  --color-gray: #4b4c4d;
-  --color-gray-light: #a3a4a6;
-  --color-contrast-light: #fafcff;
-  --color-contrast-dark: #13323c;
-  --color-added-dark: #3d6644;
-  --color-added-light: #d8eedb;
-  --color-changed-dark: #3e6a79;
-  --color-changed-light: #e0f7ff;
-  --color-removed-dark: #946ca7;
-  --color-removed-light: #d0b9da;
-  --color-background:var(--color-contrast-light, #fafcff);
-  --color-text:var(--color-contrast-dark, #13323c);
-  --color-text-light:var(--color-gray-dark, #3f3f40);
-  --color-border:var(--color-gray, #4b4c4d);
-  --color-border-light:var(--color-gray-light, #a3a4a6);
-  --color-action: #266478;
-  --color-action-hover:var(--color-pink-dark, #b10d65);
-  --color-action-bright: #e60073;
-  --color-graphic-glow:var(--color-blue-light, #49a6c5);
-  --color-graphic-base:var(--color-blue-dark, #215869);
-  --color-added-fg:var(--color-added-dark, #3d6644);
-  --color-added-bg:var(--color-added-light, #d8eedb);
-  --color-changed-fg:var(--color-changed-dark, #3e6a79);
-  --color-changed-bg:var(--color-changed-light, #e0f7ff);
-  --color-removed-fg:var(--color-removed-dark, #946ca7);
-  --color-removed-bg:var(--color-removed-light, #d0b9da);
-  background-color: var(--color-background, #fafcff);
-  color: var(--color-contrast-dark, #13323c);
-}
-
 [data-layout=grid] {
-  -webkit-box-shadow: 0 0 0.8rem var(--color-border, #4b4c4d);
-  box-shadow: 0 0 0.8rem var(--color-border, #4b4c4d);
+  -webkit-box-shadow: 0 0 0.8rem var(--color-border, #958585);
+  box-shadow: 0 0 0.8rem var(--color-border, #958585);
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 42rem;
   min-height: 100vh;
-  padding: 1em;
+  padding: 1.6rem;
 }
 /*# sourceMappingURL=screen.css.map */

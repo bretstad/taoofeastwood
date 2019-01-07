@@ -1,8 +1,12 @@
 // Type
 // ====
 
+@include import-webfonts;
+
 :root {
-  @include font-family('body');
+  @include colors--();
+  @include font-family('system');
+  @include var-contrasted('background');
   font-size: size('responsive');
   line-height: ratio('text-ratio');
 }
@@ -10,7 +14,7 @@
 h1,
 h2,
 h3 {
-  @include font-family('alt');
+  @include font-family('slab');
 }
 
 h2 {
@@ -43,11 +47,6 @@ a {
 
 // Special
 // -------
-
-.amp {
-  @include font-family('amp');
-  font-style: italic;
-}
 
 .is-hidden {
   @include is-hidden;

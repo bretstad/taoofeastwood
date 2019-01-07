@@ -1,0 +1,2001 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <title>color | Tao of Eastwood Documentation</title>
+
+  <link href="assets/img/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/webpack/app_styles.min.css" />
+
+  
+
+  
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" hidden>
+  <symbol id="icon-logo" viewBox="0 0 16 16">
+    <path d="M.2 8L0 7.8v-.2C.8 6.9 1.9 5.9 2.7 5l.4.3c-.5.8-1.1 1.6-1.8 2.3 1 1.2 1 1.3 1.7 2.4l-.4.3c-.4-.4-.5-.6-1-1C1 8.6 1.1 8.7.2 8zM13 10c.6-1.1.7-1.1 1.7-2.4-.6-.6-1.3-1.5-1.7-2.3l.3-.3c.8.8 1.8 1.8 2.7 2.6v.2l-.8.7c-.3.3-1.2 1.1-1.8 1.7L13 10z"/><path d="M2.6 13.1H3c.9 0 1.1-.2 1.1-1.4V4.2c0-1.1-.2-1.4-1.1-1.4h-.4v-.6h4.5v.7h-.3c-.9 0-1.1.2-1.1 1.4v3.2h4.6V4.2c0-1.1-.2-1.4-1.1-1.4h-.3v-.6h4.5v.7H13c-.9 0-1.1.2-1.1 1.4v7.5c0 1.1.2 1.4 1.1 1.4h.4v.7H8.9v-.7h.3c.9 0 1.1-.2 1.1-1.4V8.2H5.7v3.5c0 1.1.2 1.4 1.1 1.4h.3v.7H2.6v-.7z"/>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 28">
+    <path d="M24 21v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1v-2c0-.547.453-1 1-1h22c.547 0 1 .453 1 1zm0-8v2c0 .547-.453 1-1 1H1c-.547 0-1-.453-1-1V5c0-.547.453-1 1-1h22c.547 0 1 .453 1 1z"/>
+  </symbol>
+</svg>
+
+  <div data-region="app">
+    <header data-region="banner">
+      
+  <button data-nav-toggle data-toggle="button" aria-controls="nav" aria-pressed="false" type="button" data-toggle-synced="false">
+    
+  <svg data-icon="menu" data-icon-size="nav-icon" ><title>menu</title><use xlink:href="#icon-menu" />
+  </svg>
+
+  </button>
+
+
+      <div class="project-title">
+        <a href="index.html" rel="home" class="project-name">Tao of Eastwood</a>
+        
+          <span class="project-version">1.0.0</span>
+        
+      </div>
+    </header>
+
+    <div data-region="container">
+      
+  <nav data-region="nav" data-toggle="target" id="nav" data-target-id="nav" aria-expanded="false" data-auto-closing="false" data-auto-closing-on-any-click="false">
+    <form action="search.html">
+      <input type="text" name="q" placeholder="Search…" required minlength="3">
+    </form>
+
+    <div class="nav-subsection">
+      <h3 class="nav-home">
+        
+        <a href="index.html" data-nav="is-not-active">Tao of<span class="widont">&nbsp;</span>Eastwood</a>
+      </h3>
+
+      
+      
+    </div>
+
+    
+    <div class="nav-subsection">
+      <ul>
+  
+  
+    <li class="nav-item">
+      <a href="color.html" data-nav="is-active">color</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="fonts.html" data-nav="is-not-active">fonts</a>
+    </li>
+  
+  
+    <li class="nav-item">
+      <a href="scale.html" data-nav="is-not-active">scale</a>
+    </li>
+  </ul>
+    </div>
+
+    
+    
+      <div class="nav-subsection">
+        <h3 class="nav-title">
+          External Links
+        </h3>
+
+        <ul>
+          
+            <li class="nav-item">
+              <a href="http://www.11ty.io" data-nav="is-not-active">Eleventy</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/accoutrement/" data-nav="is-not-active">Accoutrement</a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="https://oddbird.net/herman/" data-nav="is-not-active">Herman</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+
+    
+      <aside class="footer-credit">
+        <a href="http://oddbird.net/herman/" class="footer-icon">
+          
+  <svg data-icon="logo" data-icon-size="footer-logo" ><use xlink:href="#icon-logo" />
+  </svg>
+
+        </a>
+        <span>
+          Documented with
+          <a href="http://oddbird.net/herman/" class="footer-link">
+            Herman
+          </a>
+        </span>
+        <span>
+          by
+          <a href="http://oddbird.net/" class="footer-link">
+            OddBird
+          </a>
+        </span>
+      </aside>
+    
+  </nav>
+
+
+      <main data-region="main">
+        
+  <nav class="breadcrumb">
+    
+    <a href="index.html" >Tao of Eastwood</a> »
+    <strong>color</strong>
+  </nav>
+
+
+        <div data-page="color">
+          
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--brand-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--brand-colors" class="item-name">$brand-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$brand-colors: (
+  &#39;_brand-main&#39;: #d10300,
+  &#39;_brand-accent&#39;: #d6b362,
+  &#39;_brand-gray&#39;: &#39;#_brand-main&#39; (&#39;desaturate&#39;: 90%),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>The brand is defined by our primary brand blue,
+along with secondary pink and orange base<span class="widont">&nbsp;</span>colors.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d10300;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d10300</code>
+                
+              
+                
+                  <code class="color-value">rgb(209, 3, 0)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 100%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d6b362;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d6b362</code>
+                
+              
+                
+                  <code class="color-value">rgb(214, 179, 98)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 59%, 61%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #735e5e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#735e5e</code>
+                
+              
+                
+                  <code class="color-value">rgb(115, 94, 94)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--shade-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--shade-colors" class="item-name">$shade-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$shade-colors: shades-of($brand-colors, 4);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Tints and shades of the brand<span class="widont">&nbsp;</span>colors.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #460100;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-dark-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#460100</code>
+                
+              
+                
+                  <code class="color-value">rgb(70, 1, 0)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 100%, 14%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #a30200;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-dark-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#a30200</code>
+                
+              
+                
+                  <code class="color-value">rgb(163, 2, 0)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 100%, 32%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d10300;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-dark-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d10300</code>
+                
+              
+                
+                  <code class="color-value">rgb(209, 3, 0)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 100%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d51714;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-dark-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d51714</code>
+                
+              
+                
+                  <code class="color-value">rgb(213, 23, 20)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 83%, 46%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #dc3f3d;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-0</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#dc3f3d</code>
+                
+              
+                
+                  <code class="color-value">rgb(220, 63, 61)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 69%, 55%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e36866;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-light-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e36866</code>
+                
+              
+                
+                  <code class="color-value">rgb(227, 104, 102)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 69%, 65%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #eb908f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-light-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#eb908f</code>
+                
+              
+                
+                  <code class="color-value">rgb(235, 144, 143)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 70%, 74%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f2b8b8;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-light-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f2b8b8</code>
+                
+              
+                
+                  <code class="color-value">rgb(242, 184, 184)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 69%, 84%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f9e1e0;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-main-light-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f9e1e0</code>
+                
+              
+                
+                  <code class="color-value">rgb(249, 225, 224)</code>
+                
+              
+                
+                  <code class="color-value">hsl(2, 68%, 93%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #262011;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-dark-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#262011</code>
+                
+              
+                
+                  <code class="color-value">rgb(38, 32, 17)</code>
+                
+              
+                
+                  <code class="color-value">hsl(43, 38%, 11%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #584a28;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-dark-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#584a28</code>
+                
+              
+                
+                  <code class="color-value">rgb(88, 74, 40)</code>
+                
+              
+                
+                  <code class="color-value">hsl(43, 38%, 25%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #8a743f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-dark-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#8a743f</code>
+                
+              
+                
+                  <code class="color-value">rgb(138, 116, 63)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 37%, 39%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #bd9e56;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-dark-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#bd9e56</code>
+                
+              
+                
+                  <code class="color-value">rgb(189, 158, 86)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 44%, 54%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d6b362;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-0</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d6b362</code>
+                
+              
+                
+                  <code class="color-value">rgb(214, 179, 98)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 59%, 61%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #dbbc74;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-light-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#dbbc74</code>
+                
+              
+                
+                  <code class="color-value">rgb(219, 188, 116)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 59%, 66%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #e4ce99;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-light-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#e4ce99</code>
+                
+              
+                
+                  <code class="color-value">rgb(228, 206, 153)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 58%, 75%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #eee0be;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-light-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#eee0be</code>
+                
+              
+                
+                  <code class="color-value">rgb(238, 224, 190)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 59%, 84%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f8f2e3;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-accent-light-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f8f2e3</code>
+                
+              
+                
+                  <code class="color-value">rgb(248, 242, 227)</code>
+                
+              
+                
+                  <code class="color-value">hsl(43, 60%, 93%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #261f1f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-dark-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#261f1f</code>
+                
+              
+                
+                  <code class="color-value">rgb(38, 31, 31)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 14%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #594949;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-dark-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#594949</code>
+                
+              
+                
+                  <code class="color-value">rgb(89, 73, 73)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 32%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #735e5e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-dark-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#735e5e</code>
+                
+              
+                
+                  <code class="color-value">rgb(115, 94, 94)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #7e6b6b;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-dark-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#7e6b6b</code>
+                
+              
+                
+                  <code class="color-value">rgb(126, 107, 107)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 8%, 46%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #958585;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-0</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#958585</code>
+                
+              
+                
+                  <code class="color-value">rgb(149, 133, 133)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 55%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #ab9e9e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-light-1</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#ab9e9e</code>
+                
+              
+                
+                  <code class="color-value">rgb(171, 158, 158)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 65%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #c1b8b8;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-light-2</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#c1b8b8</code>
+                
+              
+                
+                  <code class="color-value">rgb(193, 184, 184)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 74%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d8d2d2;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-light-3</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d8d2d2</code>
+                
+              
+                
+                  <code class="color-value">rgb(216, 210, 210)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 84%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #eeecec;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">_brand-gray-light-4</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#eeecec</code>
+                
+              
+                
+                  <code class="color-value">rgb(238, 236, 236)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 6%, 93%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--contrast-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--contrast-colors" class="item-name">$contrast-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$contrast-colors: (
+  &#39;contrast-light&#39;: #fff,
+  &#39;contrast-dark&#39;: color(&#39;#_brand-gray-dark-4&#39;),
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>The light and dark contrast colors act as
+the high and low range of our palette.
+These colors should not be<span class="widont">&nbsp;</span>dynamic.</p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fff;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">contrast-light</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#ffffff</code>
+                
+              
+                
+                  <code class="color-value">rgb(255, 255, 255)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 0%, 100%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #261f1f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">contrast-dark</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#261f1f</code>
+                
+              
+                
+                  <code class="color-value">rgb(38, 31, 31)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 14%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+<section class="item" id="variable--theme-colors">
+  
+    
+  
+  
+
+  
+  
+  
+  
+
+  <div data-item-section="header">
+    <h2 class="item-title">
+      
+        <span class="item-type"></span>
+      
+
+      
+        <a href="#variable--theme-colors" class="item-name">$theme-colors</a>
+      
+
+      
+        <span class="value-type">(Map)</span>
+      
+
+      
+    </h2>
+
+    
+  
+
+
+    
+    
+    
+  
+    <div class="code-block">
+      
+        <div class="code-header">
+          <span class="code-language">
+            scss
+          </span>
+
+          
+        </div>
+      
+
+      
+      
+      <pre class="hljs-pre"><code class="lang-scss">$theme-colors: (
+  &#39;background&#39;: &#39;#contrast-light&#39;,
+  &#39;text&#39;: &#39;#contrast-dark&#39;,
+  &#39;text-light&#39;: &#39;#_brand-gray-dark-2&#39;,
+  &#39;border&#39;: &#39;#_brand-gray-0&#39;,
+  &#39;border-light&#39;: &#39;#_brand-gray-light-1&#39;,
+  &#39;action&#39;: &#39;#_brand-main&#39;,
+  &#39;action-hover&#39;: &#39;#_brand-main-dark-4&#39;,
+  &#39;accent&#39;: &#39;#_brand-accent&#39;,
+  &#39;accent-light&#39;: &#39;#_brand-accent-light-4&#39;,
+);</code></pre>
+    </div>
+  
+
+    
+  
+  
+  
+  
+
+  
+    <div class="text-block">
+      <p>Main theme colors will be set as relative CSS variables –
+applying the above colors to more specific use-cases.
+<strong>This map should not include any<span class="widont">&nbsp;</span>color-adjustments.</strong></p>
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+  
+
+  </div>
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+    
+    
+  
+
+  
+
+  
+  
+
+
+  
+  
+
+  
+  
+        
+  
+  <div data-item-section="color-palette">
+    
+      <h3 class="item-subtitle">
+        <span class="item-subtitle-main">Color Previews</span>
+        
+      </h3>
+    
+
+    
+    <div class="color-palette">
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #fff;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">background</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#ffffff</code>
+                
+              
+                
+                  <code class="color-value">rgb(255, 255, 255)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 0%, 100%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #261f1f;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">text</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#261f1f</code>
+                
+              
+                
+                  <code class="color-value">rgb(38, 31, 31)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 14%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #735e5e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">text-light</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#735e5e</code>
+                
+              
+                
+                  <code class="color-value">rgb(115, 94, 94)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 10%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #958585;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">border</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#958585</code>
+                
+              
+                
+                  <code class="color-value">rgb(149, 133, 133)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 55%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #ab9e9e;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">border-light</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#ab9e9e</code>
+                
+              
+                
+                  <code class="color-value">rgb(171, 158, 158)</code>
+                
+              
+                
+                  <code class="color-value">hsl(0, 7%, 65%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d10300;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">action</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d10300</code>
+                
+              
+                
+                  <code class="color-value">rgb(209, 3, 0)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 100%, 41%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #5f1615;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">action-hover</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#5f1615</code>
+                
+              
+                
+                  <code class="color-value">rgb(95, 22, 21)</code>
+                
+              
+                
+                  <code class="color-value">hsl(1, 64%, 23%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #d6b362;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">accent</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#d6b362</code>
+                
+              
+                
+                  <code class="color-value">rgb(214, 179, 98)</code>
+                
+              
+                
+                  <code class="color-value">hsl(42, 59%, 61%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+        <div class="color-preview">
+          <div class="color-swatch">
+            <div class="transparency-grid"></div>
+            <div class="color-overlay" style="background-color: #f8f2e3;"></div>
+          </div>
+          <div class="color-info">
+            <strong class="color-name">
+              
+                <span class="color-name-option">accent-light</span>
+              
+            </strong>
+            
+            
+              
+                
+                  <code class="color-value">#f8f2e3</code>
+                
+              
+                
+                  <code class="color-value">rgb(248, 242, 227)</code>
+                
+              
+                
+                  <code class="color-value">hsl(43, 60%, 93%)</code>
+                
+              
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  </div>
+
+
+      
+
+</section>
+
+  
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/webpack/runtime.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/common.min.js"></script>
+  <script type="text/javascript" src="assets/webpack/app.min.js"></script>
+  
+</body>
+</html>

@@ -8,6 +8,7 @@ const Fiber = require('fibers');
 const gulp = require('gulp');
 const log = require('fancy-log');
 const sass = require('gulp-sass');
+const sassdoc = require('sassdoc');
 const sasslint = require("gulp-stylelint");
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
@@ -97,8 +98,13 @@ gulp.task(
   () => sasslintTask(paths.SASS)
 );
 
+gulp.task(
+  'sassdoc',
+  () => gulp.src(paths.SASS).pipe(sassdoc())
+);
+
 gulp.task('watch', (cb) => {
-  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sass']));
+  gulp.watch(paths.SASS, gulp.parallel(['sasslint', 'sassdoc', 'sass']));
 
   // lint all scss when rules change
   gulp.watch('**/.stylelintrc.yml', gulp.parallel('sasslint-nofail'));
