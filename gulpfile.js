@@ -151,7 +151,9 @@ gulp.task(
 
 gulp.task(
   'serve',
-  gulp.series('build-assets', cb => spawnTask('yarn', ['serve'], cb)),
+  gulp.series('build-assets', cb =>
+    spawnTask('yarn', ['eleventy', '--serve'], cb),
+  ),
 );
 
 gulp.task('default', gulp.parallel('watch', 'serve'));

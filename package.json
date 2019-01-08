@@ -11,9 +11,6 @@
   "private": true,
   "main": "docs/index.html",
   "repository": "git@github.com:oddbird/taoofeastwood.git",
-  "scripts": {
-    "serve": "yarn eleventy --serve"
-  },
   "devDependencies": {
     "@11ty/eleventy": "^0.6.0",
     "accoutrement": "^2.1.1",
