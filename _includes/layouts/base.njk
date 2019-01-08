@@ -20,11 +20,37 @@
 	</head>
 
 	<body data-layout="grid">
-		<h1>{{ site.title }}</h1>
-
+		<header data-layout="header">
+			<h1>{{ site.title }}</h1>
+			{% if title %}
+				<h2 class="chapter-title">Chapter {{ title }}</h2>
+			{% endif %}
+		</header>
 		{% block body %}
 		<main data-layout="main"
 			{{ utility.attr_if('class', templateClass) }}>
+
+			{% if quote %}
+				<blockquote>
+					<p>{{ quote }}</p>
+					<footer>
+						{% if quoteby %}
+							<strong>{{ quoteby }}</strong>
+						{% endif %}
+  					{% if quotebytitle %}
+							<span>{{ quotebytitle }}</span>
+						{% endif %}
+					</footer>
+				</blockquote>
+			{% endif %}
+
+			{% if verse %}
+				<blockquote class="tao-verse">
+					<p>{{ verse }}</p>
+					<footer class="tao-verse-number">from verse {{ versenum }}</footer>
+				</blockquote>
+			{% endif %}
+
 			{{ content | safe }}
 		</main>
 		{% endblock %}

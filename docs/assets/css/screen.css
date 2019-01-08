@@ -311,6 +311,13 @@ p {
   margin-bottom: 1.6rem;
 }
 
+blockquote {
+  margin-bottom: 1.6rem;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0.4rem;
+}
+
 a:link, a:visited {
   color: var(--color-action, #d10300);
 }
@@ -338,5 +345,16 @@ a:hover, a:focus, a:active {
   max-width: 42rem;
   min-height: 100vh;
   padding: 1.6rem;
+}
+
+[data-layout=header] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.6rem;
+}
+
+.chapter-title {
+  font-size: unset;
+  text-align: right;
 }
 /*# sourceMappingURL=screen.css.map */
