@@ -1,0 +1,76 @@
+/// # Color Configuration
+/// @group color
+/// @link http://oddbird.net/accoutrement/docs/color.html
+///   Accoutrement Color
+
+$_color: get-function('color');
+@include register-function('desaturate');
+
+// Brand Colors
+// ------------
+/// The brand is defined by our primary brand blue,
+/// along with secondary pink and orange base colors.
+/// @group color
+/// @colors
+/// @type Map
+$brand-colors: (
+  '_brand-main': #d10300,
+  '_brand-accent': #d6b362,
+  '_brand-gray': '#_brand-main'
+    (
+      'desaturate': 90%,
+    ),
+);
+
+@include add-colors($brand-colors);
+@include herman-add('colors', 'brand-colors', $brand-colors, $_color);
+
+// Contrast Colors
+// ---------------
+/// Tints and shades of the brand colors.
+/// @group color
+/// @colors
+/// @type Map
+$shade-colors: shades-of($brand-colors, 4);
+
+@include add-colors($shade-colors);
+@include herman-add('colors', 'shade-colors', $shade-colors, $_color);
+
+// Contrast Colors
+// ---------------
+/// The light and dark contrast colors act as
+/// the high and low range of our palette.
+/// These colors should not be dynamic.
+/// @group color
+/// @colors
+/// @type Map
+$contrast-colors: (
+  'contrast-light': #fff,
+  'contrast-dark': color('#_brand-gray-dark-4'),
+);
+
+@include add-colors($contrast-colors);
+@include herman-add('colors', 'contrast-colors', $contrast-colors, $_color);
+
+// Theme Colors
+// ------------
+/// Main theme colors will be set as relative CSS variables –
+/// applying the above colors to more specific use-cases.
+/// **This map should not include any color-adjustments.**
+/// @group color
+/// @colors
+/// @type Map
+$theme-colors: (
+  'background': '#contrast-light',
+  'text': '#contrast-dark',
+  'text-light': '#_brand-gray-dark-2',
+  'border': '#_brand-gray-0',
+  'border-light': '#_brand-gray-light-1',
+  'action': '#_brand-main',
+  'action-hover': '#_brand-main-dark-4',
+  'accent': '#_brand-accent',
+  'accent-light': '#_brand-accent-light-4',
+);
+
+@include add-colors($theme-colors);
+@include herman-add('colors', 'theme-colors', $theme-colors, $_color);

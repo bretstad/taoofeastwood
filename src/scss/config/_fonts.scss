@@ -1,0 +1,133 @@
+/// # Font Configuration
+/// @group fonts
+/// @link http://oddbird.net/accoutrement/docs/type.html
+///   Accoutrement Type
+
+// Font Path
+// ---------
+$font-path: '../fonts/';
+
+// System Local
+// ------------
+$_system-local: (
+  '.SFNSText-Light',
+  '.HelveticaNeueDeskInterface-Light',
+  '.LucidaGrandeUI',
+  'Ubuntu Light',
+  'Segoe UI Light',
+  'Roboto-Light',
+  'DroidSans',
+  'Tahoma'
+);
+
+// System Font
+// -----------
+///
+/// @group fonts
+/// @font system
+$system-font: (
+  'name': 'system',
+  'stack': (
+    'system-ui',
+    'sans-serif',
+  ),
+  '300': (
+    'local': $_system-local,
+  ),
+);
+
+@include add-font('system', $system-font);
+@include herman-add('font', 'system', $system-font);
+
+// Lato Body Font
+// --------------
+///
+/// @group fonts
+/// @font lato
+$lato-font: (
+  'name': 'lato',
+  'stack': (
+    'system',
+    'system-ui',
+    'sans-serif',
+  ),
+  'formats': (
+    'woff2',
+    'woff',
+  ),
+  '300': 'lato-light-webfont',
+  'normal': 'lato-regular-webfont',
+  'italic': 'lato-italic-webfont',
+  'bold': 'lato-bold-webfont',
+  'bold' 'italic': 'lato-bolditalic-webfont',
+);
+
+@include add-font('lato', $lato-font);
+@include herman-add('font', 'lato', $lato-font);
+
+// Open Sans Body Font
+// -------------------
+///
+/// @group fonts
+/// @font open
+$open-font: (
+  'name': 'open',
+  'stack': (
+    'system',
+    'system-ui',
+    'sans-serif',
+  ),
+  'formats': (
+    'woff2',
+    'woff',
+  ),
+  '300': 'opensans-light-webfont',
+  'normal': 'opensans-regular-webfont',
+  'italic': 'opensans-italic-webfont',
+  'bold': 'opensans-bold-webfont',
+  'bold' 'italic': 'opensans-bolditalic-webfont',
+);
+
+@include add-font('open', $open-font);
+@include herman-add('font', 'open', $open-font);
+
+// Slab Font
+// ---------
+///
+/// @group fonts
+/// @font slab
+$slab-font: (
+  'name': 'slab',
+  'stack': (
+    'serif',
+  ),
+  'formats': (
+    'woff2',
+    'woff',
+  ),
+  'normal': 'enriqueta-regular-webfont',
+  'bold': 'enriqueta-bold-webfont',
+);
+
+@include add-font('slab', $slab-font);
+@include herman-add('font', 'slab', $slab-font);
+
+// Script Font
+// -----------
+///
+/// @group fonts
+/// @font script
+$script-font: (
+  'name': 'script',
+  'stack': (
+    'cursive',
+  ),
+  'formats': (
+    'woff2',
+    'woff',
+  ),
+  'normal': 'kaushanscript-regular-webfont',
+);
+
+@include add-font('script', $script-font);
+@include herman-add('font', 'script', $script-font);

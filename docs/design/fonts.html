@@ -321,8 +321,13 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$system-font: (
   &#39;name&#39;: &#39;system&#39;,
-  &#39;stack&#39;: (&#39;system-ui&#39;, &#39;sans-serif&#39;),
-  &#39;300&#39;: (&#39;local&#39;: $_system-local),
+  &#39;stack&#39;: (
+    &#39;system-ui&#39;,
+    &#39;sans-serif&#39;,
+  ),
+  &#39;300&#39;: (
+    &#39;local&#39;: $_system-local,
+  ),
 );</code></pre>
     </div>
   
@@ -433,8 +438,43 @@
   
 
   
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;system&#39;;
+  src: local(&#39;.SFNSText-Light&#39;), local(&#39;.HelveticaNeueDeskInterface-Light&#39;), local(&#39;.LucidaGrandeUI&#39;), local(&#39;Ubuntu Light&#39;), local(&#39;Segoe UI Light&#39;), local(&#39;Roboto-Light&#39;), local(&#39;DroidSans&#39;), local(&#39;Tahoma&#39;),
+  font-weight: 300;
+  font-style: normal;
+}
+
+    &lt;/style&gt;
+  
 &lt;/head&gt;
-&lt;body class=&quot;sassdoc font-specimen&quot;&gt;&lt;/body&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;300&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      300
+
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: system, system-ui, sans-serif; font-weight: 300; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 " width="100%" height="0"></iframe>
     
@@ -508,9 +548,16 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$lato-font: (
   &#39;name&#39;: &#39;lato&#39;,
-  &#39;stack&#39;: (&#39;system&#39;, &#39;system-ui&#39;, &#39;sans-serif&#39;),
-  &#39;formats&#39;: (&#39;woff2&#39;, &#39;woff&#39;),
-  &#39;light&#39;: &#39;lato-light-webfont&#39;,
+  &#39;stack&#39;: (
+    &#39;system&#39;,
+    &#39;system-ui&#39;,
+    &#39;sans-serif&#39;,
+  ),
+  &#39;formats&#39;: (
+    &#39;woff2&#39;,
+    &#39;woff&#39;,
+  ),
+  &#39;300&#39;: &#39;lato-light-webfont&#39;,
   &#39;normal&#39;: &#39;lato-regular-webfont&#39;,
   &#39;italic&#39;: &#39;lato-italic-webfont&#39;,
   &#39;bold&#39;: &#39;lato-bold-webfont&#39;,
@@ -625,8 +672,177 @@
   
 
   
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;lato&#39;;
+  src: url(&#39;assets/fonts/lato-light-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/lato-light-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;lato&#39;;
+  src: url(&#39;assets/fonts/lato-regular-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/lato-regular-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;lato&#39;;
+  src: url(&#39;assets/fonts/lato-italic-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/lato-italic-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: &#39;lato&#39;;
+  src: url(&#39;assets/fonts/lato-bold-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/lato-bold-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;lato&#39;;
+  src: url(&#39;assets/fonts/lato-bolditalic-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/lato-bolditalic-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: bold;
+  font-style: italic;
+}
+
+    &lt;/style&gt;
+  
 &lt;/head&gt;
-&lt;body class=&quot;sassdoc font-specimen&quot;&gt;&lt;/body&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;300&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      300
+
+      
+        (&lt;code&gt;lato-light-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: lato, system, system-ui, sans-serif; font-weight: 300; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;normal&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      normal
+
+      
+        (&lt;code&gt;lato-regular-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: lato, system, system-ui, sans-serif; font-weight: normal; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;italic&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      italic
+
+      
+        (&lt;code&gt;lato-italic-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: lato, system, system-ui, sans-serif; font-weight: normal; font-style: italic;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;bold&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      bold
+
+      
+        (&lt;code&gt;lato-bold-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: lato, system, system-ui, sans-serif; font-weight: bold; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;bold italic&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      bold italic
+
+      
+        (&lt;code&gt;lato-bolditalic-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: lato, system, system-ui, sans-serif; font-weight: bold; font-style: italic;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 " width="100%" height="0"></iframe>
     
@@ -700,9 +916,16 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$open-font: (
   &#39;name&#39;: &#39;open&#39;,
-  &#39;stack&#39;: (&#39;system&#39;, &#39;system-ui&#39;, &#39;sans-serif&#39;),
-  &#39;formats&#39;: (&#39;woff2&#39;, &#39;woff&#39;),
-  &#39;light&#39;: &#39;opensans-light-webfont&#39;,
+  &#39;stack&#39;: (
+    &#39;system&#39;,
+    &#39;system-ui&#39;,
+    &#39;sans-serif&#39;,
+  ),
+  &#39;formats&#39;: (
+    &#39;woff2&#39;,
+    &#39;woff&#39;,
+  ),
+  &#39;300&#39;: &#39;opensans-light-webfont&#39;,
   &#39;normal&#39;: &#39;opensans-regular-webfont&#39;,
   &#39;italic&#39;: &#39;opensans-italic-webfont&#39;,
   &#39;bold&#39;: &#39;opensans-bold-webfont&#39;,
@@ -817,8 +1040,177 @@
   
 
   
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;open&#39;;
+  src: url(&#39;assets/fonts/opensans-light-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/opensans-light-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;open&#39;;
+  src: url(&#39;assets/fonts/opensans-regular-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/opensans-regular-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;open&#39;;
+  src: url(&#39;assets/fonts/opensans-italic-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/opensans-italic-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: &#39;open&#39;;
+  src: url(&#39;assets/fonts/opensans-bold-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/opensans-bold-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;open&#39;;
+  src: url(&#39;assets/fonts/opensans-bolditalic-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/opensans-bolditalic-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: bold;
+  font-style: italic;
+}
+
+    &lt;/style&gt;
+  
 &lt;/head&gt;
-&lt;body class=&quot;sassdoc font-specimen&quot;&gt;&lt;/body&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;300&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      300
+
+      
+        (&lt;code&gt;opensans-light-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: open, system, system-ui, sans-serif; font-weight: 300; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;normal&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      normal
+
+      
+        (&lt;code&gt;opensans-regular-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: open, system, system-ui, sans-serif; font-weight: normal; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;italic&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      italic
+
+      
+        (&lt;code&gt;opensans-italic-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: open, system, system-ui, sans-serif; font-weight: normal; font-style: italic;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;bold&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      bold
+
+      
+        (&lt;code&gt;opensans-bold-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: open, system, system-ui, sans-serif; font-weight: bold; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;bold italic&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      bold italic
+
+      
+        (&lt;code&gt;opensans-bolditalic-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: open, system, system-ui, sans-serif; font-weight: bold; font-style: italic;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 " width="100%" height="0"></iframe>
     
@@ -892,8 +1284,13 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$slab-font: (
   &#39;name&#39;: &#39;slab&#39;,
-  &#39;stack&#39;: (&#39;serif&#39;),
-  &#39;formats&#39;: (&#39;woff2&#39;, &#39;woff&#39;),
+  &#39;stack&#39;: (
+    &#39;serif&#39;,
+  ),
+  &#39;formats&#39;: (
+    &#39;woff2&#39;,
+    &#39;woff&#39;,
+  ),
   &#39;normal&#39;: &#39;enriqueta-regular-webfont&#39;,
   &#39;bold&#39;: &#39;enriqueta-bold-webfont&#39;,
 );</code></pre>
@@ -1006,8 +1403,78 @@
   
 
   
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;slab&#39;;
+  src: url(&#39;assets/fonts/enriqueta-regular-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/enriqueta-regular-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: &#39;slab&#39;;
+  src: url(&#39;assets/fonts/enriqueta-bold-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/enriqueta-bold-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: bold;
+  font-style: normal;
+}
+
+    &lt;/style&gt;
+  
 &lt;/head&gt;
-&lt;body class=&quot;sassdoc font-specimen&quot;&gt;&lt;/body&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;normal&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      normal
+
+      
+        (&lt;code&gt;enriqueta-regular-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: slab, serif; font-weight: normal; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div data-specimen-face=&quot;bold&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      bold
+
+      
+        (&lt;code&gt;enriqueta-bold-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: slab, serif; font-weight: bold; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 " width="100%" height="0"></iframe>
     
@@ -1081,8 +1548,13 @@
       
       <pre class="hljs-pre"><code class="lang-scss">$script-font: (
   &#39;name&#39;: &#39;script&#39;,
-  &#39;stack&#39;: (&#39;cursive&#39;),
-  &#39;formats&#39;: (&#39;woff2&#39;, &#39;woff&#39;),
+  &#39;stack&#39;: (
+    &#39;cursive&#39;,
+  ),
+  &#39;formats&#39;: (
+    &#39;woff2&#39;,
+    &#39;woff&#39;,
+  ),
   &#39;normal&#39;: &#39;kaushanscript-regular-webfont&#39;,
 );</code></pre>
     </div>
@@ -1194,8 +1666,45 @@
   
 
   
+    &lt;!-- Local font @font-face CSS --&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+@font-face {
+  font-family: &#39;script&#39;;
+  src: url(&#39;assets/fonts/kaushanscript-regular-webfont.woff2&#39;) format(&#39;woff2&#39;), url(&#39;assets/fonts/kaushanscript-regular-webfont.woff&#39;) format(&#39;woff&#39;);
+  font-weight: normal;
+  font-style: normal;
+}
+
+    &lt;/style&gt;
+  
 &lt;/head&gt;
-&lt;body class=&quot;sassdoc font-specimen&quot;&gt;&lt;/body&gt;
+&lt;body class=&quot;sassdoc font-specimen&quot;&gt;
+  &lt;div data-specimen-face=&quot;normal&quot;&gt;
+    &lt;h4 data-specimen=&quot;face-name&quot;&gt;
+      normal
+
+      
+        (&lt;code&gt;kaushanscript-regular-webfont&lt;/code&gt;)
+      
+    &lt;/h4&gt;
+    &lt;div data-specimen=&quot;sample&quot; style=&quot;font-family: script, cursive; font-weight: normal; font-style: normal;&quot;&gt;
+      &lt;div data-specimen=&quot;aa&quot;&gt;Aa&lt;/div&gt;
+      &lt;div data-specimen=&quot;lorem&quot;&gt;
+  
+    &lt;span data-specimen-lorem=&quot;uppercase&quot;&gt;
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;lowercase&quot;&gt;
+      abcdefghijklmnopqrstuvwxyz
+    &lt;/span&gt;
+    &lt;span data-specimen-lorem=&quot;symbols&quot;&gt;
+      1234567890([{“‘,.;:?!$&amp;*’”}])
+    &lt;/span&gt;
+  
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 " width="100%" height="0"></iframe>
     

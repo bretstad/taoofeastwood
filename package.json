@@ -18,20 +18,44 @@
     "@11ty/eleventy": "^0.6.0",
     "accoutrement": "^2.1.1",
     "beeper": "^1.1.1",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "fancy-log": "^1.3.3",
     "fibers": "^3.1.1",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-prettier-plugin": "^1.3.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-stylelint": "^8.0.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
     "markdown-it": "^8.4.2",
-    "sass": "^1.15.1",
+    "prettier": "^1.15.3",
+    "sass": "^1.15.3",
     "sassdoc": "^2.5.1",
     "sassdoc-theme-herman": "^3.0.1",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.4.0"
+    "stylelint-scss": "^3.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "prettier --write",
+        "git add"
+      ],
+      "*.scss": [
+        "prettier --write",
+        "stylelint",
+        "git add"
+      ]
+    }
   }
 }

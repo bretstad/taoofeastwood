@@ -2,7 +2,7 @@ const markdownIt = require('markdown-it')({
   html: true,
   breaks: false,
   linkify: true,
-  typographer: true
+  typographer: true,
 });
 
 const formatDate = (date, format) => {
@@ -29,7 +29,7 @@ const formatDate = (date, format) => {
     'Thursday',
     'Friday',
     'Saturday',
-  ]
+  ];
 
   const m0 = date.getMonth();
   const mm = `${m0 + 1}`.padStart(2, '0');
@@ -41,52 +41,52 @@ const formatDate = (date, format) => {
   const yyyy = date.getFullYear();
 
   const formats = {
-    'day': `${D}`,
-    'date': `${d}`,
-    'month': `${mm}`,
+    day: `${D}`,
+    date: `${d}`,
+    month: `${mm}`,
     'month-name': `${MM}`,
-    'year': `${yyyy}`,
-    'numeric': `${mm}/${dd}/${yyyy}`,
-    'url': `${yyyy}/${mm}/${dd}`,
-    'short': `${M} ${d}, ${yyyy}`,
-    'long': `${MM} ${d}, ${yyyy}`,
-  }
+    year: `${yyyy}`,
+    numeric: `${mm}/${dd}/${yyyy}`,
+    url: `${yyyy}/${mm}/${dd}`,
+    short: `${M} ${d}, ${yyyy}`,
+    long: `${MM} ${d}, ${yyyy}`,
+  };
 
   return formats[format];
-}
+};
 
 const getDate = (format = null, date = null) => {
   const now = date ? new Date(date) : new Date();
   return format ? formatDate(now, format) : now;
-}
+};
 
-module.exports = (eleventyConfig) => {
+module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('assets');
   // eleventyConfig.addPassthroughCopy('CNAME');
 
-  eleventyConfig.addFilter("typeOf", (val) => {
+  eleventyConfig.addFilter('typeOf', val => {
     return typeof val;
   });
 
-  eleventyConfig.addFilter("formatDate", (date, format = 'short') => {
+  eleventyConfig.addFilter('formatDate', (date, format = 'short') => {
     return formatDate(date, format);
   });
 
-  eleventyConfig.addFilter("getDate", (date = null, format = 'short') => {
+  eleventyConfig.addFilter('getDate', (date = null, format = 'short') => {
     return getDate(format, date);
   });
 
-  eleventyConfig.addFilter("md", (content, inline = false) => {
+  eleventyConfig.addFilter('md', (content, inline = false) => {
     return inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
   });
 
-  eleventyConfig.addShortcode("getDate", (format = null) => {
+  eleventyConfig.addShortcode('getDate', (format = null) => {
     return getDate(format);
   });
 
-  eleventyConfig.addPairedShortcode("markdown", (content, inline = null) => {
+  eleventyConfig.addPairedShortcode('markdown', (content, inline = null) => {
     return inline
       ? markdownIt.renderInline(content)
       : markdownIt.render(content);
@@ -96,7 +96,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary('md', markdownIt);
 
   return {
-    markdownTemplateEngine: "njk",
-    dir: { output: "docs" },
-  }
+    markdownTemplateEngine: 'njk',
+    dir: { output: 'docs' },
+  };
 };
