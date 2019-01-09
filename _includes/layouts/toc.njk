@@ -1,0 +1,12 @@
+{% extends "layouts/base.njk" %}
+{%- import 'utility.macros.njk' as utility -%}
+
+  {% block body %}
+    <section class="toc-archive">
+      {% block toc %}
+        {%- for chapter in chapters %}
+          {{ chapter.list(chapter) }}
+        {%- endfor %}
+      {% endblock toc %}
+    </section>
+  {% endblock body %}
