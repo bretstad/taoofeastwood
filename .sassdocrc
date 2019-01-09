@@ -16,8 +16,8 @@ herman:
       url: https://oddbird.net/accoutrement/
     - name: 'Herman'
       url: https://oddbird.net/herman/
-  fontpath: '../fonts/'
+  fontpath: 'assets/fonts/'
   sass:
-    includepaths: ['assets/scss']
+    includepaths: ['src/scss']
     includes: ['config/manifest']
     jsonfile: 'assets/css/json.css'

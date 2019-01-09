@@ -1,0 +1,18 @@
+// Grid Layout
+// ===========
+
+[data-layout='grid'] {
+  box-shadow: 0 0 size('shim') var-color('border');
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  max-width: size('page');
+  min-height: 100vh;
+  padding: size('gutter');
+}
+
+[data-layout='header'] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: size('gutter');
+}

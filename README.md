@@ -27,16 +27,22 @@ You can also run individual commands:
 
 ```
 # build the static site
-yarn eleventy
+gulp build
 
 # run the server
-yarn serve
+gulp serve
+
+# minify images
+gulp imagemin
 
 # compile sass
 gulp sass
 
 # lint sass
 gulp sasslint
+
+# format sass
+gulp prettier
 
 # compile sass docs
 gulp sassdoc
