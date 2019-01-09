@@ -1,0 +1,9 @@
+{
+  "url": "{{ pkg.homepage }}",
+  "title": "{{ pkg.title }}",
+  "description": "{{ pkg.description }}",
+  "author": "{{ pkg.author.name }}",
+  "email": "{{ pkg.author.email }}",
+  "styles": ["screen.css"],
+  "image": "assets/images/og.jpg"
+}
