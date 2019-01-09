@@ -5,3 +5,32 @@
   font-size: unset;
   text-align: right;
 }
+
+// Delete these styles, for development only
+// -----------------------------------------
+
+[data-quote] {
+  @include before('') {
+    color: color('background');
+    display: block;
+    font-size: size('xsmall');
+    padding: 0 size('half-shim');
+  }
+}
+
+[data-quote='quote'] {
+  border: 1px solid color('action');
+  @include before('quote') {
+    background-color: color('action');
+  }
+}
+
+[data-quote='verse'] {
+  border: 1px solid color('accent');
+  @include before('verse') {
+    background-color: color('accent');
+  }
+}
+
+// End of delete these styles, for development only
+// ------------------------------------------------

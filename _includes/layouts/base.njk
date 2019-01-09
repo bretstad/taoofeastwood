@@ -23,7 +23,7 @@
 		<header data-layout="header">
 			<h1>{{ site.title }}</h1>
 			{% if title %}
-				<h2 class="chapter-title">Chapter {{ title }}</h2>
+				<h2 class="chapter-title">Chapter {{ chapter }}: {{ title }}</h2>
 			{% endif %}
 		</header>
 		{% block body %}
@@ -31,23 +31,23 @@
 			{{ utility.attr_if('class', templateClass) }}>
 
 			{% if quote %}
-				<blockquote>
+				<blockquote data-quote="quote">
 					<p>{{ quote }}</p>
 					<footer>
-						{% if quoteby %}
-							<strong>{{ quoteby }}</strong>
+						{% if author %}
+							<strong>{{ author }}</strong>
 						{% endif %}
-  					{% if quotebytitle %}
-							<span>{{ quotebytitle }}</span>
+  					{% if credential %}
+							<span>{{ credential }}</span>
 						{% endif %}
 					</footer>
 				</blockquote>
 			{% endif %}
 
 			{% if verse %}
-				<blockquote class="tao-verse">
-					<p>{{ verse }}</p>
-					<footer class="tao-verse-number">from verse {{ versenum }}</footer>
+				<blockquote data-quote="verse">
+					<p>{{ verse | escape | nl2br }}</p>
+					<footer class="tao-verse-number">from verse {{ number }}</footer>
 				</blockquote>
 			{% endif %}
 

@@ -1,12 +1,15 @@
 ---
 layout: 'layouts/base.njk'
-title: '1: Wu Wei'
+chapter: '1'
+	title: 'Wu Wei'
 quote: 'Don’t just do something, stand there.'
-quoteby: 'Jack Kosslyn'
-quotebytitle: 'Acting Coach'
-verse: 'The Master does nothing, Yet he leaves nothing undone.
-The ordinary man is always doing things, Yet many more are left to be done.'
-versenum: '38'
+	author: 'Jack Kosslyn'
+	credential: 'Acting Coach'
+verse: |
+  The Master does nothing, Yet he leaves nothing undone.
+  The ordinary man is always doing things, Yet many more are left to be done.
+	number: 38
+
 ---
 
 If there is one physical quality that defines Clint Eastwood,
