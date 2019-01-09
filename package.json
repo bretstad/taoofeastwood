@@ -32,7 +32,7 @@
     "prettier": "^1.15.3",
     "sass": "^1.15.3",
     "sassdoc": "^2.5.1",
-    "sassdoc-theme-herman": "^3.0.1",
+    "sassdoc-theme-herman": "^3.0.2",
     "stylelint": "^9.9.0",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.4.4"
