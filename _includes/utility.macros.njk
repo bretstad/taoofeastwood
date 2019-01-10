@@ -1,4 +1,7 @@
-{# Attributes #}
+{#
+  Attributes
+  ----------
+#}
 {% macro attr_if(
   attr,
   value=none
@@ -26,7 +29,7 @@
 
 {#
   Links
-  ----------
+  -----
 #}
 {% macro link_if(content=none, url=none, class=none) %}
   {% set content = content if (content != none) else caller() %}
@@ -36,27 +39,4 @@
   {%- else -%}
     <span {{ attr_if('class', class) }}>{{ content }}</span>
   {%- endif -%}
-{% endmacro %}
-
-
-
-{#
-  Chapter Link Lists
-  ------------------
-#}
-{% macro chapter_list(title, chapter=none) %}
-  {# {% set chapter = [chapter] %} #}
-
-  <h2>Do I have chapters?</h2>
-
-  {% if (chapter|length > 0) %}
-    <h3>Yes, I have chapters:</h3>
-    <ul>
-      {% for chapter in chapters %}
-        <li>
-          {{ utility.link_if(chapter.title, chapter.url) }}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
 {% endmacro %}

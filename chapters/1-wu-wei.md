@@ -10,8 +10,9 @@ quote:
 verse:
   number: 38
   text: |
-    The Master does nothing, Yet he leaves nothing undone.\
-    The ordinary man is always doing things,
+    The Master does nothing, \
+    Yet he leaves nothing undone. \
+    The ordinary man is always doing things, \
     Yet many more are left to be done.
 ---
 

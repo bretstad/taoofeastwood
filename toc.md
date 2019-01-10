@@ -1,5 +1,4 @@
 ---
-layout: 'layouts/toc.njk'
+layout: 'toc'
+title: 'Table of Contents'
 ---
-
-I'm not working

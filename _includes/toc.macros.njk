@@ -1,0 +1,23 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+
+{#
+  Chapter Link Lists
+  ------------------
+#}
+{% macro list(
+  title,
+  items
+) %}
+  <h2>{{ title }}</h2>
+
+  {% if (items|length > 0) %}
+    <ol>
+      {% for item in items %}
+        <li>
+          {{ utility.link_if(item.data.title, item.url) }}
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endmacro %}
