@@ -1,15 +1,18 @@
 ---
-layout: 'layouts/base.njk'
-chapter: '1'
-	title: 'Wu Wei'
-quote: 'Don’t just do something, stand there.'
-	author: 'Jack Kosslyn'
-	credential: 'Acting Coach'
-verse: |
-  The Master does nothing, Yet he leaves nothing undone.
-  The ordinary man is always doing things, Yet many more are left to be done.
-	number: 38
-
+layout: 'chapter'
+title: 'Wu Wei'
+chapter: 1
+quote:
+  author: 'Jack Kosslyn'
+  credential: 'Acting Coach'
+  text: |
+    Don't just do something, stand there.
+verse:
+  number: 38
+  text: |
+    The Master does nothing, Yet he leaves nothing undone.\
+    The ordinary man is always doing things,
+    Yet many more are left to be done.
 ---
 
 If there is one physical quality that defines Clint Eastwood,
@@ -29,7 +32,7 @@ So, it’s not to say that the “Master does nothing,” it’s just that
 what he does do is so pure to his nature,
 it is as if it is being done through him and not by him.
 
-One of Eastwood’s early acting influences taught the idea that 
+One of Eastwood’s early acting influences taught the idea that
 you don’t need to force a scene by “doing something.”
 You do not need to fill the void with unnecessary action
 in order to convey meaning.

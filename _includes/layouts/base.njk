@@ -18,9 +18,16 @@
 
   <body data-layout="grid">
     <header data-layout="header">
-      <h1>{{ site.title }}</h1>
-      {% if title %}
-        <h2 class="chapter-title">Chapter {{ chapter }}: {{ title }}</h2>
+      <h1>
+        <a href="/" rel="home">{{ site.title }}</a>
+      </h1>
+      {% if chapter or title %}
+        <h2 class="chapter-title">
+          {% if chapter %}
+            Chapter {{ chapter }}:
+          {% endif %}
+          {{ title }}
+        </h2>
       {% endif %}
     </header>
 
@@ -28,28 +35,9 @@
       <main data-layout="main"
         {{ utility.attr_if('class', templateClass) }}>
 
-        {% if quote %}
-          <blockquote data-quote="quote">
-            <p>{{ quote }}</p>
-            <footer>
-              {% if author %}
-                <strong>{{ author }}</strong>
-              {% endif %}
-              {% if credential %}
-                <span>{{ credential }}</span>
-              {% endif %}
-            </footer>
-          </blockquote>
-        {% endif %}
-
-        {% if verse %}
-          <blockquote data-quote="verse">
-            <p>{{ verse | escape | nl2br }}</p>
-            <footer class="tao-verse-number">from verse {{ number }}</footer>
-          </blockquote>
-        {% endif %}
-
-        {{ content | safe }}
+        {% block main %}
+          {{ content | safe }}
+        {% endblock %}
       </main>
     {% endblock %}
 

@@ -1,0 +1,28 @@
+{% extends "layouts/base.njk" %}
+
+{% block main %}
+  {% if quote %}
+    <blockquote data-quote="quote">
+      {{ quote.text | md | safe }}
+      <footer>
+        {% if quote.author %}
+          <strong>{{ quote.author }}</strong>
+        {% endif %}
+        {% if quote.credential %}
+          <span>{{ quote.credential }}</span>
+        {% endif %}
+      </footer>
+    </blockquote>
+  {% endif %}
+
+  {% if verse %}
+    <blockquote data-quote="verse">
+      {{ verse.text | md | safe }}
+      <footer class="tao-verse-number">
+        from verse {{ verse.number }}
+      </footer>
+    </blockquote>
+  {% endif %}
+
+  {{ content | safe }}
+{% endblock %}
