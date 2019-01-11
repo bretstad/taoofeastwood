@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+{%- import 'nav.macros.njk' as nav -%}
+
+{% block main %}
+  {{ content | safe }}
+
+  <section class="toc-archive">
+    {{ nav.list(
+      title='Chapters:',
+      items=collections.chapters
+    ) }}
+  </section>
+{% endblock %}

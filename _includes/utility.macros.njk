@@ -1,4 +1,7 @@
-{# Attributes #}
+{#
+  Attributes
+  ----------
+#}
 {% macro attr_if(
   attr,
   value=none
@@ -20,4 +23,20 @@
   {%- for attr, value in attrs -%}
     {{- attr_if(attr, value) -}}
   {%- endfor -%}
+{% endmacro %}
+
+
+
+{#
+  Links
+  -----
+#}
+{% macro link_if(content=none, url=none, class=none) %}
+  {% set content = content if (content != none) else caller() %}
+
+  {%- if url -%}
+    <a href="{{ url }}" {{ attr_if('class', class) }}>{{ content }}</a>
+  {%- else -%}
+    <span {{ attr_if('class', class) }}>{{ content }}</span>
+  {%- endif -%}
 {% endmacro %}

@@ -1,5 +1,5 @@
 ---
-layout: 'base'
+layout: 'toc'
 ---
 
-Hello World
+by [Bret Morstad](http://www.bretstad.com)

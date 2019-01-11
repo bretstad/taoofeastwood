@@ -1,4 +1,5 @@
 {% extends "layouts/base.njk" %}
+{%- import 'nav.macros.njk' as nav -%}
 
 {% block main %}
   {% if quote %}
@@ -25,4 +26,10 @@
   {% endif %}
 
   {{ content | safe }}
+
+  {{ nav.prev_next(
+    all_chapters=collections.chapters,
+    chapter=chapter
+  ) }}
+
 {% endblock %}

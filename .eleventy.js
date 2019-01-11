@@ -61,12 +61,27 @@ const getDate = (format = null, date = null) => {
 };
 
 module.exports = eleventyConfig => {
+  // pass-through
   eleventyConfig.addPassthroughCopy('assets');
-  // eleventyConfig.addPassthroughCopy('CNAME');
 
+  // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('chapter', 'layouts/chapter.njk');
+  eleventyConfig.addLayoutAlias('toc', 'layouts/toc.njk');
 
+  // collections
+  eleventyConfig.addCollection('chapters', collection => {
+    return collection
+      .getAll()
+      .filter(item => {
+        return 'chapter' in item.data;
+      })
+      .sort((a, b) => {
+        return a.data.chapter > b.data.chapter;
+      });
+  });
+
+  // filters
   eleventyConfig.addFilter('typeOf', val => {
     return typeof val;
   });
@@ -85,6 +100,7 @@ module.exports = eleventyConfig => {
       : markdownIt.render(content);
   });
 
+  // shortcodes
   eleventyConfig.addShortcode('getDate', (format = null) => {
     return getDate(format);
   });
