@@ -64,6 +64,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('assets');
   // eleventyConfig.addPassthroughCopy('CNAME');
 
+  eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
+  eleventyConfig.addLayoutAlias('chapter', 'layouts/chapter.njk');
+
   eleventyConfig.addFilter('typeOf', val => {
     return typeof val;
   });

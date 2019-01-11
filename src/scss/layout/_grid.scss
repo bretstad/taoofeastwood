@@ -10,3 +10,9 @@
   min-height: 100vh;
   padding: size('gutter');
 }
+
+[data-layout='header'] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: size('gutter');
+}

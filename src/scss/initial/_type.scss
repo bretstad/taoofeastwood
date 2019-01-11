@@ -30,6 +30,14 @@ p {
   margin-bottom: size('gutter');
 }
 
+blockquote {
+  margin-bottom: size('gutter');
+
+  p:last-of-type {
+    margin-bottom: size('half-shim');
+  }
+}
+
 // Links
 // -----
 
