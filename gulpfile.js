@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const beeper = require('beeper');
 const chalk = require('chalk');
 const cleanCSS = require('gulp-clean-css');
+const del = require('del');
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const log = require('fancy-log');
@@ -24,6 +25,7 @@ const paths = {
   CSS_DIR: './assets/css/',
   IMG_SRC_DIR: './src/images/',
   IMG_DEST_DIR: './assets/images/',
+  OUTPUT_DIR: './docs/',
   IGNORE: ['!**/.#*', '!**/flycheck_*'],
   init: function() {
     this.SASS = [this.SASS_DIR + '**/*.scss'].concat(this.IGNORE);
@@ -144,14 +146,18 @@ gulp.task('watch', cb => {
 
 gulp.task('build-assets', gulp.parallel('imagemin', 'sassdoc'));
 
+gulp.task('build-clean', () => del([`${paths.OUTPUT_DIR}**`]));
+
 gulp.task(
   'build',
-  gulp.series('build-assets', cb => spawnTask('yarn', ['eleventy'], cb)),
+  gulp.series(gulp.parallel('build-assets', 'build-clean'), cb =>
+    spawnTask('yarn', ['eleventy'], cb),
+  ),
 );
 
 gulp.task(
   'serve',
-  gulp.series('build-assets', cb =>
+  gulp.series(gulp.parallel('build-assets', 'build-clean'), cb =>
     spawnTask('yarn', ['eleventy', '--serve'], cb),
   ),
 );
