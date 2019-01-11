@@ -8,6 +8,12 @@ package: ./package.json
 shortcutIcon: ./favicon.ico
 verbose: true
 
+groups:
+  Design Tokens:
+    color: Colors
+    fonts: Fonts
+    scale: Ratios & Sizes
+
 herman:
   extraLinks:
     - name: 'Eleventy'
