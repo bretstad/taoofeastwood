@@ -1,5 +1,5 @@
 {% extends "layouts/base.njk" %}
-{%- import 'utility.macros.njk' as utility -%}
+{%- import 'nav.macros.njk' as nav -%}
 
 {% block main %}
   {% if quote %}
@@ -27,18 +27,9 @@
 
   {{ content | safe }}
 
-  {% set all_chapters = collections.chapters %}
-  {% set next_chapter = chapter + 1 %}
-  {% set next = all_chapters[next_chapter - 1] if (all_chapters|length >= next_chapter) else none %}
-  {% set prev_chapter = chapter - 1 %}
-  {% set prev = all_chapters[prev_chapter - 1] if (prev_chapter > 0) else none %}
+  {{ nav.prev_next(
+    all_chapters=collections.chapters,
+    chapter=chapter
+  ) }}
 
-  <p>
-    {% if prev %}
-      Previous: {{ utility.link_if(prev.data.title, prev.url) }}
-    {% endif %}
-    {% if next %}
-      Next: {{ utility.link_if(next.data.title, next.url) }}
-    {% endif %}
-  </p>
 {% endblock %}

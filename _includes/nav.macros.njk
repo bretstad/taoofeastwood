@@ -1,0 +1,47 @@
+{%- import 'utility.macros.njk' as utility -%}
+
+
+{#
+  Link Lists (TOC)
+  ----------------
+#}
+{% macro list(
+  title,
+  items
+) %}
+  <h2>{{ title }}</h2>
+
+  {% if (items|length > 0) %}
+    <ol>
+      {% for item in items %}
+        <li>
+          {{ utility.link_if(item.data.title, item.url) }}
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{% endmacro %}
+
+
+{#
+  Previous & Next Chaptter
+  ------------------------
+#}
+{% macro prev_next(
+  all_chapters,
+  chapter
+) %}
+  {% set next_chapter = chapter + 1 %}
+  {% set next = all_chapters[next_chapter - 1] if (all_chapters|length >= next_chapter) else none %}
+  {% set prev_chapter = chapter - 1 %}
+  {% set prev = all_chapters[prev_chapter - 1] if (prev_chapter > 0) else none %}
+
+  <p>
+    {% if prev %}
+      Previous: {{ utility.link_if(prev.data.title, prev.url) }}
+    {% endif %}
+    {% if next %}
+      Next: {{ utility.link_if(next.data.title, next.url) }}
+    {% endif %}
+  </p>
+{% endmacro %}

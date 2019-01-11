@@ -94,10 +94,6 @@ module.exports = eleventyConfig => {
     return getDate(format, date);
   });
 
-  eleventyConfig.addFilter('inspect', obj => {
-    return JSON.stringify(obj, null, '\t');
-  });
-
   eleventyConfig.addFilter('md', (content, inline = false) => {
     return inline
       ? markdownIt.renderInline(content)

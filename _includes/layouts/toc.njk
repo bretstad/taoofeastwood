@@ -1,11 +1,11 @@
 {% extends "layouts/base.njk" %}
-{%- import 'toc.macros.njk' as toc -%}
+{%- import 'nav.macros.njk' as nav -%}
 
 {% block main %}
   {{ content | safe }}
 
   <section class="toc-archive">
-    {{ toc.list(
+    {{ nav.list(
       title='Chapters:',
       items=collections.chapters
     ) }}
