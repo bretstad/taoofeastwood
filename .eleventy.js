@@ -63,6 +63,7 @@ const getDate = (format = null, date = null) => {
 module.exports = eleventyConfig => {
   // pass-through
   eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('CNAME');
 
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
