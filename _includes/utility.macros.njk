@@ -40,3 +40,14 @@
     <span {{ attr_if('class', class) }}>{{ content }}</span>
   {%- endif -%}
 {% endmacro %}
+
+
+{#
+  Icons
+  -----
+#}
+{% macro icon(name, viewbox=none) %}
+   <svg data-icon="{{ name }}" {{ attr_if('viewBox', viewbox) }}>
+    <use xlink:href="#icon-{{ name }}" />
+  </svg>
+{% endmacro %}

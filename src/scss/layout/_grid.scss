@@ -12,6 +12,6 @@
 
 [data-layout='header'] {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   margin-bottom: size('gutter');
 }
