@@ -18,16 +18,22 @@
 
   <body data-layout="grid">
     <header data-layout="header">
-      <h1>
-        <a href="/" rel="home">{{ site.title }}</a>
-      </h1>
-      {% if chapter or title %}
-        <h2 class="chapter-title">
-          {% if chapter %}
-            Chapter {{ chapter }}:
-          {% endif %}
-          {{ title }}
-        </h2>
+      <div class="top-nav">
+        {% if not chapter %}
+          <h1>
+            <a class="site-title" href="/" rel="home">{{ site.title }}</a>
+          </h1>
+        {% else %}
+            <a class="site-title" href="/" rel="home">{{ site.title }}</a>
+        {% endif %}
+      </div>
+      {% if chapter %}
+        <span class="chapter-number">
+            Chapter {{ chapter }}
+        </span>
+      {% endif %}
+      {% if title %}
+        <h1 class="chapter-title">{{ title }}</h1>
       {% endif %}
     </header>
 

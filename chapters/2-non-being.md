@@ -6,9 +6,9 @@ quote:
   author: 'Sergio Leone'
   credential: 'Director'
   text: |
-    "At that time I needed a mask rather than an actor,
+    At that time I needed a mask rather than an actor,
     and Eastwood had only two facial expressions:
-    one with the hat and one without it."
+    one with the hat and one without it.
 verse:
   number: 11
   text: |
