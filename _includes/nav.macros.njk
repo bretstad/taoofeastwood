@@ -36,12 +36,12 @@
   {% set prev_chapter = chapter - 1 %}
   {% set prev = all_chapters[prev_chapter - 1] if (prev_chapter > 0) else none %}
 
-  <p>
+  <nav class="paging">
     {% if prev %}
       Previous: {{ utility.link_if(prev.data.title, prev.url) }}
     {% endif %}
     {% if next %}
       Next: {{ utility.link_if(next.data.title, next.url) }}
     {% endif %}
-  </p>
+  </nav>
 {% endmacro %}

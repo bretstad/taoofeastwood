@@ -32,9 +32,8 @@
 
   {{ content | safe }}
 
-  <span class="ending-mark">
-    —
-  </span>
+  {% include 'site/ending.njk' %}
+
 
   {{ nav.prev_next(
     all_chapters=collections.chapters,

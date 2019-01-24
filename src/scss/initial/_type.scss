@@ -32,6 +32,10 @@ h3 {
 
 p {
   margin-bottom: size('gutter');
+
+  main &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 // Links
