@@ -107,6 +107,7 @@ $component-sizes: (
     (
       'convert-units': 'rem',
     ),
+  'ending-mark': 4em,
 );
 
 @include add-sizes($component-sizes);
