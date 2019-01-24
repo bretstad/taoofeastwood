@@ -1,0 +1,66 @@
+// Grid Layout
+// ===========
+
+[data-quote] {
+  @include font-family('slab');
+  font-size: size('medium');
+  margin-bottom: size('spacer');
+  position: relative;
+
+  // @include before('“') {
+  //   @include font-family('script');
+  //   border: 3px solid;
+  //   color: red;
+  //   display: flex;
+  //   font-size: 80px;
+  //   height: size('quote');
+  //   justify-content: center;
+  //   left: 10px;
+  //   line-height: 1;
+  //   position: absolute;
+  //   // transform: translateX(-135%);
+  //   top: 5px;
+  //   width: size('quote');
+  //}
+
+  p:last-of-type {
+    margin-bottom: size('shim');
+  }
+
+  footer {
+    @include font-family('open');
+    font-size: size('small');
+    text-transform: uppercase;
+  }
+}
+
+// [data-quote='quote'] {
+//   border-color: color('action');
+// }
+
+// [data-quote='verse'] {
+//   border-color: color('accent');
+// }
+
+[data-icon='icon-quote'] {
+  height: size('quote') * 0.75;
+  position: absolute;
+  transform: translate(negative('quote'), 10%);
+  width: size('quote') * 0.75;
+
+  @include above('page-quotes') {
+    height: size('quote');
+    transform: translate((negative('quote') + negative('shim')), 10%);
+    width: size('quote');
+  }
+}
+
+.quote-box {
+  fill: none;
+  stroke: color('accent');
+  stroke-width: 4;
+}
+
+.quote-mark {
+  fill: color('accent');
+}

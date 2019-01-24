@@ -17,16 +17,16 @@
   </head>
 
   <body data-layout="grid">
+    <div data-layout="top-nav">
+      {% if not chapter %}
+        <h1>
+          <a class="site-title" href="/" rel="home">{{ site.title }}</a>
+        </h1>
+      {% else %}
+          <a class="site-title" href="/" rel="home">{{ site.title }}</a>
+      {% endif %}
+    </div>
     <header data-layout="header">
-      <div class="top-nav">
-        {% if not chapter %}
-          <h1>
-            <a class="site-title" href="/" rel="home">{{ site.title }}</a>
-          </h1>
-        {% else %}
-            <a class="site-title" href="/" rel="home">{{ site.title }}</a>
-        {% endif %}
-      </div>
       {% if chapter %}
         <span class="chapter-number">
             Chapter {{ chapter }}

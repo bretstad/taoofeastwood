@@ -40,6 +40,14 @@ $text-sizes: (
     (
       '%s': '#large' 0.75vw,
     ),
+  'xxlarge': calc(%s + %s)
+    (
+      '%s': '#large' 2.75vw,
+    ),
+  'medium': 1rem
+    (
+      'text-ratio': 0.125,
+    ),
   'small': 1rem
     (
       'text-ratio': -0.5,
@@ -95,6 +103,10 @@ $spacing-sizes: (
 /// @sizes component-sizes {ruler}
 $component-sizes: (
   'icon': 1em,
+  'quote': 40px
+    (
+      'convert-units': 'rem',
+    ),
 );
 
 @include add-sizes($component-sizes);
@@ -119,6 +131,10 @@ $break-sizes: (
     (
       'times': 2,
       'convert-units': 'browser-ems',
+    ),
+  'page-quotes': '#page'
+    (
+      'times': 1.25,
     ),
 );
 

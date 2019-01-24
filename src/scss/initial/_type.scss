@@ -15,27 +15,23 @@ h1,
 h2,
 h3 {
   @include font-family('slab');
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: size('xlarge');
 }
 
 h2 {
-  font-size: size('xlarge');
-  line-height: 1.2;
+  font-size: size('large');
 }
 
 h3 {
-  font-size: size('large');
+  font-size: size('medium');
 }
 
 p {
   margin-bottom: size('gutter');
-}
-
-blockquote {
-  margin-bottom: size('gutter');
-
-  p:last-of-type {
-    margin-bottom: size('half-shim');
-  }
 }
 
 // Links

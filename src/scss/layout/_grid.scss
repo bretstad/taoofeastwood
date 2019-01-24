@@ -3,15 +3,22 @@
 
 [data-layout='grid'] {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: min-content min-content 1fr min-content;
   margin: 0 auto;
-  max-width: size('page');
   min-height: 100vh;
   padding: size('gutter') size('double-gutter');
 }
 
+[data-layout='top-nav'],
 [data-layout='header'] {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
   margin-bottom: size('gutter');
+}
+
+[data-layout='header'],
+[data-layout='main'],
+[data-layout='footer'] {
+  max-width: size('page');
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
