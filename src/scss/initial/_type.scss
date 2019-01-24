@@ -40,10 +40,19 @@ p {
 a {
   #{$link} {
     color: var-color('action');
+
+    &.site-title {
+      color: color('text');
+      text-decoration: none;
+    }
   }
 
   #{$focus} {
     color: var-color('action-hover');
+
+    &.site-title {
+      color: var-color('action-hover');
+    }
   }
 }
 

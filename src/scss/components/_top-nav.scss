@@ -1,0 +1,22 @@
+// Top Nav
+// =======
+
+[data-layout='top-nav'] {
+  margin-bottom: size('gutter');
+
+  @include after('') {
+    border-bottom: 1px solid color('border-light');
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+.site-title {
+  @include font-family('script');
+  display: block;
+  font-size: size('small');
+  padding-bottom: size('quarter-shim');
+  padding-top: size('quarter-shim');
+}

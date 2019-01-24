@@ -4,13 +4,10 @@
 .chapter-number {
   @include font-family('slab');
   text-transform: uppercase;
-
-  + .site-title {
-    text-align: right;
-  }
 }
 
 .chapter-title {
+  @include font-family('script');
   font-size: size('xxlarge');
   margin-bottom: size('spacer');
   text-align: center;
