@@ -14,8 +14,8 @@ $_color: get-function('color');
 /// @colors
 /// @type Map
 $brand-colors: (
-  '_brand-main': #d10300,
-  '_brand-accent': #d6b362,
+  '_brand-main': hsl(1, 100%, 41%),
+  '_brand-accent': hsl(42, 59%, 61%),
   '_brand-gray': '#_brand-main'
     (
       'desaturate': 90%,
@@ -70,6 +70,8 @@ $theme-colors: (
   'action-hover': '#_brand-main-dark-4',
   'accent': '#_brand-accent',
   'accent-light': '#_brand-accent-light-4',
+  'quote': '#_brand-accent-light-2',
+  'verse': hsl(22, 59%, 85%),
 );
 
 @include add-colors($theme-colors);

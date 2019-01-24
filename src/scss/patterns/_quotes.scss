@@ -1,27 +1,11 @@
-// Grid Layout
-// ===========
+// Quotes
+// ======
 
 [data-quote] {
   @include font-family('slab');
   font-size: size('medium');
   margin-bottom: size('spacer');
   position: relative;
-
-  // @include before('“') {
-  //   @include font-family('script');
-  //   border: 3px solid;
-  //   color: red;
-  //   display: flex;
-  //   font-size: 80px;
-  //   height: size('quote');
-  //   justify-content: center;
-  //   left: 10px;
-  //   line-height: 1;
-  //   position: absolute;
-  //   // transform: translateX(-135%);
-  //   top: 5px;
-  //   width: size('quote');
-  //}
 
   p:last-of-type {
     margin-bottom: size('shim');
@@ -33,14 +17,6 @@
     text-transform: uppercase;
   }
 }
-
-// [data-quote='quote'] {
-//   border-color: color('action');
-// }
-
-// [data-quote='verse'] {
-//   border-color: color('accent');
-// }
 
 [data-icon='icon-quote'] {
   height: size('quote') * 0.75;
@@ -57,10 +33,23 @@
 
 .quote-box {
   fill: none;
-  stroke: color('accent');
   stroke-width: 4;
+
+  [data-quote='quote'] & {
+    stroke: color('quote');
+  }
+
+  [data-quote='verse'] & {
+    stroke: color('verse');
+  }
 }
 
 .quote-mark {
-  fill: color('accent');
+  [data-quote='quote'] & {
+    fill: color('quote');
+  }
+
+  [data-quote='verse'] & {
+    fill: color('verse');
+  }
 }
