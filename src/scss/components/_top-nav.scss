@@ -20,3 +20,14 @@
   padding-bottom: size('quarter-shim');
   padding-top: size('quarter-shim');
 }
+
+.site-title-link {
+  #{$link} {
+    color: color('text');
+    text-decoration: none;
+  }
+
+  #{$focus} {
+    color: var-color('action-hover');
+  }
+}

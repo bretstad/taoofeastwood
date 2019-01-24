@@ -32,10 +32,6 @@ h3 {
 
 p {
   margin-bottom: size('gutter');
-
-  main &:last-of-type {
-    margin-bottom: 0;
-  }
 }
 
 // Links
@@ -44,19 +40,10 @@ p {
 a {
   #{$link} {
     color: var-color('action');
-
-    &.site-title {
-      color: color('text');
-      text-decoration: none;
-    }
   }
 
   #{$focus} {
     color: var-color('action-hover');
-
-    &.site-title {
-      color: var-color('action-hover');
-    }
   }
 }
 

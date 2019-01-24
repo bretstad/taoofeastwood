@@ -20,17 +20,17 @@
     <div data-layout="top-nav">
       {% if not chapter %}
         <h1 class="site-title">
-          <a href="/" rel="home">{{ site.title }}</a>
+          <a class="site-title-link" href="/" rel="home">{{ site.title }}</a>
         </h1>
       {% else %}
-          <a class="site-title" href="/" rel="home">{{ site.title }}</a>
+          <a class="site-title site-title-link" href="/" rel="home">{{ site.title }}</a>
       {% endif %}
     </div>
     <header data-layout="header">
       {% if chapter %}
-        <span class="chapter-number">
+        <p class="chapter-number">
             Chapter {{ chapter }}
-        </span>
+        </p>
         {% include 'site/ending.njk' %}
       {% endif %}
       {% if title %}
