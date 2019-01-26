@@ -6,9 +6,13 @@ quote:
   author: 'Josey Wales'
   credential: 'The Outlaw Josey Wales'
   text: |
-    Now remember, when things look bad and it looks like you’re not gonna make it, then you gotta get mean. I mean plum mad dog mean. Cause if you lose your head and you give up, you neither live nor win. That’s just the way it is.
+    Now remember, when things look bad and it looks
+    like you’re not gonna make it, then you gotta get mean.
+    I mean plum mad dog mean.
+    Cause if you lose your head and you give up, you neither live nor win.
+    That’s just the way it is.
 verse:
-  number: '46'
+  number: 46
   text: |
     There is no greater illusion than fear, \
     no greater wrong than preparing to defend yourself. \

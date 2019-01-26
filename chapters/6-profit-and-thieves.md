@@ -6,9 +6,14 @@ quote:
   author: 'Inspector Harry Callahan'
   credential: 'Dirty Harry'
   text: |
-    I know what you’re thinking punk. You’re thinking “did he fire six shots or only five?” Now to tell you the truth, I forgot myself in all this excitement. But being this is a .44 Magnum, the most powerful handgun in the world and will blow your head clean off, you’ve got to ask yourself a question, “do I feel lucky?” Well do ya, punk?
+    I know what you’re thinking punk.
+    You’re thinking “did he fire six shots or only five?”
+    Now to tell you the truth, I forgot myself in all this excitement.
+    But being this is a .44 Magnum,
+    the most powerful handgun in the world and will blow your head clean off,
+    you’ve got to ask yourself a question, “do I feel lucky?” Well do ya, punk?
 verse:
-  number: '19'
+  number: 19
   text: |
     Throw away holiness and wisdom, \
     and people will be a hundred times happier. \

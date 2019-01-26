@@ -8,7 +8,7 @@ quote:
   text: |
     You want to play the game; you’d better know the rules, love.
 verse:
-  number: '69'
+  number: 69
   text: |
     There is no greater misfortune \
     than underestimating your enemy. \
@@ -19,7 +19,6 @@ verse:
     When two great forces oppose each other \
     the victory will go to the one that knows how to yield.
 ---
-
 
 Inspector Callahan is not afraid to force the issue, but his best tactic is direct, steely eyed intimidation; his specialty, really. If he can get someone to back down without breaking the peace, he will usually give that the first shot.
 

@@ -8,7 +8,7 @@ quote:
   text: |
     To Hell with them fellas. Buzzards gotta eat, same as worms.
 verse:
-  number: '29'
+  number: 29
   text: |
     There is a time for being ahead,  \
     a time for being behind. \

@@ -8,7 +8,7 @@ quote:
   text: |
     Things change. They always do, it’s one of the things of nature. Most people are afraid of change, but if you look at it as something you can always count on, then it can be a comfort.
 verse:
-  number: '74'
+  number: 74
   text: |
     If you realize that all things change, \
     there is nothing you will try to hold on to. \

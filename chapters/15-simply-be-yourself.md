@@ -8,7 +8,7 @@ quote:
   text: |
     I’m who I want to be.
 verse:
-  number: '8'
+  number: 8
   text: |
     The supreme good is like water, \
     which nourishes all things without trying. \

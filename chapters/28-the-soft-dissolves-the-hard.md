@@ -8,7 +8,7 @@ quote:
   text: |
     Girlie, tough ain’t enough.
 verse:
-  number: '78'
+  number: 78
   text: |
     Nothing in the world \
     is as soft and yielding as water. \
@@ -32,7 +32,3 @@ In the end, after Maggie is fatally injured during a match, her inner strength i
 This act dissolves Frankie’s bitter, hardened shell and reveals the true compassion he has tried to avoid, or had never found, most of his life.
 
 One of the Tao Te Ching’s greatest lessons.
-
-
-
-

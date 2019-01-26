@@ -30,8 +30,7 @@ interpreted as a selfish opportunist.
 Exploiting every chance he gets by killing and stealing what he wishes.
 
 This Magnificent Stranger (which is the original title of the movie) is,
-however,
-really a champion for the underdogs and misfits.
+however, really a champion for the underdogs and misfits.
 He is an equalizer; causing problems for the cruel and corrupt.
 He is on no mission to be “good” or save the day.
 He likewise has no ambition to control anyone.

@@ -6,9 +6,10 @@ quote:
   author: 'Inspector “Dirty” Harry Callahan'
   credential: 'Magnum Force'
   text: |
-    Well, you’re a good man Lieutenant. A good man always knows his limitations.
+    Well, you’re a good man Lieutenant.
+    A good man always knows his limitations.
 verse:
-  number: '24'
+  number: 24
   text: |
     He who stands on tiptoe doesn’t stand firm. \
     He who rushes ahead  \

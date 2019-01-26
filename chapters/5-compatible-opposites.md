@@ -12,7 +12,7 @@ verse:
   number: 2
   text: |
     When people see some things as beautiful, \
-    other things become ugly. \
+    other things become ugly. \gulp build
     When people see some things as good, \
     other things become bad. \
     \

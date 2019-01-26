@@ -8,7 +8,7 @@ quote:
   text: |
     It’s what people know about themselves’ inside that makes them afraid.
 verse:
-  number: '13'
+  number: 13
   text: |
     What does it mean that hope is as hollow as fear? \
     Hope and fear are both phantoms \

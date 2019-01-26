@@ -8,7 +8,7 @@ quote:
   text: |
     I don’t know nothin’. Not one damn thing.
 verse:
-  number: '71'
+  number: 71
   text: |
     Not knowing is true knowledge. \
     Presuming to know is a disease. \
