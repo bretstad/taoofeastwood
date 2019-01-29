@@ -37,10 +37,10 @@
 
   <nav class="paging">
     {% if prev %}
-      Previous: {{ utility.link_if(prev.data.title, prev.url) }}
+      {{ utility.paging_link_if(prev.data.chapter, prev.data.title, prev.url) }}
     {% endif %}
     {% if next %}
-      Next: {{ utility.link_if(next.data.title, next.url) }}
+      {{ utility.paging_link_if(next.data.chapter, next.data.title, next.url) }}
     {% endif %}
   </nav>
 {% endmacro %}

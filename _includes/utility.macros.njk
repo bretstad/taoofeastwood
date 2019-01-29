@@ -43,6 +43,25 @@
 
 
 {#
+  Paging Links
+  -----
+#}
+{% macro paging_link_if(chapter=none, title=none, url=none, class=none) %}
+
+  {%- if url -%}
+    <a href="{{ url }}" {{ attr_if('class', class) }}>
+      <span class="paging-chapter-number">Chapter {{ chapter }}</span>
+      <span class="paging-chapter-title">{{ title }}</span>
+    </a>
+  {%- else -%}
+    <span {{ attr_if('class', class) }}>Chapter {{ chapter }}</span>
+    <span class="paging-chapter-title">{{ title }}</span>
+  {%- endif -%}
+{% endmacro %}
+
+
+
+{#
   Icons
   -----
 #}
