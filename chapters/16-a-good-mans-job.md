@@ -30,13 +30,16 @@ Doubtful he would describe himself as “good”.
 He is only doing what he sees needs to be done,
 so people can go about their lives without fear.
 He doesn’t judge the “bad” guys for being bad;
-so much as he fervently wants them to stop acting crazy and hurting people.
+so much as he fervently wants them to stop acting crazy
+and hurting people.
 Unfortunately for them, he will do so by any means.
 
-In Sudden Impact, Callahan is on the case to find an apparent serial killer.
+In Sudden Impact,
+Callahan is on the case to find an apparent serial killer.
 Unknowingly, he falls for the killer;
-a woman on a quest for vengeance as she tracks down the men who once
-attacked her. He is sympathetic to her motives, as they are similar to his own.
+a woman on a quest for vengeance as she tracks down the
+men who once attacked her.
+He is sympathetic to her motives, as they are similar to his own.
 But he is un-approving of her above-the-law methods.
 
 “What is a bad man but a good man’s job?” furthers the idea that
@@ -44,5 +47,6 @@ Inspector Callahan exists only because the criminal also exists.
 It is his job to be the opposing example.
 
 What else is there in this life but to be an example for all
-those that don’t see the Way? Not by preaching at them with empty rhetoric,
+those that don’t see the Way?
+Not by preaching at them with empty rhetoric,
 but rather by walking the walk.

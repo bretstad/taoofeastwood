@@ -34,6 +34,13 @@ p {
   margin-bottom: size('gutter');
 }
 
+.page-title {
+  @include font-family('slab');
+  font-weight: normal;
+  margin-bottom: size('gutter');
+  text-transform: uppercase;
+}
+
 // Links
 // -----
 

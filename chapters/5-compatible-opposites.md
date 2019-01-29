@@ -5,7 +5,7 @@ chapter: 5
 quote:
   author: 'Blondie'
   credential: 'The Good, the Bad and the Ugly'
-  text: |
+  text: |-
     You see, in this world there’s two kinds of people my friend:
     those with loaded guns and those who dig. You dig.
 verse:

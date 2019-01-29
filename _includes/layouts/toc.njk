@@ -5,9 +5,13 @@
   {{ content | safe }}
 
   <section class="toc-archive">
+    <h2 class="page-title">Table of Contents</h2>
+    {% include 'site/ending.njk' %}
+
+    {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
     {{ nav.list(
-      title='Chapters:',
-      items=collections.chapters
+      items=collections.chapters,
+      class='link-list-item'
     ) }}
   </section>
 {% endblock %}

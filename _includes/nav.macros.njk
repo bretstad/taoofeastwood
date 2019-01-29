@@ -6,16 +6,15 @@
   ----------------
 #}
 {% macro list(
-  title,
-  items
+  items,
+  class
 ) %}
-  <h2>{{ title }}</h2>
 
   {% if (items|length > 0) %}
-    <ol>
+    <ol class="link-list">
       {% for item in items %}
-        <li>
-          {{ utility.link_if(item.data.title, item.url) }}
+        <li class="link-list-item">
+          {{ utility.link_if(item.data.title, item.url, item.class) }}
         </li>
       {% endfor %}
     </ol>

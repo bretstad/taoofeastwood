@@ -20,14 +20,28 @@ verse:
     the victory will go to the one that knows how to yield.
 ---
 
-Inspector Callahan is not afraid to force the issue, but his best tactic is direct, steely eyed intimidation; his specialty, really. If he can get someone to back down without breaking the peace, he will usually give that the first shot.
+Inspector Callahan is not afraid to force the issue,
+but his best tactic is direct, steely eyed intimidation; his specialty, really.
+If he can get someone to back down without breaking the peace,
+he will usually give that the first shot.
 
-Aware, however, that his adversaries share these same tactics (usually with less success), Callahan understands they are merely on opposite sides of the law. They are every bit as determined and lethal as he is.
+Aware, however,
+that his adversaries share these same tactics (usually with less success),
+Callahan understands they are merely on opposite sides of the law.
+They are every bit as determined and lethal as he is.
 
-When finally it’s clear his foes are not influenced by his intimidating warnings and refuse to break, Dirty Harry yields to another form of influence; his .44 Magnum.
+When finally it’s clear his foes are not influenced by his
+intimidating warnings and refuse to break,
+Dirty Harry yields to another form of influence; his .44 Magnum.
 
-As much as he is likely satisfied to stop his opponents by any means necessary, you never see him celebrate the victory. In fact, it is just the opposite. He doesn’t want the victory, so much as he keep them from achieving it.
+As much as he is likely satisfied to stop his opponents by any means necessary,
+you never see him celebrate the victory. In fact, it is just the opposite.
+He doesn’t want the victory, so much as he keep them from achieving it.
 
-This is one way to interpret the Tao Te Ching here. Winning is the goal. Taking pleasure in it is not a complete win.
+This is one way to interpret the Tao Te Ching here.
+Winning is the goal.
+Taking pleasure in it is not a complete win.
 
-The Dead Pool is the last of the Dirty Harry Callahan movies. Eastwood finally yielded this character to cinema history and won a small victory in return.
+The Dead Pool is the last of the Dirty Harry Callahan movies.
+Eastwood finally yielded this character to
+cinema history and won a small victory in return.

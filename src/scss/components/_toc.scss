@@ -1,0 +1,29 @@
+// TOC Link List
+// =======
+
+.link-list {
+  list-style-position: inside;
+  margin-bottom: size('gutter');
+}
+
+.link-list-intro {
+  display: block;
+}
+
+.link-list-item {
+  @include font-family('open');
+  font-size: size('small');
+  margin-bottom: size('shim');
+
+  &,
+  a {
+    #{$link} {
+      color: color('text');
+      text-decoration: none;
+    }
+
+    #{$focus} {
+      color: var-color('action-hover');
+    }
+  }
+}
