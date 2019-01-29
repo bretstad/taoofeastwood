@@ -11,11 +11,11 @@ verse:
   number: 52
   text: |
     If you close your mind in judgments \
-		and traffic in desires, \
-		your heart will be troubled. \
-		If you keep your mind from judging \
-		and aren’t led by the senses, \
-		your heart will find peace.
+    and traffic in desires, \
+    your heart will be troubled. \
+    If you keep your mind from judging \
+    and aren’t led by the senses, \
+    your heart will find peace.
 ---
 
 There are things you should do and things you shouldn’t do, as you go along, that create a peaceful life. Calling this one good and that one bad is unnecessary.

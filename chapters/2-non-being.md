@@ -5,7 +5,7 @@ chapter: 2
 quote:
   author: 'Sergio Leone'
   credential: 'Director'
-  text: |
+  text: |-
     At that time I needed a mask rather than an actor,
     and Eastwood had only two facial expressions:
     one with the hat and one without it.

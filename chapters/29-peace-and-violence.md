@@ -9,7 +9,7 @@ quote:
     The thing that haunts a guy is the stuff he wasn’t ordered to do.
 verse:
   number: 31
-  text: |
+  text: |-
     Weapons are the tools of fear; \
     a decent man will avoid them \
     except in the direst of necessity \

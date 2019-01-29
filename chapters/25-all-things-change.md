@@ -23,7 +23,7 @@ Robert Kincaid is not an Eastwood creation, but Eastwood’s effortless nature a
 
 Kincaid is the character lurking underneath all the hardened cowboys. He is the non-being to their being; the formlessness behind their form. He is far from violent and talks a lot more. I think William Munny and Harry Callahan would appreciate, even prefer, trading in their loaded guns for a camera.
 
-Kincaid follows his own instincts and is able to ebb and flow with the changes that brings. He does not interfere with his own fate, even when Francesca, the unfulfilled Midwestern housewife he falls madly in love with, chooses to stay with her husband rather than run away with him.
+Kincaid follows his own instincts and is able to ebb and flow with the changes that brings. He does not interfere with his own fate, even when Francesca, the unfulfilled Midwestern housewife he falls madly in love with,chooses to stay with her husband rather than run away with him.
 
 By not interfering, he has avoided cutting his hands, so to speak.
 

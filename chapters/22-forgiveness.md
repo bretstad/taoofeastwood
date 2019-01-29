@@ -34,8 +34,8 @@ You get what you give.
 
 Munny’s true nature is brutal and violent. Even though he senses
 that setting his nature free means he may one day pay the price,
-Munny is in more pain trying to hold
-it back than letting it run its course. It is his acceptance of this fate,
+Munny is in more pain trying to hold it back than letting it run its course.
+It is his acceptance of this fate,
 and the lack of fear of it,
 where I see a connection to the Tao.
 

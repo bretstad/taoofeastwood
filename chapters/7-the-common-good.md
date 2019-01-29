@@ -9,7 +9,7 @@ quote:
     Out.
 verse:
   number: 57
-  text: |
+  text: |-
     Therefore the Master says: \
     I let go of the law, \
     and people become honest. \

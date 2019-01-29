@@ -9,7 +9,7 @@ quote:
     Nothing like a good piece of hickory.
 verse:
   number: 28
-  text: |
+  text: |-
     The world is formed from the void, \
     like utensils from a block of wood. \
     The Master knows the utensils, yet keeps to the block: \

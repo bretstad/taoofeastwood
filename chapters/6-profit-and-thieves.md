@@ -5,7 +5,7 @@ chapter: 6
 quote:
   author: 'Inspector Harry Callahan'
   credential: 'Dirty Harry'
-  text: |
+  text: |-
     I know what you’re thinking punk.
     You’re thinking “did he fire six shots or only five?”
     Now to tell you the truth, I forgot myself in all this excitement.
