@@ -5,7 +5,7 @@
 
 :root {
   @include colors--();
-  @include font-family('system');
+  @include font-family('open');
   @include var-contrasted('background');
   font-size: size('responsive');
   line-height: ratio('text-ratio');
