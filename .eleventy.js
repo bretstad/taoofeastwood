@@ -78,7 +78,7 @@ module.exports = eleventyConfig => {
         return 'chapter' in item.data;
       })
       .sort((a, b) => {
-        return a.data.chapter > b.data.chapter;
+        return a.data.chapter - b.data.chapter;
       });
   });
 

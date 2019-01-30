@@ -6,15 +6,14 @@
   ----------------
 #}
 {% macro list(
-  title,
-  items
+  items,
+  class
 ) %}
-  <h2>{{ title }}</h2>
 
   {% if (items|length > 0) %}
-    <ol>
+    <ol class="link-list">
       {% for item in items %}
-        <li>
+        <li class="link-list-item">
           {{ utility.link_if(item.data.title, item.url) }}
         </li>
       {% endfor %}
@@ -24,24 +23,41 @@
 
 
 {#
+  Paging Links
+  ------------
+#}
+{% macro paging_link_if(chapter=none, title=none, url=none, class=none) %}
+
+  {%- if url -%}
+    <a href="{{ url }}" {{ utility.attr_if('class', class) }}>
+      {% include "icons/paging.svg" %}
+      <span class="paging-chapter-number">Chapter {{ chapter }}</span>
+      <span class="paging-chapter-title">{{ title }}</span>
+    </a>
+  {%- endif -%}
+{% endmacro %}
+
+
+{#
   Previous & Next Chaptter
   ------------------------
 #}
 {% macro prev_next(
   all_chapters,
-  chapter
+  chapter,
+  class
 ) %}
   {% set next_chapter = chapter + 1 %}
   {% set next = all_chapters[next_chapter - 1] if (all_chapters|length >= next_chapter) else none %}
   {% set prev_chapter = chapter - 1 %}
   {% set prev = all_chapters[prev_chapter - 1] if (prev_chapter > 0) else none %}
 
-  <p>
+  <nav class="paging">
     {% if prev %}
-      Previous: {{ utility.link_if(prev.data.title, prev.url) }}
+      {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
     {% endif %}
     {% if next %}
-      Next: {{ utility.link_if(next.data.title, next.url) }}
+      {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
     {% endif %}
-  </p>
+  </nav>
 {% endmacro %}

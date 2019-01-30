@@ -1,0 +1,73 @@
+// Paging
+// ======
+
+// outer container of all paging elements
+.paging {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: size('gutter');
+}
+
+// the <a> container of each paging element
+.paging-link {
+  @include font-family('slab');
+  column-gap: size('shim');
+  display: grid;
+  flex: 1 0 auto;
+  font-size: size('small');
+  margin-bottom: size('shim');
+}
+
+.next {
+  grid-template-columns: 1fr auto;
+  text-align: right;
+
+  // Is it worth it, let me work it
+  // put my icon down, flip it and reverse it
+  [data-icon] {
+    background-color: color('text');
+    grid-column: 2;
+    transform: scaleX(-1);
+
+    .icon-pointing {
+      fill: color('background');
+    }
+
+    .icon-square {
+      fill: color('text');
+    }
+  }
+
+  #{$focus} {
+    [data-icon] {
+      background-color: color('action');
+
+      .icon-square {
+        fill: color('action');
+      }
+    }
+  }
+}
+
+.previous {
+  grid-template-columns: auto 1fr;
+
+  #{$focus} {
+    [data-icon] {
+      fill: color('action');
+    }
+  }
+}
+
+// Line of text displaying "Chapter #"
+.paging-chapter-number {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// applied to both paging icons
+[data-icon='paging'] {
+  @include square('quote');
+  grid-row: 1 / 3;
+}

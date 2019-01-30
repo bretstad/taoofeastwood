@@ -1,0 +1,55 @@
+// Quotes
+// ======
+
+[data-quote] {
+  @include font-family('slab');
+  font-size: size('medium');
+  margin-bottom: size('spacer');
+  position: relative;
+
+  p:last-of-type {
+    margin-bottom: size('shim');
+  }
+
+  footer {
+    @include font-family('open');
+    font-size: size('xsmall');
+    text-transform: uppercase;
+  }
+}
+
+[data-icon='icon-quote'] {
+  height: size('quote') * 0.75;
+  position: absolute;
+  transform: translate(negative('quote'), 10%);
+  width: size('quote') * 0.75;
+
+  @include above('page-quotes') {
+    height: size('quote');
+    transform: translate((negative('quote') + negative('shim')), 10%);
+    width: size('quote');
+  }
+}
+
+.quote-box {
+  fill: none;
+  stroke-width: 4;
+
+  [data-quote='quote'] & {
+    stroke: color('quote');
+  }
+
+  [data-quote='verse'] & {
+    stroke: color('verse');
+  }
+}
+
+.quote-mark {
+  [data-quote='quote'] & {
+    fill: color('quote');
+  }
+
+  [data-quote='verse'] & {
+    fill: color('verse');
+  }
+}

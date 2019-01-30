@@ -1,16 +1,19 @@
 {% extends "layouts/base.njk" %}
 {%- import 'nav.macros.njk' as nav -%}
+{%- import 'utility.macros.njk' as utility -%}
+
 
 {% block main %}
   {% if quote %}
     <blockquote data-quote="quote">
+      {% include "icons/quote.svg" %}
       {{ quote.text | md | safe }}
       <footer>
         {% if quote.author %}
           <strong>{{ quote.author }}</strong>
         {% endif %}
         {% if quote.credential %}
-          <span>{{ quote.credential }}</span>
+          | <span>{{ quote.credential }}</span>
         {% endif %}
       </footer>
     </blockquote>
@@ -18,14 +21,19 @@
 
   {% if verse %}
     <blockquote data-quote="verse">
+      {% include "icons/quote.svg" %}
       {{ verse.text | md | safe }}
       <footer class="tao-verse-number">
-        from verse {{ verse.number }}
+        <strong>Tao Te Ching</strong>
+        | <span>from verse {{ verse.number }}</span>
       </footer>
     </blockquote>
   {% endif %}
 
   {{ content | safe }}
+
+  {% include 'site/ending.njk' %}
+
 
   {{ nav.prev_next(
     all_chapters=collections.chapters,

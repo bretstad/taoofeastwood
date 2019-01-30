@@ -17,17 +17,28 @@
   </head>
 
   <body data-layout="grid">
+    <div data-layout="top-nav">
+      {% if not chapter %}
+        <h1 class="site-title">
+          <a class="site-title-link" href="/" rel="home">
+            Tao of <em>Eastwood</em>
+          </a>
+        </h1>
+      {% else %}
+          <a class="site-title site-title-link" href="/" rel="home">
+            Tao of <em>Eastwood</em>
+          </a>
+      {% endif %}
+    </div>
     <header data-layout="header">
-      <h1>
-        <a href="/" rel="home">{{ site.title }}</a>
-      </h1>
-      {% if chapter or title %}
-        <h2 class="chapter-title">
-          {% if chapter %}
-            Chapter {{ chapter }}:
-          {% endif %}
-          {{ title }}
-        </h2>
+      {% if chapter %}
+        <p class="chapter-number">
+            Chapter {{ chapter }}
+        </p>
+        {% include 'site/ending.njk' %}
+      {% endif %}
+      {% if title %}
+        <h1 class="chapter-title">{{ title }}</h1>
       {% endif %}
     </header>
 
@@ -42,11 +53,13 @@
     {% endblock %}
 
     <footer data-layout="footer">
-      © {% getDate 'year' %}
-      <a href="mailto:{{ site.email }}">
-        {{ site.author }}
-      </a>
-      | <a href="/design/">Design System</a>
+      <p>
+        © {% getDate 'year' %}
+        <a href="mailto:{{ site.email }}">
+          {{ site.author }}
+        </a>
+        | <a href="/design/">Design System</a>
+      </p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->

@@ -1,30 +1,23 @@
 // Chapters
 // ========
 
+.chapter-number {
+  @include font-family('slab');
+  text-transform: uppercase;
+}
+
 .chapter-title {
-  font-size: unset;
-  text-align: right;
+  @include font-family('script');
+  font-size: size('xxlarge');
+  margin-bottom: size('spacer');
+  text-align: center;
 }
 
-// Delete these styles, for development only
-// -----------------------------------------
-
-[data-quote] {
-  border-left: size('quarter-shim') solid;
-  padding-left: size('shim');
-
-  footer {
-    font-size: size('small');
-  }
+.ending-mark {
+  @include font-family('script');
+  display: block;
+  font-size: size('ending-mark');
+  line-height: 1;
+  // because of the typeface, different charcters have different positions
+  transform: translate(negative('half-shim'), -70%);
 }
-
-[data-quote='quote'] {
-  border-color: color('action');
-}
-
-[data-quote='verse'] {
-  border-color: color('accent');
-}
-
-// End of delete these styles, for development only
-// ------------------------------------------------
