@@ -16,19 +16,8 @@
 .site-title {
   @include font-family('script');
   display: block;
-  font-size: size('small');
+  font-size: size('xsmall');
   font-weight: normal;
   padding-bottom: size('quarter-shim');
   padding-top: size('quarter-shim');
-}
-
-.site-title-link {
-  #{$link} {
-    color: color('text');
-    text-decoration: none;
-  }
-
-  #{$focus} {
-    color: var-color('action-hover');
-  }
 }

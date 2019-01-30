@@ -46,11 +46,12 @@ p {
 
 a {
   #{$link} {
-    color: var-color('action');
+    color: var-color('text');
+    text-decoration: none;
   }
 
   #{$focus} {
-    color: var-color('action-hover');
+    color: var-color('action');
   }
 }
 

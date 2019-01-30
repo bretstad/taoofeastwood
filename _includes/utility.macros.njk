@@ -50,15 +50,16 @@
 
   {%- if url -%}
     <a href="{{ url }}" {{ attr_if('class', class) }}>
+      {% include "icons/paging.svg" %}
       <span class="paging-chapter-number">Chapter {{ chapter }}</span>
       <span class="paging-chapter-title">{{ title }}</span>
     </a>
   {%- else -%}
+    {% include "icons/paging.svg" %}
     <span {{ attr_if('class', class) }}>Chapter {{ chapter }}</span>
     <span class="paging-chapter-title">{{ title }}</span>
   {%- endif -%}
 {% endmacro %}
-
 
 
 {#

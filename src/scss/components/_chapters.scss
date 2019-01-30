@@ -21,14 +21,3 @@
   // because of the typeface, different charcters have different positions
   transform: translate(negative('half-shim'), -70%);
 }
-
-[class^='paging-chapter-'] {
-  display: block;
-  text-decoration: none;
-}
-
-.paging-chapter-number {
-  @include font-family('slab');
-  font-weight: bold;
-  text-transform: uppercase;
-}

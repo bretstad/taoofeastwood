@@ -28,7 +28,8 @@
 #}
 {% macro prev_next(
   all_chapters,
-  chapter
+  chapter,
+  class
 ) %}
   {% set next_chapter = chapter + 1 %}
   {% set next = all_chapters[next_chapter - 1] if (all_chapters|length >= next_chapter) else none %}
@@ -37,10 +38,10 @@
 
   <nav class="paging">
     {% if prev %}
-      {{ utility.paging_link_if(prev.data.chapter, prev.data.title, prev.url) }}
+      {{ utility.paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
     {% endif %}
     {% if next %}
-      {{ utility.paging_link_if(next.data.chapter, next.data.title, next.url) }}
+      {{ utility.paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
     {% endif %}
   </nav>
 {% endmacro %}
