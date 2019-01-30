@@ -14,11 +14,27 @@
     <ol class="link-list">
       {% for item in items %}
         <li class="link-list-item">
-          {{ utility.link_if(item.data.title, item.url, item.class) }}
+          {{ utility.link_if(item.data.title, item.url) }}
         </li>
       {% endfor %}
     </ol>
   {% endif %}
+{% endmacro %}
+
+
+{#
+  Paging Links
+  ------------
+#}
+{% macro paging_link_if(chapter=none, title=none, url=none, class=none) %}
+
+  {%- if url -%}
+    <a href="{{ url }}" {{ utility.attr_if('class', class) }}>
+      {% include "icons/paging.svg" %}
+      <span class="paging-chapter-number">Chapter {{ chapter }}</span>
+      <span class="paging-chapter-title">{{ title }}</span>
+    </a>
+  {%- endif -%}
 {% endmacro %}
 
 
@@ -38,10 +54,10 @@
 
   <nav class="paging">
     {% if prev %}
-      {{ utility.paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+      {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
     {% endif %}
     {% if next %}
-      {{ utility.paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
+      {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
     {% endif %}
   </nav>
 {% endmacro %}
