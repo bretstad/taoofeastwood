@@ -20,4 +20,11 @@
   font-weight: normal;
   padding-bottom: size('quarter-shim');
   padding-top: size('quarter-shim');
+
+  em {
+    @include font-family('slab');
+    font-style: normal;
+    // add some space to account for italic style "f"
+    padding-left: size('quarter-shim');
+  }
 }
