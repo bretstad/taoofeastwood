@@ -49,11 +49,13 @@
     {% endblock %}
 
     <footer data-layout="footer">
-      © {% getDate 'year' %}
-      <a href="mailto:{{ site.email }}">
-        {{ site.author }}
-      </a>
-      | <a href="/design/">Design System</a>
+      <p>
+        © {% getDate 'year' %}
+        <a href="mailto:{{ site.email }}">
+          {{ site.author }}
+        </a>
+        | <a href="/design/">Design System</a>
+      </p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->

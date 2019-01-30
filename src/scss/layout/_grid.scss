@@ -6,7 +6,7 @@
   grid-template-rows: min-content min-content 1fr min-content;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 size('double-gutter') size('gutter');
+  padding: 0 size('double-gutter') size('half-shim');
 }
 
 [data-layout='header'],
