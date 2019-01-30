@@ -13,8 +13,8 @@ verse:
     Not knowing is true knowledge. \
     Presuming to know is a disease. \
     First realize that you are sick; \
-    Then you can move towards health. \
-    \
+    Then you can move towards health.
+
     The Master’s her own physician. \
     She has healed herself of knowing. \
     Thus she is truly whole.

@@ -14,8 +14,8 @@ verse:
     When people see some things as beautiful, \
     other things become ugly. \
     When people see some things as good, \
-    other things become bad. \
-    \
+    other things become bad.
+
     Being and non-being create each other. \
     Difficult and easy support each other. \
     Long and short define each other. \

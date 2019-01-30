@@ -13,8 +13,8 @@ verse:
     The Tao doesn’t take sides; \
     It gives birth to both good and evil. \
     The Master doesn’t take sides; \
-    she welcomes both saints and sinners. \
-    \
+    she welcomes both saints and sinners.
+
     The Tao is like a bellows; \
     it is empty yet infinitely capable. \
     The more you use it, the more it produces; \

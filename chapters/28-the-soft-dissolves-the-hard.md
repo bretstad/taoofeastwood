@@ -13,8 +13,8 @@ verse:
     Nothing in the world \
     is as soft and yielding as water. \
     Yet for dissolving the hard and inflexible, \
-    nothing can surpass it. \
-    \
+    nothing can surpass it.
+
     The soft overcomes the hard; \
     the gentle overcomes the rigid. \
     Everyone knows this is true, \

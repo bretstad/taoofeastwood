@@ -12,8 +12,8 @@ verse:
   text: |
     The Tao is the center of the universe, \
     The good man’s treasure, \
-    The bad man’s refuge. \
-    \
+    The bad man’s refuge.
+
     Why did the ancient Masters esteem the Tao? \
     Because, being one with the Tao, \
     When you seek, you find; \

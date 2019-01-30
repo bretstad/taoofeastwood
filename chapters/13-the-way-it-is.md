@@ -16,8 +16,8 @@ verse:
   text: |
     There is no greater illusion than fear, \
     no greater wrong than preparing to defend yourself. \
-    No greater misfortune than having an enemy. \
-    \
+    No greater misfortune than having an enemy.
+
     Whoever can see through all fear will always be safe.
 ---
 

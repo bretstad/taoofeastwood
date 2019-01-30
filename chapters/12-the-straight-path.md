@@ -15,8 +15,8 @@ verse:
     The Great Way is easy, /
     yet people prefer side paths. /
     Be aware when things are out of balance. /
-    Stay centered within the Tao. /
-    /
+    Stay centered within the Tao.
+
     When rich speculators prosper /
     while farmers lose their land; /
     When government officials spend money /

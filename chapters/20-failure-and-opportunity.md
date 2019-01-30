@@ -12,8 +12,8 @@ verse:
   text: |
     Failure is an opportunity. \
     If you blame someone else, \
-    There is no end to the blame. \
-    \
+    There is no end to the blame.
+
     Therefore the Master \
     Fulfills her own obligations \
     And corrects her own mistakes. \
