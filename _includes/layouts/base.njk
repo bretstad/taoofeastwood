@@ -29,6 +29,14 @@
             Tao of <em>Eastwood</em>
           </a>
       {% endif %}
+      {% include 'icons/menu.svg' %}
+      <nav>
+        {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
+        {{ nav.list(
+          items=collections.chapters,
+          class='link-list-item'
+        ) }}
+      </nav>
     </div>
     <header data-layout="header">
       {% if chapter %}
