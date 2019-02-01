@@ -40,8 +40,6 @@
   align-items: stretch;
   background-color: color('background');
   border-left: 1px solid color('border');
-  display: flex;
-  flex-direction: column;
   height: 100%;
   max-width: size('nav-panel');
   overflow-y: auto;
@@ -54,4 +52,14 @@
   &[aria-expanded='true'] {
     transform: translateX(0);
   }
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-layout='nav-inner'] {
+  display: flex;
+  flex-direction: column;
 }
