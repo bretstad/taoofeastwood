@@ -30,13 +30,23 @@
           </a>
       {% endif %}
       {% include 'icons/menu.svg' %}
-      <nav data-layout="nav">
-        {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
-        {{ nav.list(
-          items=collections.chapters,
-          class='link-list-item'
-        ) }}
-      </nav>
+      <div data-layout="nav-panel">
+        <div class="nav-header">
+          <span class="nav-title">
+            Chapters
+          </span>
+          <span class="close">
+            {% include 'icons/close.svg' %}
+          </span>
+        </div>
+        <nav data-layout="nav-inner">
+          {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
+          {{ nav.list(
+            items=collections.chapters,
+            class='link-list-item'
+          ) }}
+        </nav>
+      </div>
     </div>
     <header data-layout="header">
       {% if chapter %}
