@@ -108,6 +108,7 @@ $component-sizes: (
       'convert-units': 'rem',
     ),
   'ending-mark': 4em,
+  'nav-panel': 20em,
 );
 
 @include add-sizes($component-sizes);

@@ -2,6 +2,8 @@
 // =======
 
 [data-layout='top-nav'] {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: size('gutter');
 
   @include after('') {
@@ -15,7 +17,6 @@
 
 .site-title {
   @include font-family('script');
-  display: block;
   font-size: size('xsmall');
   font-weight: normal;
   padding-bottom: size('quarter-shim');
@@ -26,5 +27,33 @@
     font-style: normal;
     // add some space to account for italic style "f"
     padding-left: size('quarter-shim');
+  }
+}
+
+[data-icon='nav-icon'] {
+  @include square('icon');
+}
+
+[data-layout='nav'] {
+  @include position(0 0 0 null);
+  align-items: stretch;
+  background-color: color('background');
+  border-left: 1px solid color('border');
+  display: flex;
+  flex-direction: column;
+  max-width: size('nav-panel');
+  transform: translateX(100%); // extra space for shadow
+  transition: transform 300ms cubic-bezier(0.15, -0.21, 0.5, 1.2);
+  width: 100%;
+  z-index: 1;
+
+  &[aria-expanded='true'] {
+    transform: translateX(0);
+  }
+
+  a {
+    #{$link} {
+      text-decoration: none;
+    }
   }
 }

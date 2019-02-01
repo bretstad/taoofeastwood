@@ -30,7 +30,7 @@
           </a>
       {% endif %}
       {% include 'icons/menu.svg' %}
-      <nav>
+      <nav data-layout="nav">
         {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
         {{ nav.list(
           items=collections.chapters,
