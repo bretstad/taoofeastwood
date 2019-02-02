@@ -3,10 +3,14 @@
 
 [data-layout='grid'] {
   display: grid;
-  grid-template-rows: min-content min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
   margin: 0 auto;
   min-height: 100vh;
   padding: 0 size('double-gutter') size('half-shim');
+}
+
+[data-layout='header'] {
+  margin-top: size('double-gutter');
 }
 
 [data-layout='header'],

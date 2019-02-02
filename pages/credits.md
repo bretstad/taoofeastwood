@@ -1,4 +1,5 @@
 ---
+layout: 'toc'
 title: 'Credits'
 ---
 

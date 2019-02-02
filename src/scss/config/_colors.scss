@@ -72,6 +72,7 @@ $theme-colors: (
   'accent-light': '#_brand-accent-light-4',
   'quote': '#_brand-accent-light-2',
   'verse': hsl(22, 59%, 85%),
+  'active': '#_brand-main-light-4',
 );
 
 @include add-colors($theme-colors);

@@ -1,0 +1,97 @@
+// TOC Link List
+// =======
+
+.link-list {
+  list-style-position: inside;
+  margin-bottom: size('gutter');
+
+  /// override init-type
+  nav & {
+    list-style-type: decimal;
+  }
+}
+
+.link-list-intro {
+  display: block;
+}
+
+.link-list-item {
+  @include font-family('open');
+  font-size: size('xsmall');
+  margin-bottom: size('shim');
+  padding: size('half-shim') size('shim');
+  position: relative;
+
+  &:visited {
+    color: color('text-light');
+  }
+
+  #{$focus} {
+    background-color: color('active');
+    color: color('action');
+  }
+}
+
+// Map nav locations for highlighting active page
+$nav-locations: (
+  'Wu Wei',
+  'Non-being',
+  'No Name',
+  'Laissez-faire',
+  'Compatible Opposites',
+  'Profit and Thieves',
+  'The Common Good',
+  'See the World as Yourself',
+  'Know Your Limitations',
+  'A Time for Everything',
+  'Approval and Pride',
+  'The Straight Pat',
+  'The Way It Is',
+  'To Laugh or Not To Laugh',
+  'Simply Be Yourself',
+  'A Good Man’s Job',
+  'The Uncarved Block',
+  'Master Yourself',
+  'Know How to Yield',
+  'Failure and Opportunity',
+  'non-Tao',
+  'Forgiveness',
+  'Good and Evil',
+  'Not Knowing',
+  'All Things Change',
+  'Nothing Left Undone',
+  'Passing Judgement',
+  'The Soft Dissolves the Hard',
+  'Peace and Violence'
+);
+
+// Highlight active page
+@each $location in $nav-locations {
+  [data-location='#{$location}'] {
+    [data-active='#{$location}'] {
+      a:link,
+      a:visited {
+        color: color('action-hover');
+        font-weight: bold;
+
+        @include before('-') {
+          @include position(null null -100% negative('half-shim'));
+          @include font-family('script');
+          font-size: 80px;
+          position: absolute;
+          transform: rotate(90deg);
+        }
+      }
+
+      a:visited {
+        color: color('text-light');
+        font-weight: bold;
+      }
+
+      #{$focus} {
+        background-color: color('active');
+        color: color('action-hover');
+      }
+    }
+  }
+}

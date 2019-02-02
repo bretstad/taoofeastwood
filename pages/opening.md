@@ -1,4 +1,6 @@
 ---
+layout: 'toc'
+title: 'opening'
 quote:
   author: 'Stephen Mitchell'
   text: |

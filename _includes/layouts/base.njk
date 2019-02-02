@@ -16,7 +16,7 @@
     {% endfor %}
   </head>
 
-  <body data-layout="grid">
+  <body data-layout="grid" data-location="{{ title }}">
     <div data-layout="top-nav">
       {% if not chapter %}
         <h1 class="site-title">
@@ -43,8 +43,7 @@
           {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
           {{ nav.list(
             items=collections.chapters,
-            class='link-list-item'
-          ) }}
+            class='link-list-item') }}
         </nav>
       </div>
     </div>
