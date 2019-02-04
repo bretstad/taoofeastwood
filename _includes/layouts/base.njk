@@ -16,7 +16,7 @@
     {% endfor %}
   </head>
 
-  <body data-layout="grid" data-location="{{ title }}">
+  <body data-layout="grid" data-location="{{ title | slug }}">
     <div data-layout="top-nav">
       {% if not chapter %}
         <h1 class="site-title">
