@@ -31,6 +31,7 @@
 
 [data-layout='nav-panel'] {
   @include position(0 0 0 null fixed);
+  background: color('background');
   align-items: stretch;
   border-left: 1px solid color('border-light');
   height: 100%;

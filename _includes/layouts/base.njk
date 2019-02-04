@@ -29,15 +29,18 @@
             Tao of <em>Eastwood</em>
           </a>
       {% endif %}
-      {% include 'icons/menu.svg' %}
-      <div data-layout="nav-panel">
+      <button data-open="menu">
+        {% include 'icons/menu.svg' %}
+        <span data-hidden>show/hide table of contents</span>
+      </button>
+      <div data-target="menu" data-layout="nav-panel" aria-expanded="false">
         <div class="nav-header">
           <span class="nav-title">
             Chapters
           </span>
-          <span class="close">
+          <button data-close="menu" class="close">
             {% include 'icons/close.svg' %}
-          </span>
+          </button>
         </div>
         <nav data-layout="nav-inner">
           {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
@@ -80,11 +83,15 @@
     </footer>
 
     <script>
-      const menuBtn = document.querySelector('#@@@');
-      const menu = document.querySelector('#@@@');
+      const openBtn = document.querySelector('[data-open="menu"');
+      const closeBtn = document.querySelector('[data-close="menu"');
+      const menu = document.querySelector('[data-target="menu"]');
 
-      menuBtn.addEventListener('click', () => {
-        menu.toggleAttribute('aria-expanded');
+      openBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'true');
+      });
+      closeBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'false');
       });
     </script>
 
