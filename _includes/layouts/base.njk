@@ -36,17 +36,14 @@
       <div data-target="menu" data-layout="nav-panel" aria-expanded="false">
         <div class="nav-header">
           <span class="nav-title">
-            Chapters
+            Contents
           </span>
           <button data-close="menu" class="menu-btn">
             {% include 'icons/close.svg' %}
           </button>
         </div>
         <nav data-layout="nav-inner">
-          {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
-          {{ nav.list(
-            items=collections.chapters,
-            class='link-list-item') }}
+          {% include 'site/nav.njk' %}
         </nav>
       </div>
     </div>

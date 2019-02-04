@@ -1,5 +1,5 @@
 ---
-layout: 'toc'
+layout: 'chapter'
 title: 'Afterward'
 quote:
   text: |
@@ -8,6 +8,7 @@ quote:
     Let your workings remain a mystery. \
     Just show people the results.
 ---
+
 
 Thankfully, as of this writing, Mr. Eastwood has not decided to retire.
 There will be more movies to enjoy and more wisdom to impart from each one.

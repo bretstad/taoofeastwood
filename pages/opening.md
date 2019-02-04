@@ -1,5 +1,5 @@
 ---
-layout: 'toc'
+layout: 'chapter'
 title: 'opening'
 quote:
   author: 'Stephen Mitchell'
