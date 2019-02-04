@@ -95,6 +95,12 @@ module.exports = eleventyConfig => {
     return getDate(format, date);
   });
 
+  eleventyConfig.addFilter('getChapter', (chapters, chapter) => {
+    return chapters.filter(item => {
+      return chapter === item.data.chapter;
+    });
+  });
+
   eleventyConfig.addFilter('md', (content, inline = false) => {
     return inline
       ? markdownIt.renderInline(content)

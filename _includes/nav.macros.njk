@@ -9,11 +9,16 @@
   items,
   class
 ) %}
-
-  {% if (items|length > 0) %}
+  {% if (items | length > 0) %}
     <ol class="link-list">
       {% for item in items %}
-        {% set content = [item.data.chapter, item.data.title] | join(': ') %}
+        {% set content %}
+          {% if (item.data.chapter > 0) and (item.data.chapter < 30) %}
+            {{ item.data.chapter }}: {{ item.data.title }}
+          {% else %}
+            {{ item.data.title }}
+          {% endif %}
+        {% endset %}
         <li data-active="{{ (item.data.title or item.url) | slug }}">
           {{ utility.link_if(content, item.url, 'link-list-item') }}
         </li>
@@ -28,11 +33,12 @@
   ------------
 #}
 {% macro paging_link_if(chapter=none, title=none, url=none, class=none) %}
-
   {%- if url -%}
     <a href="{{ url }}" {{ utility.attr_if('class', class) }}>
       {% include "icons/paging.svg" %}
-      <span class="paging-chapter-number">Chapter {{ chapter }}</span>
+      {% if (chapter > 0) and (chapter < 30) %}
+        <span class="paging-chapter-number">Chapter {{ chapter }}</span>
+      {% endif %}
       <span class="paging-chapter-title">{{ title }}</span>
     </a>
   {%- endif -%}
@@ -48,14 +54,14 @@
   chapter,
   class
 ) %}
-  {% set next_chapter = chapter + 1 %}
-  {% set next = all_chapters[next_chapter - 1] if (all_chapters|length >= next_chapter) else none %}
-  {% set prev_chapter = chapter - 1 %}
-  {% set prev = all_chapters[prev_chapter - 1] if (prev_chapter > 0) else none %}
+  {% set next = all_chapters | getChapter(chapter + 1) | first %}
+  {% set prev = all_chapters | getChapter(chapter - 1) | first %}
 
   <nav class="paging">
     {% if prev %}
       {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+    {% else %}
+      {{ paging_link_if(-2, 'Title Page', '/', 'previous paging-link') }}
     {% endif %}
     {% if next %}
       {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}

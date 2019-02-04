@@ -1,6 +1,7 @@
 ---
 layout: 'chapter'
 title: 'Afterward'
+chapter: 30
 quote:
   text: |
     The soft overcomes the hard. \
