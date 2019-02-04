@@ -58,6 +58,7 @@ a {
 // Special
 // -------
 
+[data-hidden],
 .is-hidden {
   @include is-hidden;
 }
