@@ -21,6 +21,7 @@
 
 .next {
   grid-template-columns: 1fr auto;
+  margin-left: size('shim');
   text-align: right;
 
   // Is it worth it, let me work it
