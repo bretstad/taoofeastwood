@@ -19,6 +19,11 @@
   padding: size('half-shim') size('shim') size('half-shim') size('gutter');
   position: relative;
 
+  // make sure TOC menu lines up with title
+  .toc-archive & {
+    margin-left: negative('gutter');
+  }
+
   &:visited {
     color: color('text-light');
   }
