@@ -2,13 +2,10 @@
 // =======
 
 .link-list {
-  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
   margin-bottom: size('gutter');
-
-  /// override init-type
-  nav & {
-    list-style-type: decimal;
-  }
 }
 
 .link-list-intro {
@@ -17,9 +14,9 @@
 
 .link-list-item {
   @include font-family('open');
+  display: block;
   font-size: size('xsmall');
-  margin-bottom: size('shim');
-  padding: size('half-shim') size('shim');
+  padding: size('half-shim') size('shim') size('half-shim') size('gutter');
   position: relative;
 
   &:visited {
@@ -29,6 +26,10 @@
   #{$focus} {
     background-color: color('active');
     color: color('action');
+
+    .toc-archive & {
+      background-color: transparent;
+    }
   }
 }
 
@@ -69,13 +70,11 @@ $nav-locations: (
 @each $location in $nav-locations {
   [data-location='#{$location}'] {
     [data-active='#{$location}'] {
-      a:link,
-      a:visited {
-        color: color('action-hover');
+      a {
         font-weight: bold;
 
         @include before('-') {
-          @include position(null null -100% negative('half-shim'));
+          @include position(null null -100% 0);
           @include font-family('script');
           font-size: 80px;
           position: absolute;
@@ -83,9 +82,12 @@ $nav-locations: (
         }
       }
 
+      a:link {
+        color: color('action-hover');
+      }
+
       a:visited {
         color: color('text-light');
-        font-weight: bold;
       }
 
       #{$focus} {
