@@ -14,7 +14,7 @@
     <ol class="link-list">
       {% for item in items %}
         {% set content = [item.data.chapter, item.data.title] | join(': ') %}
-        <li data-active="{{ item.data.title | slug }}">
+        <li data-active="{{ (item.data.title or item.url) | slug }}">
           {{ utility.link_if(content, item.url, 'link-list-item') }}
         </li>
       {% endfor %}
