@@ -16,7 +16,7 @@
     {% endfor %}
   </head>
 
-  <body data-layout="grid">
+  <body data-layout="grid" data-location="{{ (title or page.url) | slug }}">
     <div data-layout="top-nav">
       {% if not chapter %}
         <h1 class="site-title">
@@ -29,9 +29,26 @@
             Tao of <em>Eastwood</em>
           </a>
       {% endif %}
+      <button data-open="menu" class="menu-btn">
+        {% include 'icons/menu.svg' %}
+        <span data-hidden>show/hide table of contents</span>
+      </button>
+      <div data-target="menu" data-layout="nav-panel" aria-expanded="false">
+        <div class="nav-header">
+          <span class="nav-title">
+            Contents
+          </span>
+          <button data-close="menu" class="menu-btn">
+            {% include 'icons/close.svg' %}
+          </button>
+        </div>
+        <nav data-layout="nav-inner">
+          {% include 'site/nav.njk' %}
+        </nav>
+      </div>
     </div>
     <header data-layout="header">
-      {% if chapter %}
+      {% if (chapter > 0) and (chapter < 30) %}
         <p class="chapter-number">
             Chapter {{ chapter }}
         </p>
@@ -61,6 +78,19 @@
         | <a href="/design/">Design System</a>
       </p>
     </footer>
+
+    <script>
+      const openBtn = document.querySelector('[data-open="menu"');
+      const closeBtn = document.querySelector('[data-close="menu"');
+      const menu = document.querySelector('[data-target="menu"]');
+
+      openBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'true');
+      });
+      closeBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'false');
+      });
+    </script>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>

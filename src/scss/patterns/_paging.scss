@@ -21,6 +21,7 @@
 
 .next {
   grid-template-columns: 1fr auto;
+  margin-left: size('shim');
   text-align: right;
 
   // Is it worth it, let me work it
@@ -60,10 +61,20 @@
   }
 }
 
+.paging-chapter-title {
+  align-self: center;
+  grid-row: 1 / 3;
+}
+
 // Line of text displaying "Chapter #"
 .paging-chapter-number {
   font-weight: bold;
+  grid-row: 1;
   text-transform: uppercase;
+
+  + .paging-chapter-title {
+    grid-row: 2;
+  }
 }
 
 // applied to both paging icons

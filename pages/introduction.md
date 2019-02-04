@@ -1,5 +1,7 @@
 ---
+layout: 'chapter'
 title: 'Introduction'
+chapter: -1
 ---
 
 The Tao Te Ching is amongst the highest level achievements ever

@@ -30,13 +30,376 @@
     
   </head>
 
-  <body data-layout="grid">
+  <body data-layout="grid" data-location="non-tao">
     <div data-layout="top-nav">
       
           <a class="site-title site-title-link" href="/" rel="home">
             Tao of <em>Eastwood</em>
           </a>
       
+      <button data-open="menu" class="menu-btn">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-icon="nav">
+    <path d="M11.015,14.335c-2.085,0 -3.757,-0.48 -5.019,-1.44c-1.261,-0.96 -1.892,-2.29 -1.892,-3.99c0,-0.274 0.069,-0.699 0.206,-1.275c0.137,-0.576 0.26,-1.001 0.37,-1.275c1.152,0.165 2.249,0.274 3.291,0.329c1.042,0.055 2.358,0.082 3.949,0.082c3.455,0 6.704,-0.082 9.748,-0.246c3.044,-0.165 5.8,-0.357 8.268,-0.576c2.468,-0.22 4.58,-0.412 6.335,-0.576c1.755,-0.165 3.098,-0.247 4.031,-0.247c1.261,0 2.399,0.631 3.414,1.892c1.014,1.262 1.741,3.071 2.18,5.43c-1.7,-0.165 -3.085,-0.274 -4.155,-0.329c-1.069,-0.055 -2.015,-0.083 -2.838,-0.083c-2.961,0 -5.69,0.124 -8.185,0.371c-2.496,0.246 -4.854,0.507 -7.075,0.781c-2.222,0.274 -4.374,0.535 -6.458,0.782c-2.084,0.247 -4.141,0.37 -6.17,0.37Z" />
+    <path d="M11.015,29.607c-2.085,0 -3.757,-0.48 -5.019,-1.44c-1.261,-0.959 -1.892,-2.289 -1.892,-3.99c0,-0.274 0.069,-0.699 0.206,-1.275c0.137,-0.576 0.26,-1.001 0.37,-1.275c1.152,0.165 2.249,0.274 3.291,0.329c1.042,0.055 2.358,0.082 3.949,0.082c3.455,0 6.704,-0.082 9.748,-0.246c3.044,-0.165 5.8,-0.357 8.268,-0.576c2.468,-0.22 4.58,-0.412 6.335,-0.576c1.755,-0.165 3.098,-0.247 4.031,-0.247c1.261,0 2.399,0.631 3.414,1.892c1.014,1.262 1.741,3.071 2.18,5.43c-1.7,-0.165 -3.085,-0.274 -4.155,-0.329c-1.069,-0.055 -2.015,-0.083 -2.838,-0.083c-2.961,0 -5.69,0.124 -8.185,0.371c-2.496,0.246 -4.854,0.507 -7.075,0.781c-2.222,0.274 -4.374,0.535 -6.458,0.782c-2.084,0.247 -4.141,0.37 -6.17,0.37Z" />
+    <path d="M11.015,44.879c-2.085,0 -3.757,-0.48 -5.019,-1.44c-1.261,-0.959 -1.892,-2.289 -1.892,-3.99c0,-0.274 0.069,-0.699 0.206,-1.275c0.137,-0.576 0.26,-1.001 0.37,-1.275c1.152,0.165 2.249,0.274 3.291,0.329c1.042,0.055 2.358,0.082 3.949,0.082c3.455,0 6.704,-0.082 9.748,-0.246c3.044,-0.165 5.8,-0.357 8.268,-0.576c2.468,-0.22 4.58,-0.412 6.335,-0.576c1.755,-0.165 3.098,-0.247 4.031,-0.247c1.261,0 2.399,0.631 3.414,1.892c1.014,1.262 1.741,3.072 2.18,5.43c-1.7,-0.165 -3.085,-0.274 -4.155,-0.329c-1.069,-0.055 -2.015,-0.082 -2.838,-0.082c-2.961,0 -5.69,0.123 -8.185,0.37c-2.496,0.247 -4.854,0.507 -7.075,0.781c-2.222,0.275 -4.374,0.535 -6.458,0.782c-2.084,0.247 -4.141,0.37 -6.17,0.37Z" />
+</svg>
+
+        <span data-hidden>show/hide table of contents</span>
+      </button>
+      <div data-target="menu" data-layout="nav-panel" aria-expanded="false">
+        <div class="nav-header">
+          <span class="nav-title">
+            Contents
+          </span>
+          <button data-close="menu" class="menu-btn">
+            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" data-icon="close">
+    <path d="M12.147,18.368c-1.474,-1.473 -2.317,-2.995 -2.531,-4.566c-0.213,-1.571 0.281,-2.957 1.484,-4.159c0.194,-0.194 0.543,-0.446 1.047,-0.757c0.504,-0.31 0.892,-0.523 1.163,-0.639c0.698,0.93 1.396,1.783 2.094,2.559c0.698,0.776 1.61,1.726 2.734,2.851c2.444,2.443 4.8,4.682 7.068,6.718c2.269,2.036 4.353,3.849 6.254,5.439c1.9,1.59 3.529,2.948 4.886,4.072c1.358,1.125 2.366,2.017 3.025,2.676c0.892,0.892 1.251,2.143 1.076,3.752c-0.174,1.61 -0.94,3.403 -2.298,5.381c-1.085,-1.318 -1.987,-2.375 -2.704,-3.17c-0.718,-0.795 -1.368,-1.483 -1.949,-2.065c-2.094,-2.094 -4.111,-3.936 -6.05,-5.526c-1.939,-1.591 -3.791,-3.074 -5.555,-4.451c-1.765,-1.376 -3.471,-2.714 -5.12,-4.013c-1.648,-1.3 -3.189,-2.667 -4.624,-4.102Z" />
+    <path d="M31.632,12.089c1.473,-1.474 2.995,-2.318 4.566,-2.531c1.571,-0.213 2.957,0.281 4.159,1.483c0.194,0.194 0.446,0.543 0.757,1.048c0.31,0.504 0.523,0.892 0.639,1.163c-0.93,0.698 -1.783,1.396 -2.559,2.094c-0.776,0.698 -1.726,1.61 -2.851,2.734c-2.443,2.443 -4.682,4.799 -6.718,7.068c-2.036,2.269 -3.849,4.353 -5.439,6.254c-1.59,1.9 -2.948,3.529 -4.072,4.886c-1.125,1.357 -2.017,2.366 -2.676,3.025c-0.892,0.892 -2.143,1.251 -3.752,1.076c-1.61,-0.174 -3.403,-0.94 -5.381,-2.298c1.318,-1.086 2.375,-1.987 3.17,-2.705c0.795,-0.717 1.483,-1.367 2.065,-1.948c2.094,-2.095 3.936,-4.111 5.526,-6.05c1.591,-1.939 3.074,-3.791 4.451,-5.556c1.376,-1.764 2.714,-3.471 4.013,-5.119c1.3,-1.648 2.667,-3.19 4.102,-4.624Z" />
+</svg>
+
+          </button>
+        </div>
+        <nav data-layout="nav-inner">
+          
+  
+    <ol class="link-list">
+      
+        
+        <li data-active="introduction">
+          
+  <a href="/pages/introduction/" class="link-list-item">
+          
+            Introduction
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="opening">
+          
+  <a href="/pages/opening/" class="link-list-item">
+          
+            Opening
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="wu-wei">
+          
+  <a href="/chapters/1-wu-wei/" class="link-list-item">
+          
+            1: Wu Wei
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="non-being">
+          
+  <a href="/chapters/2-non-being/" class="link-list-item">
+          
+            2: Non-being
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="no-name">
+          
+  <a href="/chapters/3-no-name/" class="link-list-item">
+          
+            3: No Name
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="laissez-faire">
+          
+  <a href="/chapters/4-laissez-faire/" class="link-list-item">
+          
+            4: Laissez-faire
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="compatible-opposites">
+          
+  <a href="/chapters/5-compatible-opposites/" class="link-list-item">
+          
+            5: Compatible Opposites
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="profit-and-thieves">
+          
+  <a href="/chapters/6-profit-and-thieves/" class="link-list-item">
+          
+            6: Profit and Thieves
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="the-common-good">
+          
+  <a href="/chapters/7-the-common-good/" class="link-list-item">
+          
+            7: The Common Good
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="see-the-world-as-yourself">
+          
+  <a href="/chapters/8-see-the-world-as-yourself/" class="link-list-item">
+          
+            8: See the World as Yourself
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="know-your-limitations">
+          
+  <a href="/chapters/9-know-your-limitations/" class="link-list-item">
+          
+            9: Know Your Limitations
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="a-time-for-everything">
+          
+  <a href="/chapters/10-a-time-for-everything/" class="link-list-item">
+          
+            10: A Time for Everything
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="approval-and-pride">
+          
+  <a href="/chapters/11-approval-and-pride/" class="link-list-item">
+          
+            11: Approval and Pride
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="the-straight-path">
+          
+  <a href="/chapters/12-the-straight-path/" class="link-list-item">
+          
+            12: The Straight Path
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="the-way-it-is">
+          
+  <a href="/chapters/13-the-way-it-is/" class="link-list-item">
+          
+            13: The Way It Is
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="to-laugh-or-not-to-laugh">
+          
+  <a href="/chapters/14-to-laugh-or-not-to-laugh/" class="link-list-item">
+          
+            14: To Laugh or Not To Laugh
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="simply-be-yourself">
+          
+  <a href="/chapters/15-simply-be-yourself/" class="link-list-item">
+          
+            15: Simply Be Yourself
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="a-good-man&#39;s-job">
+          
+  <a href="/chapters/16-a-good-mans-job/" class="link-list-item">
+          
+            16: A Good Man’s Job
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="the-uncarved-block">
+          
+  <a href="/chapters/17-the-uncarved-bock/" class="link-list-item">
+          
+            17: The Uncarved Block
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="master-yourself">
+          
+  <a href="/chapters/18-master-yourself/" class="link-list-item">
+          
+            18: Master Yourself
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="know-how-to-yield">
+          
+  <a href="/chapters/19-know-how-to-yield/" class="link-list-item">
+          
+            19: Know How to Yield
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="failure-and-opportunity">
+          
+  <a href="/chapters/20-failure-and-opportunity/" class="link-list-item">
+          
+            20: Failure and Opportunity
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="non-tao">
+          
+  <a href="/chapters/21-non-tao/" class="link-list-item">
+          
+            21: non-Tao
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="forgiveness">
+          
+  <a href="/chapters/22-forgiveness/" class="link-list-item">
+          
+            22: Forgiveness
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="good-and-evil">
+          
+  <a href="/chapters/23-good-and-evil/" class="link-list-item">
+          
+            23: Good and Evil
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="not-knowing">
+          
+  <a href="/chapters/24-not-knowing/" class="link-list-item">
+          
+            24: Not Knowing
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="all-things-change">
+          
+  <a href="/chapters/25-all-things-change/" class="link-list-item">
+          
+            25: All Things Change
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="nothing-left-undone">
+          
+  <a href="/chapters/26-nothing-left-undone/" class="link-list-item">
+          
+            26: Nothing Left Undone
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="passing-judgement">
+          
+  <a href="/chapters/27-passing-judgement/" class="link-list-item">
+          
+            27: Passing Judgement
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="the-soft-dissolves-the-hard">
+          
+  <a href="/chapters/28-the-soft-dissolves-the-hard/" class="link-list-item">
+          
+            28: The Soft Dissolves the Hard
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="peace-and-violence">
+          
+  <a href="/chapters/29-peace-and-violence/" class="link-list-item">
+          
+            29: Peace and Violence
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="afterward">
+          
+  <a href="/pages/afterward/" class="link-list-item">
+          
+            Afterward
+          
+        </a>
+        </li>
+      
+        
+        <li data-active="credits">
+          
+  <a href="/pages/credits/" class="link-list-item">
+          
+            Credits
+          
+        </a>
+        </li>
+      
+    </ol>
+  
+
+
+        </nav>
+      </div>
     </div>
     <header data-layout="header">
       
@@ -59,7 +422,8 @@
         
   
     <blockquote data-quote="quote">
-      <svg data-icon='icon-quote' viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg"><path class="quote-box" d="M1.691 1.691h45.618v45.618H1.691z"/><path class="quote-mark" d="M40.815 9.519c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8zm-16 0c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8z" /></svg>
+      <svg data-icon='quote' viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg"><path class="quote-box" d="M1.691 1.691h45.618v45.618H1.691z"/><path class="quote-mark" d="M40.815 9.519c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8zm-16 0c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8z" /></svg>
+
       <p>Mr. Ackerman, if you want a guarantee, buy a toaster.</p>
 
       <footer>
@@ -75,7 +439,8 @@
 
   
     <blockquote data-quote="verse">
-      <svg data-icon='icon-quote' viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg"><path class="quote-box" d="M1.691 1.691h45.618v45.618H1.691z"/><path class="quote-mark" d="M40.815 9.519c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8zm-16 0c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8z" /></svg>
+      <svg data-icon='quote' viewBox="0 0 49 49" xmlns="http://www.w3.org/2000/svg"><path class="quote-box" d="M1.691 1.691h45.618v45.618H1.691z"/><path class="quote-mark" d="M40.815 9.519c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8zm-16 0c.32.267.614.707.88 1.32.267.613.4 1.187.4 1.72-2.666 2.293-4.573 4.48-5.72 6.56-1.146 2.08-1.72 4.347-1.72 6.8 0 1.6.067 2.973.2 4.12.134 1.147.387 2.467.76 3.96a16.5 16.5 0 0 1-4-.64 21.958 21.958 0 0 1-3.48-1.32c-1.04-.507-1.906-1.093-2.6-1.76-.693-.667-1.12-1.32-1.28-1.96 2.507-8.853 8.027-15.12 16.56-18.8z" /></svg>
+
       <p>The Masters power is like this. <br>
 He lets all things come and go <br>
 effortlessly, without desire. <br>
@@ -118,9 +483,6 @@ He was quoted as saying, “Sometimes these things work; sometimes they don’t.
   —
 </span>
 
-
-  
-  
   
   
   
@@ -130,7 +492,9 @@ He was quoted as saying, “Sometimes these things work; sometimes they don’t.
       <a href="/chapters/20-failure-and-opportunity/" class="previous paging-link">
       <svg data-icon="paging" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="icon-square" d="M50,50l-50,0l0,-50l50,0c0,16.667 0,33.333 0,50Zm-46,-4l42,0l0,-42l-42,0c0,14 0,28 0,42Z" /><path class="icon-pointing" d="M16.59,24.259c2.224,-0.808 4.124,-1.544 5.702,-2.207c1.578,-0.664 2.921,-1.311 4.029,-1.943c1.109,-0.632 2.014,-1.247 2.715,-1.845c0.702,-0.598 1.283,-1.255 1.743,-1.97c0.038,-0.011 0.085,0.079 0.14,0.271l0.067,0.231c0.321,1.114 -0.108,2.477 -1.288,4.087c-1.18,1.61 -2.795,3.19 -4.846,4.739c1.787,0.567 3.338,1.254 4.654,2.061c1.315,0.807 2.095,1.633 2.338,2.479c0.167,0.576 0.19,1.163 0.071,1.759c-0.119,0.597 -0.343,1.192 -0.671,1.786c-1.267,-1.216 -2.795,-2.254 -4.582,-3.112c-1.788,-0.858 -3.944,-1.547 -6.467,-2.068l-1.375,0.646c-0.76,-0.613 -1.367,-1.708 -1.822,-3.284c-0.133,-0.461 -0.23,-0.797 -0.291,-1.008c-0.061,-0.212 -0.1,-0.419 -0.117,-0.622Z" /></svg>
 
-      <span class="paging-chapter-number">Chapter 20</span>
+      
+        <span class="paging-chapter-number">Chapter 20</span>
+      
       <span class="paging-chapter-title">Failure and Opportunity</span>
     </a>
     
@@ -138,7 +502,9 @@ He was quoted as saying, “Sometimes these things work; sometimes they don’t.
       <a href="/chapters/22-forgiveness/" class="next paging-link">
       <svg data-icon="paging" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="icon-square" d="M50,50l-50,0l0,-50l50,0c0,16.667 0,33.333 0,50Zm-46,-4l42,0l0,-42l-42,0c0,14 0,28 0,42Z" /><path class="icon-pointing" d="M16.59,24.259c2.224,-0.808 4.124,-1.544 5.702,-2.207c1.578,-0.664 2.921,-1.311 4.029,-1.943c1.109,-0.632 2.014,-1.247 2.715,-1.845c0.702,-0.598 1.283,-1.255 1.743,-1.97c0.038,-0.011 0.085,0.079 0.14,0.271l0.067,0.231c0.321,1.114 -0.108,2.477 -1.288,4.087c-1.18,1.61 -2.795,3.19 -4.846,4.739c1.787,0.567 3.338,1.254 4.654,2.061c1.315,0.807 2.095,1.633 2.338,2.479c0.167,0.576 0.19,1.163 0.071,1.759c-0.119,0.597 -0.343,1.192 -0.671,1.786c-1.267,-1.216 -2.795,-2.254 -4.582,-3.112c-1.788,-0.858 -3.944,-1.547 -6.467,-2.068l-1.375,0.646c-0.76,-0.613 -1.367,-1.708 -1.822,-3.284c-0.133,-0.461 -0.23,-0.797 -0.291,-1.008c-0.061,-0.212 -0.1,-0.419 -0.117,-0.622Z" /></svg>
 
-      <span class="paging-chapter-number">Chapter 22</span>
+      
+        <span class="paging-chapter-number">Chapter 22</span>
+      
       <span class="paging-chapter-title">Forgiveness</span>
     </a>
     
@@ -158,6 +524,19 @@ He was quoted as saying, “Sometimes these things work; sometimes they don’t.
         | <a href="/design/">Design System</a>
       </p>
     </footer>
+
+    <script>
+      const openBtn = document.querySelector('[data-open="menu"');
+      const closeBtn = document.querySelector('[data-close="menu"');
+      const menu = document.querySelector('[data-target="menu"]');
+
+      openBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'true');
+      });
+      closeBtn.addEventListener('click', () => {
+        menu.setAttribute('aria-expanded', 'false');
+      });
+    </script>
 
     <!-- Current page: /chapters/21-non-tao/ -->
   </body>

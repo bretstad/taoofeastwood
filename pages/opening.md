@@ -1,4 +1,7 @@
 ---
+layout: 'chapter'
+title: 'Opening'
+chapter: 0
 quote:
   author: 'Stephen Mitchell'
   text: |

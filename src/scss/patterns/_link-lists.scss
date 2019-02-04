@@ -1,0 +1,104 @@
+// TOC Link List
+// =======
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+.link-list-intro {
+  display: block;
+}
+
+.link-list-item {
+  @include font-family('open');
+  display: block;
+  font-size: size('xsmall');
+  padding: size('half-shim') size('shim') size('half-shim') size('gutter');
+  position: relative;
+
+  // make sure TOC menu lines up with title
+  .toc-archive & {
+    margin-left: negative('gutter');
+  }
+
+  &:visited {
+    color: color('text-light');
+  }
+
+  #{$focus} {
+    background-color: color('active');
+    color: color('action');
+
+    .toc-archive & {
+      background-color: transparent;
+    }
+  }
+}
+
+// Map nav locations for highlighting active page
+$nav-locations: (
+  'wu-wei',
+  'non-being',
+  'no-name',
+  'laissez-faire',
+  'compatible-opposites',
+  'profit-and-thieves',
+  'the-common-good',
+  'see-the-world-as-yourself',
+  'know-your-limitations',
+  'a-time-for-everything',
+  'approval-and-pride',
+  'the-straight-pat',
+  'the-way-it-is',
+  'to-laugh-or-not-to-laugh',
+  'simply-be-yourself',
+  "a-good-man's-job",
+  'the-uncarved-block',
+  'master-yourself',
+  'know-how-to-yield',
+  'failure-and-opportunity',
+  'non-tao',
+  'forgiveness',
+  'good-and-evil',
+  'not-knowing',
+  'all-things-change',
+  'nothing-left-undone',
+  'passing-judgement',
+  'the-soft-dissolves-the-hard',
+  'peace-and-violence'
+);
+
+// Highlight active page
+@each $location in $nav-locations {
+  [data-location='#{$location}'] {
+    [data-active='#{$location}'] {
+      a {
+        font-weight: bold;
+
+        @include before('-') {
+          @include position(null null -100% 0);
+          @include font-family('script');
+          font-size: 80px;
+          position: absolute;
+          transform: rotate(90deg);
+        }
+      }
+
+      a:link {
+        color: color('action-hover');
+      }
+
+      a:visited {
+        color: color('text-light');
+      }
+
+      #{$focus} {
+        background-color: color('active');
+        color: color('action-hover');
+      }
+    }
+  }
+}

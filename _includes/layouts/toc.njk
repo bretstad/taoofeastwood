@@ -7,11 +7,6 @@
   <section class="toc-archive">
     <h2 class="page-title">Table of Contents</h2>
     {% include 'site/ending.njk' %}
-
-    {{ utility.link_if('Introduction', 'pages/introduction/', 'link-list-item link-list-intro') }}
-    {{ nav.list(
-      items=collections.chapters,
-      class='link-list-item'
-    ) }}
+    {% include 'site/nav.njk' %}
   </section>
 {% endblock %}

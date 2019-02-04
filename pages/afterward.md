@@ -1,5 +1,7 @@
 ---
+layout: 'chapter'
 title: 'Afterward'
+chapter: 30
 quote:
   text: |
     The soft overcomes the hard. \
@@ -7,6 +9,7 @@ quote:
     Let your workings remain a mystery. \
     Just show people the results.
 ---
+
 
 Thankfully, as of this writing, Mr. Eastwood has not decided to retire.
 There will be more movies to enjoy and more wisdom to impart from each one.
