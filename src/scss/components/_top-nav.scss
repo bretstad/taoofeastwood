@@ -74,6 +74,12 @@
 .menu-btn {
   display: flex;
 
+  #{$focus} {
+    [data-icon] {
+      fill: color('action');
+    }
+  }
+
   .nav-header & {
     // better alignment with open to account for double scrolls
     margin-right: size('shim');
