@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'The Straight Path'
+title: '<span>The</span> Straight Path'
 chapter: 12
 quote:
   author: 'Josey Wales'

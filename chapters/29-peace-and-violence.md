@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Peace and Violence'
+title: 'Peace <span>and</span> Violence'
 chapter: 29
 quote:
   author: 'Walt Kowalski'

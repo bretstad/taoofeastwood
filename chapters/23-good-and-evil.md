@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Good and Evil'
+title: 'Good <span>and</span> Evil'
 chapter: 23
 quote:
   author: 'William Munny'

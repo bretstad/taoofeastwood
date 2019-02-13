@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'The Common Good'
+title: '<span>The</span> Common Good'
 chapter: 7
 quote:
   author: 'The Stranger'

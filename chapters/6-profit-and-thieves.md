@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Profit and Thieves'
+title: 'Profit <span>and</span> Thieves'
 chapter: 6
 quote:
   author: 'Inspector Harry Callahan'

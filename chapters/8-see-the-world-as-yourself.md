@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'See the World as Yourself'
+title: 'See <span>the</span> <em>World</em> <span>as</span> Yourself'
 chapter: 8
 quote:
   author: 'The Stranger'
