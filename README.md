@@ -1,4 +1,4 @@
-# Tao of Eastwood
+# The Tao of Eastwood
 
 by [Bret Morstad](http://www.bretstad.com)
 
