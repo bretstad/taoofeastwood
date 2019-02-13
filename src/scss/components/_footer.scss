@@ -2,20 +2,12 @@
 // ======
 
 [data-layout='footer'] {
+  border-top: 1px solid color('border-light');
   font-size: size('xsmall');
   padding-bottom: size('quarter-shim');
   padding-top: size('quarter-shim');
+}
 
-  @include before('') {
-    border-top: 1px solid color('border-light');
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-
-  p {
-    margin-bottom: 0;
-    padding-top: size('half-shim');
-  }
+.site-info {
+  margin-bottom: 0;
 }

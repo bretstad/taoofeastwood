@@ -47,37 +47,40 @@
         </nav>
       </div>
     </div>
-    <header data-layout="header">
-      {% if (chapter > 0) and (chapter < 30) %}
-        <p class="chapter-number">
-            Chapter {{ chapter }}
+
+    <div data-layout="content">
+      <header data-layout="header">
+        {% if (chapter > 0) and (chapter < 30) %}
+          <p class="chapter-number">
+              Chapter {{ chapter }}
+          </p>
+          {% include 'site/ending.njk' %}
+        {% endif %}
+        {% if title %}
+          <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
+        {% endif %}
+      </header>
+
+      {% block body %}
+        <main data-layout="main"
+          {{ utility.attr_if('class', templateClass) }}>
+
+          {% block main %}
+            {{ content | safe }}
+          {% endblock %}
+        </main>
+      {% endblock %}
+
+      <footer data-layout="footer">
+        <p class="site-info">
+          © {% getDate 'year' %}
+          <a href="mailto:{{ site.email }}">
+            {{ site.author }}
+          </a>
+          | <a href="/design/">Design System</a>
         </p>
-        {% include 'site/ending.njk' %}
-      {% endif %}
-      {% if title %}
-        <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
-      {% endif %}
-    </header>
-
-    {% block body %}
-      <main data-layout="main"
-        {{ utility.attr_if('class', templateClass) }}>
-
-        {% block main %}
-          {{ content | safe }}
-        {% endblock %}
-      </main>
-    {% endblock %}
-
-    <footer data-layout="footer">
-      <p>
-        © {% getDate 'year' %}
-        <a href="mailto:{{ site.email }}">
-          {{ site.author }}
-        </a>
-        | <a href="/design/">Design System</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
 
     <script type="text/javascript">
       const openBtn = document.querySelector('[data-open="menu"]');
