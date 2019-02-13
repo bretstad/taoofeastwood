@@ -9,8 +9,23 @@
 .chapter-title {
   @include font-family('script');
   font-size: size('xxlarge');
+  font-weight: normal;
+  line-height: 1;
   margin-bottom: size('spacer');
   text-align: center;
+
+  // de-emphasized words like and, a, the
+  span {
+    @include font-family('slab');
+    font-size: 75%;
+    text-transform: uppercase;
+  }
+
+  // emphasized words
+  em {
+    font-size: 130%;
+    font-style: normal;
+  }
 }
 
 .ending-mark {
