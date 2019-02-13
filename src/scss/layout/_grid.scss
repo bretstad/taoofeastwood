@@ -3,10 +3,17 @@
 
 [data-layout='grid'] {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  margin: 0 auto;
   min-height: 100vh;
-  padding: 0 size('double-gutter') size('half-shim');
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 size('half-shim');
+}
+
+[data-layout='content'] {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 [data-layout='header'] {
@@ -15,10 +22,12 @@
 
 [data-layout='header'],
 [data-layout='main'],
-[data-layout='footer'] {
+.site-info {
   max-width: size('page');
   margin-left: auto;
   margin-right: auto;
+  padding-left: size('double-gutter');
+  padding-right: size('double-gutter');
   width: 100%;
 }
 
