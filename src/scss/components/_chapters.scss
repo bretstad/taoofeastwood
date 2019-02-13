@@ -18,6 +18,7 @@
   span {
     @include font-family('slab');
     font-size: 75%;
+    margin-right: negative('shim');
     text-transform: uppercase;
   }
 

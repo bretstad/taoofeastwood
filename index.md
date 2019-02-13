@@ -1,6 +1,6 @@
 ---
 layout: 'toc'
-title: 'Tao of EastWood'
+title: '<span>The</span> Tao <span>of</span> <br><em>Eastwood</em>'
 ---
 
 by Bret Morstad

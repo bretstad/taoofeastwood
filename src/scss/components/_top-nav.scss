@@ -13,15 +13,14 @@
 }
 
 .site-title {
-  @include font-family('script');
+  @include font-family('slab');
   font-size: size('xsmall');
   font-weight: normal;
 
   em {
-    @include font-family('slab');
-    font-style: normal;
+    @include font-family('script');
     // add some space to account for italic style "f"
-    padding-left: size('quarter-shim');
+    font-style: normal;
   }
 }
 
