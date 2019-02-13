@@ -109,6 +109,7 @@ $component-sizes: (
     ),
   'ending-mark': 4em,
   'nav-panel': 15em,
+  'scooch': 0.05rem,
 );
 
 @include add-sizes($component-sizes);

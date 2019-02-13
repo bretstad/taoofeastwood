@@ -19,8 +19,14 @@
 
   em {
     @include font-family('script');
-    // add some space to account for italic style "f"
     font-style: normal;
+    // reduces the space between words with tags
+    margin-left: negative('scooch');
+
+    // This is super picky, but the 'e' + 'T' had too much room
+    &:first-of-type {
+      margin-left: negative('quarter-shim');
+    }
   }
 }
 
