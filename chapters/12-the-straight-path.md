@@ -12,18 +12,18 @@ quote:
 verse:
   number: 53
   text: |
-    The Great Way is easy, /
-    yet people prefer side paths. /
-    Be aware when things are out of balance. /
+    The Great Way is easy, \
+    yet people prefer side paths. \
+    Be aware when things are out of balance. \
     Stay centered within the Tao.
 
-    When rich speculators prosper /
-    while farmers lose their land; /
-    When government officials spend money /
-    on weapons instead of cures; /
-    When the upper class is extravagant and irresponsible /
-    while the poor have nowhere to turn- /
-    all this is robbery and chaos. /
+    When rich speculators prosper \
+    while farmers lose their land; \
+    When government officials spend money \
+    on weapons instead of cures; \
+    When the upper class is extravagant and irresponsible \
+    while the poor have nowhere to turn- \
+    all this is robbery and chaos. \
     It is not in keeping with the Tao.
 ---
 
