@@ -43,7 +43,7 @@ they can peacefully co-exist.
 
 Josey doesn’t send an envoy to represent the interests of his friends;
 he rides right up to Ten Bears and makes a deal himself.
-There is no mistaking is offer and he cannot hide from the outcome.
+There is no mistaking his offer and he cannot hide from the outcome.
 It is genuine.
 
 Whether it’s a “fair word or a fair fight”, Josey takes the straight path.

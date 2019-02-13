@@ -10,12 +10,10 @@ quote:
 verse:
   number: 48
   text: |
-    In the pursuit of knowledge, \
-    every day something is added. \
-    In practice of the Tao, \
-    every day something is dropped. \
-    Less and less do you need to force things, \
-    until finally you arrive at non-action. \
+    In the pursuit of learning, every day something is acquired. \
+    In the pursuit of Tao, every day something is dropped. \
+    Less and less is done \
+    until non-action is achieved. \
     When nothing is done, \
     nothing is left undone.
 ---

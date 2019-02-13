@@ -9,11 +9,13 @@ quote:
     Nothing like a good piece of hickory.
 verse:
   number: 28
-  text: |-
-    The world is formed from the void, \
-    like utensils from a block of wood. \
-    The Master knows the utensils, yet keeps to the block: \
-    thus she can use all things.
+  text: |
+    If you embrace the world with compassion, \
+    then your virtue will return you to the uncarved block. \
+    The block of wood is carved into utensils \
+    by carving void into the wood. \
+    The Master uses the utensils, yet prefers to keep to the block \
+    because of its limitless possibilities.
 ---
 
 Central to all teachings in the Taoist philosophy is the concept of

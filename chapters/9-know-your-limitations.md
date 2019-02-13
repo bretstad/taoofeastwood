@@ -11,16 +11,13 @@ quote:
 verse:
   number: 24
   text: |
-    He who stands on tiptoe doesn’t stand firm. \
-    He who rushes ahead  \
-    doesn’t go far. \
-    He who tries to shine \
-    dims his own light. \
-    He who defines himself \
-    can’t know who he really is. \
-    He who has power over others can’t empower himself. \
-    He who clings to his work \
-    will create nothing that endures.
+    Those who stand on tip toes do not stand firmly. \
+    Those who rush ahead don’t get very far. \
+    Those who try to outshine others dim their own light. \
+    Those who call themselves righteous \
+    can’t know how wrong they are. \
+    Those who boast of their accomplishments \
+    diminish the things they have done.
 ---
 
 If I had to define Inspector Callahan in one word,
