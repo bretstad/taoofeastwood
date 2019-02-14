@@ -10,14 +10,12 @@ quote:
 verse:
   number: 9
   text: |
-    Fill your bowl to the brim \
-    and it will spill. \
-    Keep sharpening your knife \
-    and it will blunt. \
-    Chase after money and security \
-    and your heart will never unclench. \
-    Care about people’s approval \
-    and you will be their prisoner.
+    It is easier to carry an empty cup \
+    than one that is filled to the brim. \
+    The sharper the knife the easier it is to dull. \
+    The more wealth you possess \
+    the harder it is to protect. \
+    Pride brings its own trouble.
 ---
 
 Finally finding a bit a respite from their perilous journey,

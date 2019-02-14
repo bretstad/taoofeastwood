@@ -12,10 +12,10 @@ quote:
 verse:
   number: 33
   text: |
-    Knowing others is intelligence; \
-    Knowing yourself is true wisdom. \
-    Mastering others is strength; \
-    Mastering yourself is true power.
+    Those who know others are intelligent; \
+    Those who know themselves are truly wise. \
+    Those who master others are strong; \
+    Those who master themselves have true power.
 ---
 
 Gunny Highway clearly isn’t the most refined character.

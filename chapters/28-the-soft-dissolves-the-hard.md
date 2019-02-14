@@ -10,15 +10,13 @@ quote:
 verse:
   number: 78
   text: |
-    Nothing in the world \
-    is as soft and yielding as water. \
-    Yet for dissolving the hard and inflexible, \
-    nothing can surpass it.
+    Water is the softest and most yielding substance, \
+    Yet nothing is better than water for overcoming \
+    the hard and the rigid because nothing can compete with it.
 
-    The soft overcomes the hard; \
-    the gentle overcomes the rigid. \
-    Everyone knows this is true, \
-    but few can put it into practice.
+    Everyone knows that the soft and yielding \
+    overcomes the rigid and hard, \
+    but few can put this knowledge into practice.
 ---
 
 Prophetically, Eastwood’s Frankie Dunn barks this one at

@@ -10,15 +10,16 @@ quote:
 verse:
   number: 5
   text: |
-    The Tao doesn’t take sides; \
-    It gives birth to both good and evil. \
-    The Master doesn’t take sides; \
-    she welcomes both saints and sinners.
+    Tao is neutral: \
+    it doesn’t worry about good or evil. \
+    The Masters are neutral: \
+    they treat everyone the same.
 
-    The Tao is like a bellows; \
-    it is empty yet infinitely capable. \
-    The more you use it, the more it produces; \
-    the more you talk of it, the less you understand.
+    Lao Tzu said Tao is like a bellows: \
+    It’s empty, but it could help set the world on fire. \
+    If you keep using Tao, it works better. \
+    If you keep talking about it, it won’t make any sense. \
+    Be cool.
 ---
 
 About to get shot point blank by Munny, the wounded,

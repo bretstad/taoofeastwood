@@ -10,14 +10,13 @@ quote:
 verse:
   number: 71
   text: |
-    Not knowing is true knowledge. \
-    Presuming to know is a disease. \
-    First realize that you are sick; \
-    Then you can move towards health.
+    Knowing you don’t know is wholeness. \
+    Thinking you know is a disease. \
+    Only by recognizing that you have an illness \
+    can you move to seek a cure.
 
-    The Master’s her own physician. \
-    She has healed herself of knowing. \
-    Thus she is truly whole.
+    The Master is whole because she sees her illnesses and treats them, \
+    and thus is able to remain whole.
 ---
 
 At the very end of the film,
@@ -38,7 +37,7 @@ Or maybe what we do know is such an infinitesimal slice of the whole,
 we have to admit we really know nothing.
 
 A Perfect World is one of the first films where Eastwood plays against
-the outwardly imposed image of shoot ‘em cop.
+the outwardly imposed image of shoot ‘em up cop.
 Garnett is a patient, even compassionate man.
 He is trying hard to throttle his hard-liner,
 trigger happy colleagues who presume they understand the situation.
@@ -47,9 +46,9 @@ a small time hoodlum with a troubled past, must be killed.
 
 Butch (played brilliantly by Kevin Costner) has kidnapped a young boy,
 who he befriends despite their desperate situation.
-Garnett, is empathetic to the plight of this societal misfit.
-Understanding that the failures of the system we live in are as
-much to blame as Haynes reckless choices.
+Garnett is empathetic to the plight of this societal misfit.
+Understanding that the failures of the system we live
+in are as much to blame as Haynes reckless choices.
 
 If we could all just step back and take a long look at what is going on,
 with less arrogant belief we already know, maybe we can find a better Way.

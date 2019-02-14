@@ -12,18 +12,18 @@ quote:
 verse:
   number: 53
   text: |
-    The Great Way is easy, /
-    yet people prefer side paths. /
-    Be aware when things are out of balance. /
+    The Great Way is easy, \
+    yet people prefer side paths. \
+    Be aware when things are out of balance. \
     Stay centered within the Tao.
 
-    When rich speculators prosper /
-    while farmers lose their land; /
-    When government officials spend money /
-    on weapons instead of cures; /
-    When the upper class is extravagant and irresponsible /
-    while the poor have nowhere to turn- /
-    all this is robbery and chaos. /
+    When rich speculators prosper \
+    while farmers lose their land; \
+    When government officials spend money \
+    on weapons instead of cures; \
+    When the upper class is extravagant and irresponsible \
+    while the poor have nowhere to turn- \
+    all this is robbery and chaos. \
     It is not in keeping with the Tao.
 ---
 
@@ -43,7 +43,7 @@ they can peacefully co-exist.
 
 Josey doesn’t send an envoy to represent the interests of his friends;
 he rides right up to Ten Bears and makes a deal himself.
-There is no mistaking is offer and he cannot hide from the outcome.
+There is no mistaking his offer and he cannot hide from the outcome.
 It is genuine.
 
 Whether it’s a “fair word or a fair fight”, Josey takes the straight path.

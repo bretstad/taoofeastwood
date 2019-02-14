@@ -9,21 +9,18 @@ quote:
     The thing that haunts a guy is the stuff he wasn’t ordered to do.
 verse:
   number: 31
-  text: |-
-    Weapons are the tools of fear; \
-    a decent man will avoid them \
-    except in the direst of necessity \
-    and, if compelled, will use them \
-    only with the utmost restraint. \
-    Peace is his highest value. \
-    If the peace has been shattered, \
-    how can he be content: \
-    his enemies are not demons, \
-    but human beings like himself. \
-    He doesn’t wish them personal harm. \
-    Nor does he rejoice in victory. \
-    How could he rejoice in victory \
-    and delight in the slaughter of men?
+  text: |
+    The Master, knowing all things came from the Tao, \
+    recognizes what he has in common with his enemies \
+    and always tries to avoid conflict.
+
+    But when there is no other choice, \
+    he uses force reluctantly. \
+    He does so with great restraint, \
+    and never celebrates a victory; \
+    to do so would be to rejoice in killing. \
+    A person who would rejoice in killing \
+    has completely lost touch with Tao.
 ---
 
 Lao Tzu is less poetic in this verse.

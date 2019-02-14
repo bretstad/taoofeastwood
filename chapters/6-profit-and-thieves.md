@@ -5,13 +5,14 @@ chapter: 6
 quote:
   author: 'Inspector Harry Callahan'
   credential: 'Dirty Harry'
-  text: |-
+  text: |
     I know what you’re thinking punk.
-    You’re thinking “did he fire six shots or only five?”
+    You’re thinking “did he fire six shots or only five?”.
     Now to tell you the truth, I forgot myself in all this excitement.
     But being this is a .44 Magnum,
     the most powerful handgun in the world and will blow your head clean off,
-    you’ve got to ask yourself a question, “do I feel lucky?” Well do ya, punk?
+    you’ve got to ask yourself a question, “do I feel lucky?”.
+    Well, do ya, punk?
 verse:
   number: 19
   text: |

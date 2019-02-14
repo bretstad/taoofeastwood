@@ -10,14 +10,14 @@ quote:
 verse:
   number: 41
   text: |
-    When a superior man hears of the Tao, \
-    he immediately begins to embrace it. \
-    When an average man hears of the Tao, \
-    he half believes it, half doubts it. \
-    When a foolish man hears of the Tao, \
-    he laughs out loud. \
-    If he didn’t laugh, \
-    it wouldn’t be the Tao.
+    When a superior person hears of the Tao, \
+    she diligently puts it into practice. \
+    When an average person hears of the Tao, \
+    he believes half of it and doubts the other half. \
+    When a foolish person hears of the Tao, \
+    he laughs out load at the very idea. \
+    If he didn’t laugh, it wouldn’t be the Tao.
+
 ---
 
 In a conversation with a fellow inmate, Frank Morris is asked,
