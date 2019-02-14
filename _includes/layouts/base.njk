@@ -59,6 +59,11 @@
         {% if title %}
           <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
         {% endif %}
+        {% if layout == 'toc' %}
+          <p class="book-author">
+            by {{ site.author }}
+          </p>
+        {% endif %}
       </header>
 
       {% block body %}

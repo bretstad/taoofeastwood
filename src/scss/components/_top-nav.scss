@@ -13,20 +13,15 @@
 }
 
 .site-title {
-  @include font-family('slab');
+  @include font-family('script');
   font-size: size('xsmall');
+  font-style: normal;
   font-weight: normal;
 
   em {
-    @include font-family('script');
-    font-style: normal;
-    // reduces the space between words with tags
-    margin-left: negative('scooch');
-
-    // This is super picky, but the 'e' + 'T' had too much room
-    &:first-of-type {
-      margin-left: negative('quarter-shim');
-    }
+    @include font-family('slab');
+    // adds space because fancy "f" and Eastwood
+    margin-left: size('scooch');
   }
 }
 

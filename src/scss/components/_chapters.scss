@@ -14,6 +14,11 @@
   margin-bottom: size('spacer');
   text-align: center;
 
+  [data-location='the-tao-of-eastwood'] & {
+    line-height: 0.8;
+    margin-bottom: size('gutter');
+  }
+
   // de-emphasized words like and, a, the
   span {
     @include font-family('slab');
@@ -26,7 +31,17 @@
   em {
     font-size: 130%;
     font-style: normal;
+
+    [data-location='the-tao-of-eastwood'] & {
+      @include font-family('slab');
+    }
   }
+}
+
+// only on TOC page
+.book-author {
+  margin-bottom: size('double-gutter');
+  text-align: center;
 }
 
 .ending-mark {
