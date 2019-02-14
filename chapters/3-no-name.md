@@ -11,12 +11,12 @@ quote:
 verse:
   number: 1
   text: |
-    The Tao that can be told \
+    The Tao that can be told
     is not the eternal Tao. \
     The Name that can be Named \
     is not the eternal Name. \
-    The unnamable is the eternally real. \
-    Naming is the origin of all particular things.
+    The nameless is the beginning of Heaven and Earth. \
+    The named is the mother of the ten thousand things.
 ---
 
 A Man With No Name,

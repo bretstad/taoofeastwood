@@ -10,18 +10,14 @@ quote:
 verse:
   number: 29
   text: |
-    There is a time for being ahead,  \
-    a time for being behind. \
-    A time for being in motion, \
-    a time for being at rest. \
-    A time for being vigorous, \
-    a time for being exhausted. \
-    A time for being safe, \
-    a time for being in danger. \
-    The Master sees things as they are, \
-    without trying to control them. \
-    She lets them go their own way, \
-    and resides at the center of the circle.
+    The universe is sacred. \
+    You cannot improve it. \
+    If you try to change it, you will ruin it. \
+    If you try to hold it, you will lose it. \
+    So sometimes things are ahead and sometimes they are behind; \
+    Sometimes breathing is hard, sometimes it comes easy. \
+    Sometimes there is strength and sometimes weakness. \
+    Sometimes one is up and sometimes down.
 ---
 
 You won’t win every race. You don’t always need to be doing something.

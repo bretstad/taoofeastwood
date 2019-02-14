@@ -10,10 +10,10 @@ quote:
 verse:
   number: 38
   text: |
-    The Master does nothing, \
-    Yet he leaves nothing undone. \
-    The ordinary man is always doing things, \
-    Yet many more are left to be done.
+    A truly good man does nothing, \
+    Yet leaves nothing undone. \
+    A foolish man is always doing, \
+    Yet much remains to be done.
 ---
 
 If there is one physical quality that defines Clint Eastwood,
@@ -29,9 +29,10 @@ It is also often expressed as Wei Wu Wei, “doing not doing.”
 Wu Wei is the natural, effortless flow of action.
 It is your spontaneous,
 unthinking reaction to your surroundings and the situation at hand.
-So, it’s not to say that the “Master does nothing,” it’s just that
-what he does do is so pure to his nature,
+So, it’s not to say that the “Good man does nothing,”
+it’s just that what he does do is so pure to his nature,
 it is as if it is being done through him and not by him.
+
 
 One of Eastwood’s early acting influences taught the idea that
 you don’t need to force a scene by “doing something.”

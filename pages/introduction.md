@@ -4,8 +4,8 @@ title: 'Introduction'
 chapter: -1
 ---
 
-The Tao Te Ching is amongst the highest level achievements ever
-in recorded human thought.
+The Tao Te Ching is amongst the finest achievements 
+ever in recorded human thought.
 The fact that I even know what it is,
 two thousand five hundred years later,
 is a testament to the truth of that statement.
@@ -36,19 +36,18 @@ This is not a complex mystery. It is simple.
 Simple and yet it seems impossible.
 That is why the lessons of the Tao Te Ching persist.
 
-I have read this book countless times over the last twenty years.
+I have read this book countless times over the last twenty five years.
 It is a work of true depth.
 I encourage everyone to find a copy and contemplate it for themselves.
-Like most great mystical wisdom, it cannot be intellectualized but,
-rather, only experienced.
+It is best when internalized directly.
 
 There are many academic and historical writings tracing the lineage
 of the Tao Te Ching and its author.
 As a believer that the simplest explanation is usually the right one,
 however, I prefer the legend of Lao Tzu as the one true author.
 As it’s told, the very wise Lao Tzu was leaving China’s borders for good,
-at which point an outpost guard asked if he would
-share his wisdom of the Universe, and how to live in it, before he departed.
+at which point an outpost guard asks him to share his wisdom of the Universe,
+and how to live in it, before he departs.
 In five thousand beautifully simple words,
 he wrote the Book of the Virtue of the Way (or Book of the Way)
 and vanished forever.
@@ -77,13 +76,13 @@ every single one.
 Even in the box office bombs and the critical flops,
 I was drawn to something about this guy’s movies.
 
-I was often ridiculed for my unwavering appreciation.
+My unwavering appreciation always raised a few eyebrows.
 However, there was so much consistency in his movies.
 One after the other, over such a long and storied career,
 whether it was his simple style or the basic storytelling or the self-composed,
 cool headed nature of his characters, I just flat “got it.”
 
-Then, finally, in 1993, came Unforgiven.
+Then, in 1993, came Unforgiven.
 Following that, a landslide of awards from the
 highest levels of the film industry;
 Oscars, Golden Globes, Directors Guild of America,
@@ -114,16 +113,22 @@ was the first book to take a familiar,
 contemporary character to help reveal the mind of Lao Tzu.
 
 For the appropriate selection of quotes from the Tao Te Ching,
-I used Stephen Mitchell’s English language version
-(Harper & Row, copyright 1988) as my main source.
+I used a few different sources.
+First is Stephen Mitchell’s English language version
+(Harper & Row, copyright 1988).
 I used Mr. Mitchell’s interpretation for two reasons;
-first, his version is the first copy of the Tao Te Ching I ever owned.
+one, his version is the first copy of the Tao Te Ching I ever owned.
 I have read it countless times and am more familiar with his words
 than any other of the many translations that exist.
-Secondly,
-his plain language notations on each verse found in the back of the book,
-helped me tremendously to decipher the often cryptic poetry of Lao-Tzu.
-Insightful and humorous, Mitchell makes it as simple as it is.
+Two, his plain language notations on each verse found in the back of the book,
+helped me tremendously to decipher the often cryptic poetry of Lao Tzu.
+Insightful and humorous,
+Mitchell makes it as simple as it is.
+I also used selections from the translations of Gia-Fu Feng,
+Jane English and Toinette Lippe (Vintage Books, copyright 1972),
+J.H. McDonald (public domain, 1996),
+and Ron Hogan’s _Getting Right with The Tao:
+A Contemporary Spin on the Tao Te Ching_ (Channel V Books, copyright 2010).
 
 Concerning the movie quotes from Eastwood, many of you will ask,
 “Why did I choose the ones I did and leave others out?”
@@ -154,7 +159,6 @@ When Michelangelo crafted the statue of David,
 legend says he described it like this,
 “I saw the angel in the marble and carved until I set him free.”
 That is how I have always thought of this project.
-It was just out there,
-çall someone needed to do is write it down.
+It was just out there, all someone needed to do is write it down.
 
 I didn’t create it, I discovered it.
