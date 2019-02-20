@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Approval and Pride'
+title: 'Approval <span>and</span> Pride'
 chapter: 11
 quote:
   author: 'Josey Wales'

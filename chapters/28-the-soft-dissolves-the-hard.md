@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'The Soft Dissolves the Hard'
+title: '<span>The</span> Soft <em>Dissolves</em> <span>the</span> Hard'
 chapter: 28
 quote:
   author: 'Frankie Dunn'

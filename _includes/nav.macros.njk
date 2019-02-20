@@ -14,12 +14,12 @@
       {% for item in items %}
         {% set content %}
           {% if (item.data.chapter > 0) and (item.data.chapter < 30) %}
-            {{ item.data.chapter }}: {{ item.data.title }}
+            {{ item.data.chapter }}: {{ item.data.title | striptags(true) }}
           {% else %}
-            {{ item.data.title }}
+            {{ item.data.title | striptags(true) }}
           {% endif %}
         {% endset %}
-        <li data-active="{{ (item.data.title or item.url) | slug }}">
+        <li data-active="{{ (item.data.title | striptags(true) or item.url) | slug }}">
           {{ utility.link_if(content, item.url, 'link-list-item') }}
         </li>
       {% endfor %}
@@ -39,7 +39,7 @@
       {% if (chapter > 0) and (chapter < 30) %}
         <span class="paging-chapter-number">Chapter {{ chapter }}</span>
       {% endif %}
-      <span class="paging-chapter-title">{{ title }}</span>
+      <span class="paging-chapter-title">{{ title | striptags(true) }}</span>
     </a>
   {%- endif -%}
 {% endmacro %}

@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Know How to Yield'
+title: 'Know How <span>to</span> Yield'
 chapter: 19
 quote:
   author: 'Inspector “Dirty” Harry Callahan'

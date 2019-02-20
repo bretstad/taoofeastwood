@@ -2,10 +2,16 @@
 {%- import 'nav.macros.njk' as nav -%}
 
 {% block main %}
+  <div class="opening-graphic">
     {% include "icons/yin-yang.svg" %}
-    <p class="author">
-      by <strong>{{ site.author }}</strong>
-    </p>
-    {{ content | safe }}
+  </div>
 
+  {{ content | safe }}
+
+    <nav class="paging">
+      <a href="/toc" class="paging-link next">
+        {% include "icons/paging.svg" %}
+        <span class="paging-chapter-title">Please Begin</span>
+      </a>
+    </nav>
 {% endblock %}

@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Failure and Opportunity'
+title: 'Failure <span>and</span> Opportunity'
 chapter: 20
 quote:
   author: 'John Wilson'

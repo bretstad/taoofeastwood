@@ -9,8 +9,45 @@
 .chapter-title {
   @include font-family('script');
   font-size: size('xxlarge');
+  font-weight: normal;
+  line-height: 1;
   margin-bottom: size('spacer');
   text-align: center;
+
+  [data-location='the-tao-of-eastwood'] & {
+    line-height: 0.8;
+    margin-bottom: size('gutter');
+  }
+
+  // de-emphasized words like and, a, the
+  span {
+    @include font-family('slab');
+    font-size: 75%;
+    margin-right: negative('shim');
+    text-transform: uppercase;
+  }
+
+  // emphasized words
+  em {
+    font-size: 130%;
+    font-style: normal;
+
+    [data-location='landing'] &,
+    [data-location='the-tao-of-eastwood'] & {
+      @include font-family('slab');
+    }
+  }
+}
+
+// only on TOC and landing page
+.book-author {
+  font-size: size('xsmall');
+  margin-bottom: size('double-gutter');
+  text-align: center;
+
+  strong {
+    text-transform: uppercase;
+  }
 }
 
 .ending-mark {
@@ -20,4 +57,13 @@
   line-height: 1;
   // because of the typeface, different charcters have different positions
   transform: translate(negative('half-shim'), -70%);
+}
+
+.opening-graphic {
+  margin-bottom: size('double-gutter');
+  text-align: center;
+
+  svg {
+    @include square('opening-graphic');
+  }
 }

@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'To Laugh or Not To Laugh'
+title: '<span>To</span> <em>Laugh</em> <span>or</span> Not <span>To</span> <em>Laugh</em>'
 chapter: 14
 quote:
   author: 'Frank Morris'

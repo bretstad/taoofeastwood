@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'The Uncarved Block'
+title: '<span>The</span> Uncarved Block'
 chapter: 17
 quote:
   author: 'The Preacher '

@@ -38,7 +38,7 @@ $text-sizes: (
     ),
   'xlarge': calc(%s + %s)
     (
-      '%s': '#large' 0.75vw,
+      '%s': '#large' 2.5vw,
     ),
   'xxlarge': calc(%s + %s)
     (
@@ -108,7 +108,9 @@ $component-sizes: (
       'convert-units': 'rem',
     ),
   'ending-mark': 4em,
+  'opening-graphic': 8em,
   'nav-panel': 15em,
+  'scooch': 0.1rem,
 );
 
 @include add-sizes($component-sizes);
