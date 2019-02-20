@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'Know Your Limitations'
+title: 'Know <span>Your</span> <em>Limitations</em>'
 chapter: 9
 quote:
   author: 'Inspector “Dirty” Harry Callahan'

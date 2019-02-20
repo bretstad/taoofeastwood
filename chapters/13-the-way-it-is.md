@@ -1,6 +1,6 @@
 ---
 layout: 'chapter'
-title: 'The Way It Is'
+title: '<span>The</span> Way <span>It</span> <span>Is</span>'
 chapter: 13
 quote:
   author: 'Josey Wales'

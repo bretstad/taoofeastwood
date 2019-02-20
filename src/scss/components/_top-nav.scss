@@ -15,13 +15,13 @@
 .site-title {
   @include font-family('script');
   font-size: size('xsmall');
+  font-style: normal;
   font-weight: normal;
 
   em {
     @include font-family('slab');
-    font-style: normal;
-    // add some space to account for italic style "f"
-    padding-left: size('quarter-shim');
+    // adds space because fancy "f" and Eastwood
+    margin-left: size('scooch');
   }
 }
 
