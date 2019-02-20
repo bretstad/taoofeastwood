@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+{%- import 'nav.macros.njk' as nav -%}
+
+{% block main %}
+    {% include "icons/yin-yang.svg" %}
+    <p class="author">
+      by <strong>{{ site.author }}</strong>
+    </p>
+    {{ content | safe }}
+
+{% endblock %}
