@@ -59,7 +59,7 @@
         {% if title %}
           <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
         {% endif %}
-        {% if layout == 'toc' or layout == 'landing' %}
+        {% if chapter == -2 %}
           <p class="book-author">
             by <strong>{{ site.author }}</strong>
           </p>
