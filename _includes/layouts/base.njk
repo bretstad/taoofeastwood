@@ -59,6 +59,14 @@
         {% if title %}
           <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
         {% endif %}
+
+        {# needs to be flexible #}
+        {% if (chapter == -2) %}
+           <div class="opening-graphic">
+            {% include "icons/yin-yang.svg" %}
+          </div>
+        {% endif %}
+
         {% if chapter == -2 %}
           <p class="book-author">
             by <strong>{{ site.author }}</strong>
