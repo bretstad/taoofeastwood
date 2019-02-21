@@ -68,8 +68,6 @@ module.exports = eleventyConfig => {
   // layouts
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');
   eleventyConfig.addLayoutAlias('chapter', 'layouts/chapter.njk');
-  eleventyConfig.addLayoutAlias('toc', 'layouts/toc.njk');
-  eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
 
   // collections
   eleventyConfig.addCollection('chapters', collection => {
