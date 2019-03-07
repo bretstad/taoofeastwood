@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Know <span>Your</span> <em>Limitations</em>'
 chapter: 9
 quote:

@@ -15,11 +15,11 @@
 .site-title {
   @include font-family('script');
   font-size: size('xsmall');
-  font-style: normal;
   font-weight: normal;
 
   em {
     @include font-family('slab');
+    font-style: normal;
     // adds space because fancy "f" and Eastwood
     margin-left: size('scooch');
   }

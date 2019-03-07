@@ -11,7 +11,7 @@
 
 [data-layout='content'] {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: auto 1fr auto auto;
   height: 100vh;
   overflow-y: auto;
 }
@@ -22,6 +22,7 @@
 
 [data-layout='header'],
 [data-layout='main'],
+[data-layout='paging'],
 .site-info {
   max-width: size('page');
   margin-left: auto;

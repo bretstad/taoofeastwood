@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Good <span>and</span> Evil'
 chapter: 23
 quote:

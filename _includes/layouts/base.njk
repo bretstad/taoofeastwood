@@ -59,9 +59,13 @@
         {% if title %}
           <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
         {% endif %}
-        {% if layout == 'toc' %}
+
+        {% if title_page %}
+          <div class="title-icon">
+            {% include title_page %}
+          </div>
           <p class="book-author">
-            by {{ site.author }}
+            by <strong>{{ site.author }}</strong>
           </p>
         {% endif %}
       </header>
@@ -75,6 +79,8 @@
           {% endblock %}
         </main>
       {% endblock %}
+
+      {% block pagenav %}{% endblock %}
 
       <footer data-layout="footer">
         <p class="site-info">

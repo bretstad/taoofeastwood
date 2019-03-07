@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>The</span> Soft <em>Dissolves</em> <span>the</span> Hard'
 chapter: 28
 quote:

@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Nothing Left Undone'
 chapter: 26
 quote:

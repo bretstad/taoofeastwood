@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Compatible Opposites'
 chapter: 5
 quote:

@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'No Name'
 chapter: 3
 quote:

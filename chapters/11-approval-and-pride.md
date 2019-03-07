@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Approval <span>and</span> Pride'
 chapter: 11
 quote:

@@ -32,11 +32,14 @@
 
   {{ content | safe }}
 
-  {% include 'site/ending.njk' %}
+  {% if not title_page %}
+    {% include 'site/ending.njk' %}
+  {% endif %}
+{% endblock %}
 
+{% block pagenav %}
   {{ nav.prev_next(
     all_chapters=collections.chapters,
     chapter=chapter
   ) }}
-
 {% endblock %}

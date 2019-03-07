@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Know How <span>to</span> Yield'
 chapter: 19
 quote:

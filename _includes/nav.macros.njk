@@ -57,14 +57,22 @@
   {% set next = all_chapters | getChapter(chapter + 1) | first %}
   {% set prev = all_chapters | getChapter(chapter - 1) | first %}
 
-  <nav class="paging">
+  <nav data-layout="paging">
     {% if prev %}
-      {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+      {% if (prev.data.chapter > -2) %}
+        {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+      {% elif (prev.data.chapter == -2 ) %}
+        {{ paging_link_if(-1, 'Title Page', prev.url, 'previous paging-link') }}
+      {% endif %}
     {% else %}
-      {{ paging_link_if(-2, 'Title Page', '/', 'previous paging-link') }}
+      <span class="spacer"></span>
     {% endif %}
-    {% if next %}
+
+    {% if next and (next.data.chapter > -1) %}
       {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
+    {% endif %}
+    {% if next and (next.data.chapter == -1 ) %}
+      {{ paging_link_if(-1, 'Please Begin', next.url, 'next paging-link') }}
     {% endif %}
   </nav>
 {% endmacro %}

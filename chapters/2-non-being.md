@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Non-being'
 chapter: 2
 quote:

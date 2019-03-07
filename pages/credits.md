@@ -1,10 +1,8 @@
 ---
-layout: 'chapter'
 title: 'Credits'
 chapter: 31
 ---
-
-Title: A Fistful of Dollars \
+title: A Fistful of Dollars \
 Year: 1964 \
 Director: Sergio Leone \
 Screenplay/Story: Adriano Bolzoni, Victor Andres Catena, Sergio Leone, Jaime Comas Gil \

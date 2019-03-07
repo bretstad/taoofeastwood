@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>The</span> Straight Path'
 chapter: 12
 quote:
