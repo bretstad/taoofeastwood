@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Master Yourself'
 chapter: 18
 quote:

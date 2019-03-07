@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>The</span> Way <span>It</span> <span>Is</span>'
 chapter: 13
 quote:

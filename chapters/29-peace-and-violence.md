@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Peace <span>and</span> Violence'
 chapter: 29
 quote:

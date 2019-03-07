@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'non-Tao'
 chapter: 21
 quote:

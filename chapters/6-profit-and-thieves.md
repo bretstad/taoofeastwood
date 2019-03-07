@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Profit <span>and</span> Thieves'
 chapter: 6
 quote:

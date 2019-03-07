@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Forgiveness'
 chapter: 22
 quote:

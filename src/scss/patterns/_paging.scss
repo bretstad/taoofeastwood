@@ -2,7 +2,7 @@
 // ======
 
 // outer container of all paging elements
-.paging {
+[data-layout='paging'] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +14,7 @@
   @include font-family('slab');
   column-gap: size('shim');
   display: grid;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   font-size: size('small');
   margin-bottom: size('shim');
 }

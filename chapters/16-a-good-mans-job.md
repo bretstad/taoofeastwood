@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>A</span> Good Man’s Job'
 chapter: 16
 quote:

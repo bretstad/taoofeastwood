@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>The</span> Common Good'
 chapter: 7
 quote:

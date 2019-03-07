@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Laissez-faire'
 chapter: 4
 quote:

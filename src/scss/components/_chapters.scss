@@ -59,11 +59,11 @@
   transform: translate(negative('half-shim'), -70%);
 }
 
-.opening-graphic {
+.title-icon {
   margin-bottom: size('double-gutter');
   text-align: center;
 
   svg {
-    @include square('opening-graphic');
+    @include square('title-icon');
   }
 }

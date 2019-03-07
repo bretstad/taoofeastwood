@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'All Things Change'
 chapter: 25
 quote:

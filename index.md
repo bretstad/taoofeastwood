@@ -1,10 +1,6 @@
 ---
-layout: 'chapter'
-title: 'The Tao of <em>Eastwood</em>'
+layout: chapter
+title: The Tao of <em>Eastwood</em>
 chapter: -2
-icon:
-  name: 'yin-yang'
-  path: 'icons/'
-  src: 'icons/yin-yang.svg'
-  type: '.svg'
+title_page: icons/yin-yang.svg
 ---

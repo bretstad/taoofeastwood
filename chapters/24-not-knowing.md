@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Not Knowing'
 chapter: 24
 quote:

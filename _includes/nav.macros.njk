@@ -57,13 +57,17 @@
   {% set next = all_chapters | getChapter(chapter + 1) | first %}
   {% set prev = all_chapters | getChapter(chapter - 1) | first %}
 
-  <nav class="paging">
-    {% if prev and (prev.data.chapter > -2) %}
-      {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+  <nav data-layout="paging">
+    {% if prev %}
+      {% if (prev.data.chapter > -2) %}
+        {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+      {% elif (prev.data.chapter == -2 ) %}
+        {{ paging_link_if(-1, 'Title Page', prev.url, 'previous paging-link') }}
+      {% endif %}
+    {% else %}
+      <span class="spacer"></span>
     {% endif %}
-    {% if prev and (prev.data.chapter == -2 ) %}
-      {{ paging_link_if(-1, 'Title Page', prev.url, 'previous paging-link') }}
-    {% endif %}
+
     {% if next and (next.data.chapter > -1) %}
       {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
     {% endif %}

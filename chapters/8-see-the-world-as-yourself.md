@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'See <span>the</span> <em>World</em> <span>as</span> Yourself'
 chapter: 8
 quote:

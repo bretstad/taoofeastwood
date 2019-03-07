@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Wu Wei'
 chapter: 1
 quote:

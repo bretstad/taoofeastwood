@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>To</span> <em>Laugh</em> <span>or</span> Not <span>To</span> <em>Laugh</em>'
 chapter: 14
 quote:

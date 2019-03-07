@@ -1,10 +1,9 @@
 ---
-layout: 'chapter'
 title: 'Introduction'
 chapter: -1
 ---
 
-The Tao Te Ching is amongst the finest achievements 
+The Tao Te Ching is amongst the finest achievements
 ever in recorded human thought.
 The fact that I even know what it is,
 two thousand five hundred years later,

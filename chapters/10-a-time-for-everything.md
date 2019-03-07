@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>A</span> Time <span>for</span> <em>Everything</em>'
 chapter: 10
 quote:

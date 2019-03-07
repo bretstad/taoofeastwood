@@ -60,14 +60,10 @@
           <h1 class="chapter-title">{{ title | md('inline') | safe }}</h1>
         {% endif %}
 
-        {# needs to be flexible #}
-        {% if (chapter == -2) %}
-           <div class="opening-graphic">
-            {% include "icons/yin-yang.svg" %}
+        {% if title_page %}
+          <div class="title-icon">
+            {% include title_page %}
           </div>
-        {% endif %}
-
-        {% if chapter == -2 %}
           <p class="book-author">
             by <strong>{{ site.author }}</strong>
           </p>
@@ -83,6 +79,8 @@
           {% endblock %}
         </main>
       {% endblock %}
+
+      {% block pagenav %}{% endblock %}
 
       <footer data-layout="footer">
         <p class="site-info">

@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Afterward'
 chapter: 30
 quote:

@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: '<span>The</span> Uncarved Block'
 chapter: 17
 quote:

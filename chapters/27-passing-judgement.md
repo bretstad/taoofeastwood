@@ -1,5 +1,4 @@
 ---
-layout: 'chapter'
 title: 'Passing Judgement'
 chapter: 27
 quote:
