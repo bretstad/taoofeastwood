@@ -1,6 +1,8 @@
 ---
 title: 'Wu Wei'
 chapter: 1
+image:
+  src: wu_wei.svg
 quote:
   author: 'Jack Kosslyn'
   credential: 'Acting Coach'

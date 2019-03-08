@@ -1,6 +1,8 @@
 ---
 title: 'Compatible Opposites'
 chapter: 5
+image:
+  src: pistol.svg
 quote:
   author: 'Blondie'
   credential: 'The Good, the Bad and the Ugly'

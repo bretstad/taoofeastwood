@@ -50,6 +50,17 @@
   }
 }
 
+.chapter-image {
+  float: left;
+  max-width: 100%;
+  width: size('chapter-image');
+  padding-bottom: size('shim');
+
+  @include above('chapter-image') {
+    padding: size('shim');
+  }
+}
+
 .ending-mark {
   @include font-family('script');
   display: block;
