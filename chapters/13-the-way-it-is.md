@@ -1,6 +1,8 @@
 ---
 title: '<span>The</span> Way <span>It</span> <span>Is</span>'
 chapter: 13
+image:
+  src: fear.svg
 quote:
   author: 'Josey Wales'
   credential: 'The Outlaw Josey Wales'

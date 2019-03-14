@@ -1,6 +1,8 @@
 ---
 title: 'Failure <span>and</span> Opportunity'
 chapter: 20
+image:
+  src: whitehunter.jpg
 quote:
   author: 'John Wilson'
   credential: 'White Hunter, Black Heart'

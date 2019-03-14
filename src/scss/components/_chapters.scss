@@ -51,13 +51,14 @@
 }
 
 .chapter-image {
+  filter: grayscale(100%);
   float: left;
   max-width: 100%;
-  width: size('chapter-image');
   padding-bottom: size('shim');
+  width: size('chapter-image');
 
   @include above('chapter-image') {
-    padding: size('shim');
+    padding-right: size('gutter');
   }
 }
 

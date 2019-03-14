@@ -1,6 +1,8 @@
 ---
 title: '<span>The</span> Soft <em>Dissolves</em> <span>the</span> Hard'
 chapter: 28
+image:
+  src: million-dollar-baby-frankie.jpg
 quote:
   author: 'Frankie Dunn'
   credential: 'Million Dollar Baby'

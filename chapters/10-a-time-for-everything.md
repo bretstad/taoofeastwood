@@ -1,6 +1,8 @@
 ---
 title: '<span>A</span> Time <span>for</span> <em>Everything</em>'
 chapter: 10
+image:
+  src: time.svg
 quote:
   author: 'Josey Wales'
   credential: 'The Outlaw Josey Wales'

@@ -1,6 +1,8 @@
 ---
 title: 'Know <span>Your</span> <em>Limitations</em>'
 chapter: 9
+image:
+  src: magnum-force.jpg
 quote:
   author: 'Inspector “Dirty” Harry Callahan'
   credential: 'Magnum Force'

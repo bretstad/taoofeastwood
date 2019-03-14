@@ -149,3 +149,41 @@ chapter: 31
 **Screenplay/Story:** Nick Schenk, Dave Johannson \
 **Studio:** Village Roadshow Pictures, Malpaso Productions, Media Magik Entertainment \
 **Distribution:** Warner Bros. \
+
+## Photo Credits
+
+**A Fistful of Dollars** - Ch. 4 \
+Silver Screen Collection/Moviepix/Getty Images/United Artists
+
+**Dirty Harry** - Ch. 6 \
+Sunset Boulevard/Corbis Historical/Getty Images/Warner Bros.
+
+**High Plains Drifter** - Ch. 8 \
+Silver Screen Collection/Moviepix/Getty Images/Universal Studios
+
+**Magnum Force** - Ch. 9 \
+Movie Poster Image Art/Moviepix/Getty Images/Warner Bros.
+
+**The Outlaw Josey Wales** - Ch. 11 \
+Sunset Boulevard/Corbis Historical/Getty Images/Warner Bros.
+
+**Bronco Billy** - Ch. 15 \
+Archive Photo’s/Moviepix/Getty Images/Warner Bros.
+
+**Sudden Impact** - Ch. 16 \
+Michael Ochs Archive/Moviepix/Getty Images/Warner Bros.
+
+**Pale Rider** - Ch. 17 \
+Sunset Boulevard/Corbis Historical/Getty Images/Warner Bros.
+
+**White Hunter, Black Heart** - Ch. 20 \
+Murray Close/Moviepix/Getty Images/Warner Bros.
+
+**Unforgiven** - Ch. 22 \
+AF Archive/Alamy Stock Photo/Warner Bros.
+
+**Million Dollar Baby** - Ch. 28 \
+Entertainment Pictures/Alamy Stock Photo/Warner Bros.
+
+**Gran Torino** - Ch. 29 \
+TCD/Prod. DB/Alamy Stock Photo/Warner Bros.

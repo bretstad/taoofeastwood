@@ -1,11 +1,11 @@
 ---
-title: 'No Name'
+title: No Name
 chapter: 3
 image:
   src: eternity.svg
 quote:
-  author: 'Clint Eastwood'
-  credential: 'The Man With No Name'
+  author: Clint Eastwood
+  credential: The Man With No Name
   text: |
     I wanted to play it with an economy of words and create
     this whole feeling through attitude and movement.

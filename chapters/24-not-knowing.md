@@ -1,6 +1,8 @@
 ---
 title: 'Not Knowing'
 chapter: 24
+image:
+  src: badge.svg
 quote:
   author: 'Chief Red Garnett'
   credential: 'A Perfect World'

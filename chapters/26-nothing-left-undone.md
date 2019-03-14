@@ -1,6 +1,8 @@
 ---
 title: 'Nothing Left Undone'
 chapter: 26
+image:
+  src: emptiness.svg
 quote:
   author: 'Luther Whitney'
   credential: 'Absolute Power'

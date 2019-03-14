@@ -1,6 +1,8 @@
 ---
 title: 'Forgiveness'
 chapter: 22
+image:
+  src: unforgiven-munny.jpg
 quote:
   author: 'William Munny'
   credential: 'Unforgiven'

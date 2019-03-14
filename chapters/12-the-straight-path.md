@@ -1,6 +1,8 @@
 ---
 title: '<span>The</span> Straight Path'
 chapter: 12
+image:
+  src: teepees.svg
 quote:
   author: 'Josey Wales'
   credential: 'The Outlaw Josey Wales'

@@ -1,11 +1,11 @@
 ---
-title: 'Wu Wei'
+title: Wu Wei
 chapter: 1
 image:
   src: wu_wei.svg
 quote:
-  author: 'Jack Kosslyn'
-  credential: 'Acting Coach'
+  author: Jack Kosslyn
+  credential: Acting Coach
   text: |
     Don't just do something, stand there.
 verse:

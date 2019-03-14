@@ -1,6 +1,8 @@
 ---
 title: 'All Things Change'
 chapter: 25
+image:
+  src: camera.svg
 quote:
   author: 'Robert Kincaid'
   credential: 'The Bridges of Madison County'

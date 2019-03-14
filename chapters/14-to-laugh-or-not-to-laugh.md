@@ -1,6 +1,8 @@
 ---
 title: '<span>To</span> <em>Laugh</em> <span>or</span> Not <span>To</span> <em>Laugh</em>'
 chapter: 14
+image:
+  src: yin-yang.svg
 quote:
   author: 'Frank Morris'
   credential: 'Escape from Alcatraz'

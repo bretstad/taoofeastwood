@@ -1,6 +1,8 @@
 ---
 title: 'Passing Judgement'
 chapter: 27
+image:
+  src: scale.svg
 quote:
   author: 'Steve Everett'
   credential: 'True Crime'

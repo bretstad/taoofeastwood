@@ -1,6 +1,8 @@
 ---
 title: '<span>The</span> Common Good'
 chapter: 7
+image:
+  src: swimming_doors.svg
 quote:
   author: 'The Stranger'
   credential: 'High Plains Drifter'

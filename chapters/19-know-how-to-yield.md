@@ -1,6 +1,8 @@
 ---
 title: 'Know How <span>to</span> Yield'
 chapter: 19
+image:
+  src: yield.svg
 quote:
   author: 'Inspector “Dirty” Harry Callahan'
   credential: 'The Dead Pool'
