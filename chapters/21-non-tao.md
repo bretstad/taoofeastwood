@@ -1,6 +1,8 @@
 ---
 title: 'non-Tao'
 chapter: 21
+image:
+  src: harmony.svg
 quote:
   author: 'Nick Pulovski'
   credential: 'The Rookie'

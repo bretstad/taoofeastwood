@@ -1,6 +1,8 @@
 ---
 title: '<span>The</span> Uncarved Block'
 chapter: 17
+image:
+  src: preacher-pale-rider.jpg
 quote:
   author: 'The Preacher '
   credential: 'Pale Rider'

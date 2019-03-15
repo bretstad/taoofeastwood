@@ -1,6 +1,8 @@
 ---
 title: 'Laissez-faire'
 chapter: 4
+image:
+  src: man-with-no-name.jpg
 quote:
   author: 'Joe (Man With No Name)'
   credential: 'A Fistful of Dollars'

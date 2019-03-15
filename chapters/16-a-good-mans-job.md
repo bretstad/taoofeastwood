@@ -1,6 +1,8 @@
 ---
 title: '<span>A</span> Good Man’s Job'
 chapter: 16
+image:
+  src: sudden-impact.jpg
 quote:
   author: 'Inspector “Dirty” Harry Callahan'
   credential: 'Sudden Impact'

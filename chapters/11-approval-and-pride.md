@@ -1,6 +1,8 @@
 ---
 title: 'Approval <span>and</span> Pride'
 chapter: 11
+image:
+  src: joseywales.jpg
 quote:
   author: 'Josey Wales'
   credential: 'The Outlaw Josey Wales'

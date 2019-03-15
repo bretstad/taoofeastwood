@@ -1,6 +1,8 @@
 ---
 title: 'See <span>the</span> <em>World</em> <span>as</span> Yourself'
 chapter: 8
+image:
+  src: highplainsdrifter.jpg
 quote:
   author: 'The Stranger'
   credential: 'High Plains Drifter'

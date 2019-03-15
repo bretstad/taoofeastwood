@@ -1,6 +1,8 @@
 ---
 title: 'Simply <span>Be</span> Yourself'
 chapter: 15
+image:
+  src: bronco-billy.jpg
 quote:
   author: 'Bronco Billy McCoy'
   credential: 'Bronco Billy'

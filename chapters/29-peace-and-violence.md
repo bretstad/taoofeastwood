@@ -1,6 +1,8 @@
 ---
 title: 'Peace <span>and</span> Violence'
 chapter: 29
+image:
+  src: gran-torino-walt.jpg
 quote:
   author: 'Walt Kowalski'
   credential: 'Gran Torino'

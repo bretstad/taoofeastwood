@@ -1,6 +1,8 @@
 ---
 title: 'Master Yourself'
 chapter: 18
+image:
+  src: soldier_salute.svg
 quote:
   author: 'Gunny Highway'
   credential: 'Heartbreak Ridge'

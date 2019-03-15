@@ -1,6 +1,8 @@
 ---
 title: 'Good <span>and</span> Evil'
 chapter: 23
+image:
+  src: evil.svg
 quote:
   author: 'William Munny'
   credential: 'Unforgiven'

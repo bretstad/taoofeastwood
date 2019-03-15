@@ -1,9 +1,11 @@
 ---
-title: 'Compatible Opposites'
+title: Compatible Opposites
 chapter: 5
+image:
+  src: pistol.svg
 quote:
-  author: 'Blondie'
-  credential: 'The Good, the Bad and the Ugly'
+  author: Blondie
+  credential: The Good, the Bad and the Ugly
   text: |
     You see, in this world there’s two kinds of people my friend:
     those with loaded guns and those who dig. You dig.

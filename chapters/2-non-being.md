@@ -1,9 +1,11 @@
 ---
-title: 'Non-being'
+title: Non-being
 chapter: 2
+image:
+  src: cowboy_hat.svg
 quote:
-  author: 'Sergio Leone'
-  credential: 'Director'
+  author: Sergio Leone
+  credential: Director
   text: |
     At that time I needed a mask rather than an actor,
     and Eastwood had only two facial expressions:

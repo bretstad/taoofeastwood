@@ -30,6 +30,13 @@
     </blockquote>
   {% endif %}
 
+  {% if image.src %}
+    <img
+      src="/assets/images/chapter/{{ image.src }}"
+      alt="{{ image.alt }}"
+      class="chapter-image" />
+  {% endif %}
+
   {{ content | safe }}
 
   {% if not title_page %}

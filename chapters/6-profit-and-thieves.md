@@ -1,6 +1,8 @@
 ---
 title: 'Profit <span>and</span> Thieves'
 chapter: 6
+image:
+  src: dirty-harry.jpg
 quote:
   author: 'Inspector Harry Callahan'
   credential: 'Dirty Harry'

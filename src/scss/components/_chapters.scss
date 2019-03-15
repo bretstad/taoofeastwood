@@ -50,6 +50,18 @@
   }
 }
 
+.chapter-image {
+  filter: grayscale(100%);
+  float: left;
+  max-width: 100%;
+  padding-bottom: size('shim');
+  width: size('chapter-image');
+
+  @include above('chapter-image') {
+    padding-right: size('gutter');
+  }
+}
+
 .ending-mark {
   @include font-family('script');
   display: block;
