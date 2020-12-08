@@ -72,7 +72,7 @@
       {{ paging_link_if(next.data.chapter, next.data.title, next.url, 'next paging-link') }}
     {% endif %}
     {% if next and (next.data.chapter == -1 ) %}
-      {{ paging_link_if(-1, 'Please Begin', next.url, 'next paging-link') }}
+      {{ paging_link_if(-1, 'Please Begin', '/pages/opening/', 'next paging-link') }}
     {% endif %}
   </nav>
 {% endmacro %}
