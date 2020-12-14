@@ -1,6 +1,11 @@
 <h1>The Tao of Eastwood</h1>
 <p>by <a href="http://www.bretstad.com">Bret Morstad</a></p>
 <h2>Develop:</h2>
+<p>Make sure you are on the proper version of node with
+<a href="https://github.com/nvm-sh/nvm#installing-and-updating">node version manager</a>:</p>
+<pre><code>nvm i 10
+nvm use 10
+</code></pre>
 <p>Install dependencies:</p>
 <pre><code>yarn
 </code></pre>
@@ -10,8 +15,7 @@ with a watcher for Sass files:</p>
 </code></pre>
 <p>The site will be compiled into <code>docs/</code>
 for simple gh-pages deployment,
-and the served site will be available at
-<code>localhost:8080</code> or e.g. <code>tao.hexxie.com:8080</code>.</p>
+and the served site will be available at <code>localhost:8080</code>.</p>
 <p>You can also run individual commands:</p>
 <pre><code># build the static site
 gulp build

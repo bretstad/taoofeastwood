@@ -5,6 +5,14 @@ by [Bret Morstad](http://www.bretstad.com)
 
 ## Develop:
 
+Make sure you are on the proper version of node with
+[node version manager](https://github.com/nvm-sh/nvm#installing-and-updating):
+
+```
+nvm i 10
+nvm use 10
+```
+
 Install dependencies:
 
 ```
@@ -20,8 +28,7 @@ gulp
 
 The site will be compiled into `docs/`
 for simple gh-pages deployment,
-and the served site will be available at
-`localhost:8080` or e.g. `tao.hexxie.com:8080`.
+and the served site will be available at `localhost:8080`.
 
 You can also run individual commands:
 

@@ -59,11 +59,11 @@
 
   <nav data-layout="paging">
     {% if prev and (prev.data.chapter == -1) %}
-    {{ paging_link_if(-2, 'Title Page', '/', 'previous paging-link') }}
-      {% elif (prev.data.chapter > -2) %}
-        {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
-      {% elif (prev.data.chapter == -2 ) %}
-        {{ paging_link_if(-1, 'Title Page', prev.url, 'previous paging-link') }}
+      {{ paging_link_if(-2, 'Title Page', '/', 'previous paging-link') }}
+    {% elif (prev.data.chapter > -2) %}
+      {{ paging_link_if(prev.data.chapter, prev.data.title, prev.url, 'previous paging-link') }}
+    {% elif (prev.data.chapter == -2 ) %}
+      {{ paging_link_if(-1, 'Title Page', prev.url, 'previous paging-link') }}
     {% else %}
       <span class="spacer"></span>
     {% endif %}
